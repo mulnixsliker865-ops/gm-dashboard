@@ -7,6 +7,8 @@ const CHANNEL_OUTREACH_COLORS = {
   "其他": "#64748b"
 };
 
+const DASHBOARD_APP_VERSION = "20260617-refund-draft-rate-v2";
+
 const CHANNEL_OUTREACH_MAP = new Map([
   ["99", "线上广播"],
   ["878", "线上广播"],
