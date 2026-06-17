@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-17T04:11:47.534Z",
+  "generatedAt": "2026-06-17T07:02:47.415Z",
   "dashboardYear": 2026,
   "selectedTables": {
     "systemOutput": "产值2026.1-12月",
@@ -48,6 +48,7 @@
         "signSystemOutputWan": 786.89,
         "productNetOutputWan": 826.1,
         "currentOrders": 32,
+        "draftOrderCount": 54,
         "monthlyOutputWan": 509.21,
         "monthlyNetOutputWan": 509.21,
         "monthlyPositiveOutputWan": 54.19,
@@ -72,8 +73,8 @@
         "monthDays": 31,
         "elapsedDays": 31,
         "elapsedDaysSource": "system_current_date",
-        "refundRatePct": 112.5,
-        "refundRateDeltaPp": 98.5,
+        "refundRatePct": 66.67,
+        "refundRateDeltaPp": 52.67,
         "refundOrders": 36,
         "refundLossWan": 331.87
       },
@@ -553,6 +554,7 @@
         {
           "name": "设计四部",
           "output": 173.27,
+          "draftOrders": 14,
           "orders": 8,
           "avg": 17.04,
           "quoteOutputWan": 136.36,
@@ -579,13 +581,14 @@
           "refundWan": 94.3,
           "controlRecoverWan": 18.86,
           "controlledOutput": 192.13,
-          "refundRate": 112.5,
+          "refundRate": 64.29,
           "perCapita": 13.33,
           "risk": "高危"
         },
         {
           "name": "设计一部",
           "output": 172.76,
+          "draftOrders": 18,
           "orders": 8,
           "avg": 13.24,
           "quoteOutputWan": 105.95,
@@ -613,13 +616,14 @@
           "refundWan": 74.91,
           "controlRecoverWan": 14.98,
           "controlledOutput": 187.74,
-          "refundRate": 100,
+          "refundRate": 44.44,
           "perCapita": 12.34,
           "risk": "高危"
         },
         {
           "name": "设计三部",
           "output": 153.36,
+          "draftOrders": 12,
           "orders": 10,
           "avg": 14.86,
           "quoteOutputWan": 148.62,
@@ -647,13 +651,14 @@
           "refundWan": 43.95,
           "controlRecoverWan": 8.79,
           "controlledOutput": 162.15,
-          "refundRate": 50,
+          "refundRate": 41.67,
           "perCapita": 10.95,
           "risk": "高危"
         },
         {
           "name": "设计二部",
           "output": 16.61,
+          "draftOrders": 10,
           "orders": 6,
           "avg": 11.46,
           "quoteOutputWan": 68.74,
@@ -680,7 +685,7 @@
           "refundWan": 111.92,
           "controlRecoverWan": 22.38,
           "controlledOutput": 38.99,
-          "refundRate": 216.67,
+          "refundRate": 130,
           "perCapita": 1.28,
           "risk": "高危"
         }
@@ -1078,6 +1083,7 @@
         "signSystemOutputWan": 264.14,
         "productNetOutputWan": 259.42,
         "currentOrders": 18,
+        "draftOrderCount": 20,
         "monthlyOutputWan": 34.14,
         "monthlyNetOutputWan": 34.14,
         "monthlyPositiveOutputWan": 33.52,
@@ -1102,8 +1108,8 @@
         "monthDays": 28,
         "elapsedDays": 28,
         "elapsedDaysSource": "system_current_date",
-        "refundRatePct": 138.89,
-        "refundRateDeltaPp": 124.89,
+        "refundRatePct": 125,
+        "refundRateDeltaPp": 111,
         "refundOrders": 25,
         "refundLossWan": 263.52
       },
@@ -1424,6 +1430,7 @@
         {
           "name": "设计四部",
           "output": 46.3,
+          "draftOrders": 7,
           "orders": 9,
           "avg": 11.78,
           "quoteOutputWan": 106.03,
@@ -1448,13 +1455,14 @@
           "refundWan": 65.3,
           "controlRecoverWan": 13.06,
           "controlledOutput": 59.36,
-          "refundRate": 55.56,
+          "refundRate": 71.43,
           "perCapita": 4.21,
           "risk": "高危"
         },
         {
           "name": "设计二部",
           "output": 19.07,
+          "draftOrders": 4,
           "orders": 2,
           "avg": 23.08,
           "quoteOutputWan": 46.16,
@@ -1481,13 +1489,14 @@
           "refundWan": 41.96,
           "controlRecoverWan": 8.39,
           "controlledOutput": 27.46,
-          "refundRate": 200,
+          "refundRate": 100,
           "perCapita": 1.47,
           "risk": "高危"
         },
         {
           "name": "设计一部",
           "output": -15.38,
+          "draftOrders": 6,
           "orders": 6,
           "avg": 11.01,
           "quoteOutputWan": 66.08,
@@ -1520,6 +1529,7 @@
         {
           "name": "设计三部",
           "output": -15.85,
+          "draftOrders": 3,
           "orders": 1,
           "avg": 13.5,
           "quoteOutputWan": 13.5,
@@ -1547,7 +1557,7 @@
           "refundWan": 58.96,
           "controlRecoverWan": 11.79,
           "controlledOutput": -4.06,
-          "refundRate": 600,
+          "refundRate": 200,
           "perCapita": -1.13,
           "risk": "高危"
         }
@@ -1875,6 +1885,7 @@
         "signSystemOutputWan": 2445.77,
         "productNetOutputWan": 2614,
         "currentOrders": 72,
+        "draftOrderCount": 181,
         "monthlyOutputWan": 2444.18,
         "monthlyNetOutputWan": 2444.18,
         "monthlyPositiveOutputWan": 178.12,
@@ -1899,8 +1910,8 @@
         "monthDays": 31,
         "elapsedDays": 31,
         "elapsedDaysSource": "system_current_date",
-        "refundRatePct": 22.22,
-        "refundRateDeltaPp": 8.22,
+        "refundRatePct": 8.84,
+        "refundRateDeltaPp": -5.16,
         "refundOrders": 16,
         "refundLossWan": 179.71
       },
@@ -2345,6 +2356,7 @@
         {
           "name": "设计四部",
           "output": 695.39,
+          "draftOrders": 53,
           "orders": 17,
           "avg": 13.82,
           "quoteOutputWan": 234.9,
@@ -2368,13 +2380,14 @@
           "refundWan": 77.48,
           "controlRecoverWan": 15.5,
           "controlledOutput": 710.89,
-          "refundRate": 35.29,
+          "refundRate": 11.32,
           "perCapita": 69.54,
-          "risk": "高危"
+          "risk": "良好"
         },
         {
           "name": "设计三部",
           "output": 599.81,
+          "draftOrders": 41,
           "orders": 21,
           "avg": 13.69,
           "quoteOutputWan": 287.58,
@@ -2405,6 +2418,7 @@
         {
           "name": "设计一部",
           "output": 580.24,
+          "draftOrders": 45,
           "orders": 16,
           "avg": 16.57,
           "quoteOutputWan": 265.09,
@@ -2428,13 +2442,14 @@
           "refundWan": 72.29,
           "controlRecoverWan": 14.46,
           "controlledOutput": 594.7,
-          "refundRate": 43.75,
+          "refundRate": 15.56,
           "perCapita": 58.02,
-          "risk": "高危"
+          "risk": "关注"
         },
         {
           "name": "设计二部",
           "output": 568.74,
+          "draftOrders": 42,
           "orders": 18,
           "avg": 15.22,
           "quoteOutputWan": 273.94,
@@ -2459,9 +2474,9 @@
           "refundWan": 29.93,
           "controlRecoverWan": 5.99,
           "controlledOutput": 574.73,
-          "refundRate": 16.67,
+          "refundRate": 7.14,
           "perCapita": 51.7,
-          "risk": "关注"
+          "risk": "稳健"
         }
       ],
       "designerHeatmap": [
@@ -2857,6 +2872,7 @@
         "signSystemOutputWan": 598.73,
         "productNetOutputWan": 137.82,
         "currentOrders": 54,
+        "draftOrderCount": 47,
         "monthlyOutputWan": -418.88,
         "monthlyNetOutputWan": -418.88,
         "monthlyPositiveOutputWan": -75.93,
@@ -2881,8 +2897,8 @@
         "monthDays": 30,
         "elapsedDays": 30,
         "elapsedDaysSource": "system_current_date",
-        "refundRatePct": 151.85,
-        "refundRateDeltaPp": 137.85,
+        "refundRatePct": 174.47,
+        "refundRateDeltaPp": 160.47,
         "refundOrders": 82,
         "refundLossWan": 941.68
       },
@@ -3249,6 +3265,7 @@
         {
           "name": "设计六部",
           "output": -6.72,
+          "draftOrders": 1,
           "orders": 1,
           "avg": 8.27,
           "quoteOutputWan": 8.27,
@@ -3271,6 +3288,7 @@
         {
           "name": "设计五部",
           "output": -36.68,
+          "draftOrders": 5,
           "orders": 3,
           "avg": 12.68,
           "quoteOutputWan": 38.05,
@@ -3289,13 +3307,14 @@
           "refundWan": 104.59,
           "controlRecoverWan": 20.92,
           "controlledOutput": -15.76,
-          "refundRate": 300,
+          "refundRate": 180,
           "perCapita": -7.34,
           "risk": "高危"
         },
         {
           "name": "设计一部",
           "output": -61.33,
+          "draftOrders": 13,
           "orders": 12,
           "avg": 13.58,
           "quoteOutputWan": 162.9,
@@ -3314,13 +3333,14 @@
           "refundWan": 234.18,
           "controlRecoverWan": 46.84,
           "controlledOutput": -14.49,
-          "refundRate": 200,
+          "refundRate": 184.62,
           "perCapita": -12.27,
           "risk": "高危"
         },
         {
           "name": "设计二部",
           "output": -84.96,
+          "draftOrders": 7,
           "orders": 7,
           "avg": 12.66,
           "quoteOutputWan": 88.65,
@@ -3349,6 +3369,7 @@
         {
           "name": "设计四部",
           "output": -112.19,
+          "draftOrders": 13,
           "orders": 16,
           "avg": 11.63,
           "quoteOutputWan": 186.08,
@@ -3370,13 +3391,14 @@
           "refundWan": 230.4,
           "controlRecoverWan": 46.08,
           "controlledOutput": -66.11,
-          "refundRate": 100,
+          "refundRate": 123.08,
           "perCapita": -14.02,
           "risk": "高危"
         },
         {
           "name": "设计三部",
           "output": -117,
+          "draftOrders": 8,
           "orders": 15,
           "avg": 11.02,
           "quoteOutputWan": 165.34,
@@ -3398,7 +3420,7 @@
           "refundWan": 183.91,
           "controlRecoverWan": 36.78,
           "controlledOutput": -80.22,
-          "refundRate": 106.67,
+          "refundRate": 200,
           "perCapita": -14.62,
           "risk": "高危"
         }
@@ -3866,6 +3888,7 @@
         "signSystemOutputWan": 586.14,
         "productNetOutputWan": 558.34,
         "currentOrders": 54,
+        "draftOrderCount": 66,
         "monthlyOutputWan": 465.84,
         "monthlyNetOutputWan": 465.84,
         "monthlyPositiveOutputWan": 202.47,
@@ -3890,8 +3913,8 @@
         "monthDays": 31,
         "elapsedDays": 31,
         "elapsedDaysSource": "system_current_date",
-        "refundRatePct": 42.59,
-        "refundRateDeltaPp": 28.59,
+        "refundRatePct": 34.85,
+        "refundRateDeltaPp": 20.85,
         "refundOrders": 23,
         "refundLossWan": 322.77
       },
@@ -4293,6 +4316,7 @@
         {
           "name": "设计二部",
           "output": 173.98,
+          "draftOrders": 15,
           "orders": 15,
           "avg": 13.49,
           "quoteOutputWan": 202.3,
@@ -4320,6 +4344,7 @@
         {
           "name": "设计三部",
           "output": 156.71,
+          "draftOrders": 12,
           "orders": 14,
           "avg": 15.03,
           "quoteOutputWan": 210.39,
@@ -4348,6 +4373,7 @@
         {
           "name": "设计五部",
           "output": 70.84,
+          "draftOrders": 14,
           "orders": 10,
           "avg": 13.11,
           "quoteOutputWan": 131.11,
@@ -4367,13 +4393,14 @@
           "refundWan": 90.55,
           "controlRecoverWan": 18.11,
           "controlledOutput": 88.95,
-          "refundRate": 70,
+          "refundRate": 50,
           "perCapita": 11.81,
           "risk": "高危"
         },
         {
           "name": "设计六部",
           "output": 43.97,
+          "draftOrders": 3,
           "orders": 3,
           "avg": 11.34,
           "quoteOutputWan": 34.02,
@@ -4398,6 +4425,7 @@
         {
           "name": "设计一部",
           "output": 21.93,
+          "draftOrders": 10,
           "orders": 6,
           "avg": 15.52,
           "quoteOutputWan": 93.15,
@@ -4416,13 +4444,14 @@
           "refundWan": 84.1,
           "controlRecoverWan": 16.82,
           "controlledOutput": 38.75,
-          "refundRate": 116.67,
+          "refundRate": 70,
           "perCapita": 4.39,
           "risk": "高危"
         },
         {
           "name": "设计四部",
           "output": -1.57,
+          "draftOrders": 12,
           "orders": 6,
           "avg": 12.06,
           "quoteOutputWan": 72.33,
@@ -4444,7 +4473,7 @@
           "refundWan": 133.13,
           "controlRecoverWan": 26.63,
           "controlledOutput": 25.06,
-          "refundRate": 133.33,
+          "refundRate": 66.67,
           "perCapita": -0.2,
           "risk": "高危"
         }
@@ -4772,6 +4801,7 @@
         "signSystemOutputWan": 169.92,
         "productNetOutputWan": 55.12,
         "currentOrders": 10,
+        "draftOrderCount": 21,
         "monthlyOutputWan": -96.7,
         "monthlyNetOutputWan": -96.7,
         "monthlyPositiveOutputWan": 27.27,
@@ -4796,8 +4826,8 @@
         "monthDays": 30,
         "elapsedDays": 17,
         "elapsedDaysSource": "system_current_date",
-        "refundRatePct": 240,
-        "refundRateDeltaPp": 226,
+        "refundRatePct": 114.29,
+        "refundRateDeltaPp": 100.29,
         "refundOrders": 24,
         "refundLossWan": 293.89
       },
@@ -5064,6 +5094,7 @@
         {
           "name": "设计一部",
           "output": 29.4,
+          "draftOrders": 7,
           "orders": 3,
           "avg": 14.68,
           "quoteOutputWan": 44.05,
@@ -5082,13 +5113,14 @@
           "refundWan": 43.4,
           "controlRecoverWan": 8.68,
           "controlledOutput": 38.08,
-          "refundRate": 133.33,
+          "refundRate": 57.14,
           "perCapita": 5.88,
           "risk": "高危"
         },
         {
           "name": "设计三部",
           "output": 13.51,
+          "draftOrders": 3,
           "orders": 1,
           "avg": 10.55,
           "quoteOutputWan": 10.55,
@@ -5111,13 +5143,14 @@
           "refundWan": 16.94,
           "controlRecoverWan": 3.39,
           "controlledOutput": 16.9,
-          "refundRate": 200,
+          "refundRate": 66.67,
           "perCapita": 1.5,
           "risk": "高危"
         },
         {
           "name": "设计六部",
           "output": -26.93,
+          "draftOrders": 0,
           "orders": 0,
           "avg": 0,
           "quoteOutputWan": 0,
@@ -5143,6 +5176,7 @@
         {
           "name": "设计四部",
           "output": -27.82,
+          "draftOrders": 5,
           "orders": 3,
           "avg": 12.81,
           "quoteOutputWan": 38.42,
@@ -5163,13 +5197,14 @@
           "refundWan": 69.82,
           "controlRecoverWan": 13.96,
           "controlledOutput": -13.86,
-          "refundRate": 166.67,
+          "refundRate": 100,
           "perCapita": -3.97,
           "risk": "高危"
         },
         {
           "name": "设计五部",
           "output": -39.93,
+          "draftOrders": 4,
           "orders": 1,
           "avg": 7.59,
           "quoteOutputWan": 7.59,
@@ -5189,13 +5224,14 @@
           "refundWan": 71.86,
           "controlRecoverWan": 14.37,
           "controlledOutput": -25.56,
-          "refundRate": 500,
+          "refundRate": 125,
           "perCapita": -6.66,
           "risk": "高危"
         },
         {
           "name": "设计二部",
           "output": -44.93,
+          "draftOrders": 2,
           "orders": 2,
           "avg": 13.06,
           "quoteOutputWan": 26.13,
@@ -5507,8 +5543,8 @@
   "benchmark": {
     "monthlyOutputWanAvg": 69.94,
     "monthlyOrdersAvg": 40,
-    "avgOrderWanAvg": 1.75,
-    "refundRatePctAvg": 85.83
+    "avgOrderWanAvg": 13.63,
+    "refundRatePctAvg": 52.96
   },
   "summary": {
     "statDays": 30,
@@ -5520,6 +5556,7 @@
     "signSystemOutputWan": 169.92,
     "productNetOutputWan": 55.12,
     "currentOrders": 10,
+    "draftOrderCount": 21,
     "monthlyOutputWan": -96.7,
     "monthlyNetOutputWan": -96.7,
     "monthlyPositiveOutputWan": 27.27,
@@ -5544,8 +5581,8 @@
     "monthDays": 30,
     "elapsedDays": 17,
     "elapsedDaysSource": "system_current_date",
-    "refundRatePct": 240,
-    "refundRateDeltaPp": 226,
+    "refundRatePct": 114.29,
+    "refundRateDeltaPp": 100.29,
     "refundOrders": 24,
     "refundLossWan": 293.89
   },
