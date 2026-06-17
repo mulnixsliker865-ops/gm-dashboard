@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>总经理经营看盘 - 静态原型</title>
+    <link rel="stylesheet" href="./styles.css?v=20260616-year-table-routing" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">GM</div>
+        <div>
+          <h1>总经理经营看盘</h1>
+          <p>Executive Dashboard · v1.0 · 静态 HTML 原型</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button class="status-pill ready" id="aiStatus" type="button"><span></span>规则播报已就绪</button>
+        <button class="icon-btn" type="button" id="jsonBtn" title="查看数据接入说明">JSON</button>
+        <button class="settings-btn" type="button" title="设置">设置</button>
+      </div>
+    </header>
+
+    <main class="shell">
+      <section class="hero" id="overview">
+        <canvas class="hero-space" id="heroSpace" aria-hidden="true"></canvas>
+        <div class="hero-copy">
+          <p class="eyebrow">经营看盘</p>
+          <h2>一屏掌握全公司健康度</h2>
+        </div>
+        <div class="ai-card">
+          <div class="ai-icon"><span>播报</span></div>
+          <p class="brief-line"><strong>数据每日播报：</strong><span id="aiBrief">读取现有经营指标后，此处将按固定规则生成经营播报，不调用 AI，不自由发挥。</span></p>
+          <button type="button" id="generateBrief">更新播报</button>
+        </div>
+      </section>
+
+      <section class="goal-grid">
+        <article class="goal-card">
+          <div class="section-kicker">年度产值目标 <span class="metric-tag metric-tag-net">净产值</span></div>
+          <div class="goal-line"><strong id="yearGoalValue">2,236万</strong><span id="yearGoalTarget">/ 35,000 万</span><b id="yearGoalPct">6.4%</b></div>
+          <div class="progress-track"><i id="yearGoalBar" style="--value: 6.4%"></i><em id="yearTheoryMarker" style="left: 30%"></em></div>
+          <p id="yearGoalTalk">按 365 天理论进度 30%，实际完成 6.4%，落后 23.6pp</p>
+        </article>
+        <article class="goal-card">
+          <div class="section-kicker">月度产值目标 <span class="metric-tag metric-tag-net">净产值</span></div>
+          <div class="goal-line"><strong id="monthGoalValue">2,636万</strong><span id="monthGoalTarget">/ 2,900 万</span><b id="monthGoalPct">90.9%</b></div>
+          <div class="progress-track orange"><i id="monthGoalBar" style="--value: 90.9%"></i></div>
+          <p id="monthGoalTalk">4 月月均推算，达成 90.9%，差 264 万追平月度目标</p>
+        </article>
+      </section>
+
+      <nav class="tabs" aria-label="看板分区">
+        <a class="active" href="#overview">驾驶舱</a>
+        <a href="#product">产品经营</a>
+        <a href="#channel">引流渠道</a>
+        <a href="#department">设计师/部门</a>
+        <a href="#risk">退单风险</a>
+      </nav>
+
+      <section class="filter-strip">
+        <div class="months" id="monthFilters">
+          <span>月份</span>
+        </div>
+        <div class="filter-actions">
+          <span id="selectedMonths">已选 1 个月</span>
+          <button type="button" id="selectAll">全选</button>
+          <button type="button" id="clearMonths">清空</button>
+        </div>
+      </section>
+
+      <section class="kpi-grid" id="kpiCards"></section>
+
+      <section class="panel-grid two" id="structure">
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>渠道净产值：正值与退单影响 <span class="metric-tag metric-tag-net">净产值</span></h3>
+              <p id="channelStructureTalk">看渠道净额、正值渠道和受退单影响渠道，避免负数被结构占比掩盖</p>
+            </div>
+          </div>
+          <div class="channel-flow" id="channelFlow"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>产品线产值分布 <span class="metric-tag metric-tag-net">净产值</span></h3>
+              <p id="productStructureTalk">任性装贡献最高，单品集中风险需培育第二曲线</p>
+            </div>
+          </div>
+          <div class="channel-flow product-flow" id="productFlow"></div>
+        </article>
+      </section>
+
+      <section class="panel" id="multiMonth">
+        <div class="panel-head">
+          <div>
+            <h3>多月综合经营指标 <span class="metric-tag metric-tag-net">净产值</span></h3>
+            <p>选择多个月份后，净产值看经营结果，转正产值/单数/均单按转正式口径展示</p>
+          </div>
+        </div>
+        <div class="metric-grid" id="multiMetrics"></div>
+      </section>
+
+      <section class="panel" id="product">
+        <div class="panel-head">
+          <div>
+            <h3>走量型 vs 高客单型：产值占比与单数占比对照 <span class="metric-tag metric-tag-net">净产值</span></h3>
+            <p>蓝条为产值占比，灰条为单数占比；蓝条高于灰条说明更偏高客单贡献</p>
+          </div>
+        </div>
+        <div class="paired-bars" id="productContribution"></div>
+      </section>
+
+      <section class="panel-grid two">
+        <article class="panel">
+          <h3>各产品线均单值对比 <span class="metric-tag metric-tag-quote">报价单产值</span></h3>
+          <p>客单价反映客户层级与产品定位</p>
+          <div class="horizontal-bars" id="avgOrderBars"></div>
+        </article>
+        <article class="panel">
+          <h3>均单面积对比 <span class="metric-tag metric-tag-quote">报价单产值</span></h3>
+          <p>判断高均单是否来自面积，而不是纯客质</p>
+          <div class="horizontal-bars" id="areaBars"></div>
+        </article>
+      </section>
+
+      <section class="panel ai-list" id="productAi">
+        <div class="panel-head">
+          <div>
+            <h3>规则经营播报：产品经营</h3>
+            <p>由产品线、均单、面积、产品结构等指标按固定规则生成</p>
+          </div>
+        </div>
+        <div id="productInsights"></div>
+      </section>
+
+      <section class="panel" id="channel">
+        <div class="panel-head">
+          <div>
+            <h3>TOP 细分渠道产值排行 <span class="metric-tag metric-tag-net">净产值</span></h3>
+            <p>金额展示渠道净产值，可保留负值；右侧百分比按该渠道订单数 / 全部渠道订单数计算，用来看来源订单结构</p>
+          </div>
+        </div>
+        <div class="warning-strip" id="channelWarningStrip">线上投放类渠道合计：抖音直播类、百度系、第三方平台垂直类、抖音信息流类、腾讯系</div>
+        <div class="rank-bars" id="channelRanking"></div>
+      </section>
+
+      <section class="panel ai-list" id="channelAi">
+        <div class="panel-head">
+          <div>
+            <h3>规则经营播报：渠道经营</h3>
+            <p>由渠道排行、渠道占比、均单和异常负数按固定规则生成</p>
+          </div>
+        </div>
+        <div id="channelInsights"></div>
+      </section>
+
+      <section class="panel-grid two" id="department">
+        <article class="panel">
+          <h3>6 个设计部产值总榜 <span class="metric-tag metric-tag-net">净产值</span></h3>
+          <p>按净产值降序：签单系统产值 + 转正式差额产值 + 转正设计费 - 退单产值；颜色按退单风险区分</p>
+          <div class="department-list" id="departmentRanking"></div>
+        </article>
+        <article class="panel">
+          <h3>部门控退潜力测算 <span class="metric-tag metric-tag-net">净产值</span></h3>
+          <p>按设计部展示：当前净产值 vs 假设挽回 20% 退单损失后的净产值</p>
+          <div class="scenario-bars" id="scenarioBars"></div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <div>
+            <h3>维度 1：部门产值 × 设计师人数 <span class="metric-tag metric-tag-net">净产值</span></h3>
+            <p>柱状为净产值，折线为在职设计师人数，看部门规模与产出的总体盘子</p>
+          </div>
+        </div>
+        <div class="combo-chart" id="peopleChart"></div>
+      </section>
+
+      <section class="panel" id="designerHeatmapPanel">
+        <div class="panel-head">
+          <div>
+            <h3>产值 VS 设计师热力图</h3>
+            <p>不做个人排名，按设计一部到设计六部分组展示设计师；颜色越深代表该列金额越高</p>
+          </div>
+        </div>
+        <div class="designer-heatmap" id="designerHeatmap"></div>
+      </section>
+
+      <section class="panel-grid two">
+        <article class="panel">
+          <h3>维度 2：部门月均产值排行 <span class="metric-tag metric-tag-net">净产值</span></h3>
+          <p>看部门稳定产出能力</p>
+          <div class="vertical-bars compact" id="monthlyBars"></div>
+        </article>
+        <article class="panel">
+          <h3>维度 3：部门均单值排行 <span class="metric-tag metric-tag-quote">报价单产值</span></h3>
+          <p>按转正式报价单产值（含设计费）/ 转正式单数计算，不扣退单产值</p>
+          <div class="vertical-bars compact baseline" id="departmentAvgBars"></div>
+        </article>
+      </section>
+
+      <section class="panel" id="risk">
+        <div class="panel-head">
+          <div>
+            <h3>部门视角：产值排名 × 本期内退率 <span class="metric-tag metric-tag-net">净产值</span></h3>
+            <p>产值排名按净产值；本期内退率按退单单数 / 转正式单数；风险标签由退单率规则库生成</p>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="risk-table" id="riskTable">
+            <thead>
+              <tr>
+                <th>产值排名</th>
+                <th>部门</th>
+                <th>净产值(万)</th>
+                <th>转正式单数</th>
+                <th>本期内退</th>
+                <th>本期内退率</th>
+                <th>人均产值(万)</th>
+                <th>风险标签</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel ai-list" id="departmentAi">
+        <div class="panel-head">
+          <div>
+            <h3>规则经营播报：设计部经营</h3>
+            <p>由 6 个设计部的产值、单数、均单、人效、退单率按固定规则生成</p>
+          </div>
+        </div>
+        <div id="departmentInsights"></div>
+      </section>
+
+      <section class="panel data-note" id="dataGuide">
+        <h3>后续接数据方式</h3>
+        <p>当前页面读取 <code>dashboard.js</code> / <code>dashboard.json</code> 展示数据；这两个文件由飞书多维表生成。生成脚本会按当前年份自动匹配子表名称里的年份，例如 2026 读取 2026 子表，2027 读取 2027 子表。</p>
+        <div class="code-block">飞书多维表年度子表 -> 字段清洗与规则映射 -> 生成 dashboard.json / dashboard.js -> 看板读取展示</div>
+      </section>
+    </main>
+
+    <script src="./rules-engine.js?v=20260617-channel-order-share-v1"></script>
+    <script src="./dashboard.js?v=20260617-channel-order-share-v1"></script>
+    <script src="./app.js?v=20260617-channel-order-share-v1"></script>
+  </body>
+</html>
