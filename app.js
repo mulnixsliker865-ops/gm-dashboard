@@ -330,7 +330,7 @@ async function loadData() {
   }
 
   try {
-    const response = await fetch("./dashboard.json", { cache: "no-store" });
+    const response = await fetch("./data/dashboard.json", { cache: "no-store" });
     if (!response.ok) throw new Error("No local JSON yet");
     dashboardData = await response.json();
   } catch {
@@ -456,7 +456,7 @@ function getFilteredDashboardData() {
 }
 
 function rebuildKpisForView(data, benchmark) {
-  const avgOrder = safeDivide(data.summary?.positiveOutputWan ?? data.summary?.currentOutputWan, data.summary?.currentOrders);
+  const avgOrder = safeDivide(data.summary?.quoteOutputWan ?? data.summary?.positiveOutputWan ?? data.summary?.currentOutputWan, data.summary?.currentOrders);
   data.benchmark = benchmark;
   data.kpis = buildKpisFromSummary(data.summary || {}, avgOrder, benchmark);
   return data;
@@ -479,15 +479,16 @@ function getKpiBenchmark(data) {
     return {
       monthlyOutputWanAvg: explicitBenchmark.monthlyOutputWanAvg || summary.monthlyOutputWan || safeDivide(summary.currentOutputWan, monthCount),
       monthlyOrdersAvg: explicitBenchmark.monthlyOrdersAvg || safeDivide(summary.currentOrders, monthCount),
-      avgOrderWanAvg: explicitBenchmark.avgOrderWanAvg || safeDivide(summary.currentOutputWan, summary.currentOrders),
+      avgOrderWanAvg: explicitBenchmark.avgOrderWanAvg || safeDivide(summary.quoteOutputWan ?? summary.positiveOutputWan ?? summary.currentOutputWan, summary.currentOrders),
       refundRatePctAvg: explicitBenchmark.refundRatePctAvg || summary.refundRatePct || 0
     };
   }
 
   const monthlyOutputs = snapshots.map(snapshot => snapshot.summary?.monthlyPositiveOutputWan || snapshot.summary?.positiveOutputWan || 0);
   const monthlyOrders = snapshots.map(snapshot => safeDivide(snapshot.summary?.currentOrders || 0, getSummaryMonthCount(snapshot.summary || {})));
-  const totalOutput = sum(snapshots, snapshot => snapshot.summary?.positiveOutputWan || 0);
+  const totalOutput = sum(snapshots, snapshot => snapshot.summary?.quoteOutputWan ?? snapshot.summary?.positiveOutputWan ?? 0);
   const totalOrders = sum(snapshots, snapshot => snapshot.summary?.currentOrders || 0);
+  const totalDraftOrders = sum(snapshots, snapshot => snapshot.summary?.draftOrderCount || snapshot.summary?.currentOrders || 0);
   const totalRefundOrders = sum(snapshots, snapshot => snapshot.summary?.refundOrders || 0);
   const avgRefundRate = safeDivide(sum(snapshots, snapshot => snapshot.summary?.refundRatePct || 0), snapshots.length);
 
@@ -495,7 +496,7 @@ function getKpiBenchmark(data) {
     monthlyOutputWanAvg: explicitBenchmark.monthlyOutputWanAvg || round(safeDivide(sum(monthlyOutputs, value => value), monthlyOutputs.length)),
     monthlyOrdersAvg: explicitBenchmark.monthlyOrdersAvg || round(safeDivide(sum(monthlyOrders, value => value), monthlyOrders.length)),
     avgOrderWanAvg: explicitBenchmark.avgOrderWanAvg || round(safeDivide(totalOutput, totalOrders)),
-    refundRatePctAvg: explicitBenchmark.refundRatePctAvg || round(totalRefundOrders ? safeDivide(totalRefundOrders * 100, totalOrders) : avgRefundRate)
+    refundRatePctAvg: explicitBenchmark.refundRatePctAvg || round(totalRefundOrders ? safeDivide(totalRefundOrders * 100, totalDraftOrders) : avgRefundRate)
   };
 }
 
@@ -507,18 +508,19 @@ function aggregateMonthSnapshots(snapshots) {
   const totalSystemOutput = sum(snapshots, item => item.summary.systemOutputWan ?? item.summary.currentOutputWan);
   const totalSignSystemOutput = sum(snapshots, item => item.summary.signSystemOutputWan || 0);
   const totalOrders = sum(snapshots, item => item.summary.currentOrders);
+  const totalDraftOrders = sum(snapshots, item => item.summary.draftOrderCount || item.summary.currentOrders || 0);
   const totalRefundOrders = sum(snapshots, item => item.summary.refundOrders || 0);
   const totalRefundLoss = sum(snapshots, item => item.summary.refundLossWan || 0);
   const count = snapshots.length;
   const yearTargetWan = snapshots.find(item => item.summary.yearTargetWan)?.summary.yearTargetWan || 35000;
   const monthTargetWan = round(safeDivide(sum(snapshots, item => item.summary.monthTargetWan || 0), count)) || 2900;
   const theoryProgressPct = Math.max(...snapshots.map(item => item.summary.yearTheoryProgressPct || 0));
-  const avgOrder = safeDivide(totalPositiveOutput, totalOrders);
+  const avgOrder = safeDivide(totalQuoteOutput || totalPositiveOutput, totalOrders);
   const monthlyOutput = safeDivide(totalNetOutput, count);
   const monthlyPositiveOutput = safeDivide(totalPositiveOutput, count);
   const monthlyQuoteOutput = safeDivide(totalQuoteOutput, count);
   const monthlySystemOutput = safeDivide(totalSystemOutput, count);
-  const refundRate = safeDivide(totalRefundOrders * 100, totalOrders);
+  const refundRate = safeDivide(totalRefundOrders * 100, totalDraftOrders);
   const summary = {
     statDays: count * 30,
     currentOutputWan: round(totalNetOutput),
@@ -528,6 +530,7 @@ function aggregateMonthSnapshots(snapshots) {
     systemOutputWan: round(totalSystemOutput),
     signSystemOutputWan: round(totalSignSystemOutput),
     currentOrders: Math.round(totalOrders),
+    draftOrderCount: Math.round(totalDraftOrders),
     monthlyOutputWan: round(monthlyOutput),
     monthlyNetOutputWan: round(monthlyOutput),
     monthlyPositiveOutputWan: round(monthlyPositiveOutput),
@@ -693,7 +696,7 @@ function buildKpisFromSummary(summary, avgOrder, benchmark = fallbackData.benchm
   const monthlyOrders = safeDivide(summary.currentOrders, monthCount);
   const positiveOutput = summary.positiveOutputWan ?? summary.currentOutputWan;
   const monthlyPositiveOutput = summary.monthlyPositiveOutputWan ?? summary.monthlyOutputWan;
-  const positiveAvgOrder = safeDivide(positiveOutput, summary.currentOrders);
+  const quoteAvgOrder = safeDivide(summary.quoteOutputWan ?? positiveOutput, summary.currentOrders);
   return [
     {
       label: "转正总产值",
@@ -715,18 +718,18 @@ function buildKpisFromSummary(summary, avgOrder, benchmark = fallbackData.benchm
     },
     {
       label: "均单值（剔除局改）",
-      value: formatNumber(positiveAvgOrder || avgOrder),
+      value: formatNumber(quoteAvgOrder || avgOrder),
       unit: "万",
-      note: "按当前筛选月份有效订单计算",
-      delta: getKpiBadgeLabel("avgOrderWan", positiveAvgOrder || avgOrder, benchmark.avgOrderWanAvg),
+      note: "按报价单产值 / 转正式单数计算",
+      delta: getKpiBadgeLabel("avgOrderWan", quoteAvgOrder || avgOrder, benchmark.avgOrderWanAvg),
       color: "#f59f0a",
-      progress: getKpiProgress("avgOrderWan", positiveAvgOrder || avgOrder, benchmark.avgOrderWanAvg)
+      progress: getKpiProgress("avgOrderWan", quoteAvgOrder || avgOrder, benchmark.avgOrderWanAvg)
     },
     {
-      label: "本期内退率",
+      label: "退单率（按草签）",
       value: formatNumber(summary.refundRatePct),
       unit: "%",
-      note: `${summary.refundOrders || 0} 单内退 · 损失 ${formatNumber(summary.refundLossWan || 0)} 万`,
+      note: `${summary.refundOrders || 0} 单退单 / ${summary.draftOrderCount || summary.currentOrders || 0} 单草签 · 损失 ${formatNumber(summary.refundLossWan || 0)} 万`,
       delta: getKpiBadgeLabel("refundRatePct", summary.refundRatePct, benchmark.refundRatePctAvg),
       color: "#ef4444",
       progress: getKpiProgress("refundRatePct", summary.refundRatePct, benchmark.refundRatePctAvg)
@@ -791,11 +794,11 @@ function buildMultiMetricsFromSummary(summary, avgOrder) {
   const monthCount = getSummaryMonthCount(summary);
   const positiveOutput = summary.positiveOutputWan ?? summary.currentOutputWan;
   const monthlyPositiveOutput = summary.monthlyPositiveOutputWan ?? summary.monthlyOutputWan;
-  const positiveAvgOrder = safeDivide(positiveOutput, summary.currentOrders) || avgOrder;
+  const quoteAvgOrder = safeDivide(summary.quoteOutputWan ?? positiveOutput, summary.currentOrders) || avgOrder;
   return [
     ["转正总产值(至今)", formatNumber(positiveOutput), "万元"],
     ["转正总单数", formatNumber(summary.currentOrders), "单"],
-    ["转正均单值(剔除局改)", formatNumber(positiveAvgOrder), "万元/单"],
+    ["转正均单值(报价单口径)", formatNumber(quoteAvgOrder), "万元/单"],
     ["均单面积(剔除局改)", "78.81", "m²"],
     ["月均产值(推算)", formatNumber(monthlyPositiveOutput), "万元/月"],
     ["月均转正", formatNumber(summary.currentOrders / monthCount), "单/月"],
@@ -1039,10 +1042,11 @@ function aggregateDepartments(snapshots) {
   const byName = new Map();
   snapshots.forEach(snapshot => {
     (snapshot.departments || []).forEach(row => {
-      const current = byName.get(row.name) || { ...row, output: 0, quoteOutputWan: 0, netOutputWan: 0, orders: 0, refund: 0, refundWan: 0, controlRecoverWan: 0 };
+      const current = byName.get(row.name) || { ...row, output: 0, quoteOutputWan: 0, netOutputWan: 0, draftOrders: 0, orders: 0, refund: 0, refundWan: 0, controlRecoverWan: 0 };
       current.output += row.output || 0;
       current.netOutputWan += row.netOutputWan ?? row.output ?? 0;
       current.quoteOutputWan += row.quoteOutputWan || 0;
+      current.draftOrders += row.draftOrders || row.orders || 0;
       current.orders += row.orders || 0;
       current.refund += row.refund || 0;
       current.refundWan += row.refundWan || 0;
@@ -1056,12 +1060,13 @@ function aggregateDepartments(snapshots) {
 
   return [...byName.values()].map(row => {
     const avg = safeDivide(row.quoteOutputWan, row.orders);
-    const refundRate = row.orders ? safeDivide(row.refund * 100, row.orders) : (row.refund > 0 ? 100 : 0);
+    const refundRate = row.draftOrders ? safeDivide(row.refund * 100, row.draftOrders) : (row.refund > 0 ? 100 : 0);
     return {
       ...row,
       output: round(row.output),
       netOutputWan: round(row.netOutputWan || row.output),
       quoteOutputWan: round(row.quoteOutputWan),
+      draftOrders: Math.round(row.draftOrders || 0),
       orders: Math.round(row.orders),
       avg: round(avg),
       monthly: round(safeDivide(row.output, snapshots.length)),
