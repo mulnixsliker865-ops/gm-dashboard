@@ -206,8 +206,8 @@
       <section class="panel" id="risk">
         <div class="panel-head">
           <div>
-            <h3>部门视角：产值排名 × 本期内退率 <span class="metric-tag metric-tag-net">净产值</span></h3>
-            <p>产值排名按净产值；本期内退率按退单单数 / 转正式单数；风险标签由退单率规则库生成</p>
+            <h3>部门视角：产值排名 × 退单率 <span class="metric-tag metric-tag-net">净产值</span></h3>
+            <p>产值排名按净产值；退单率按退单单数 / 草签单数；风险标签由退单率规则库生成</p>
           </div>
         </div>
         <div class="table-wrap">
@@ -219,7 +219,7 @@
                 <th>净产值(万)</th>
                 <th>转正式单数</th>
                 <th>本期内退</th>
-                <th>本期内退率</th>
+                <th>退单率</th>
                 <th>人均产值(万)</th>
                 <th>风险标签</th>
               </tr>
@@ -241,13 +241,13 @@
 
       <section class="panel data-note" id="dataGuide">
         <h3>后续接数据方式</h3>
-        <p>当前页面读取 <code>dashboard.js</code> / <code>dashboard.json</code> 展示数据；这两个文件由飞书多维表生成。生成脚本会按当前年份自动匹配子表名称里的年份，例如 2026 读取 2026 子表，2027 读取 2027 子表。</p>
+        <p>当前页面读取 <code>data/dashboard.js</code> / <code>data/dashboard.json</code> 展示数据；这两个文件由飞书多维表生成。生成脚本会按当前年份自动匹配子表名称里的年份，例如 2026 读取 2026 子表，2027 读取 2027 子表。</p>
         <div class="code-block">飞书多维表年度子表 -> 字段清洗与规则映射 -> 生成 dashboard.json / dashboard.js -> 看板读取展示</div>
       </section>
     </main>
 
-    <script src="./rules-engine.js?v=20260617-channel-order-share-v1"></script>
-    <script src="./dashboard.js?v=20260617-channel-order-share-v1"></script>
-    <script src="./app.js?v=20260617-channel-order-share-v1"></script>
+    <script src="./rules-engine.js?v=20260617-refund-draft-rate-v1"></script>
+    <script src="./dashboard.js?v=20260617-refund-draft-rate-v1"></script>
+    <script src="./app.js?v=20260617-refund-draft-rate-v1"></script>
   </body>
 </html>
