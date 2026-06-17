@@ -683,7 +683,7 @@
           { path: "department.highRiskRefundRatePct", op: "gte", value: 25 }
         ],
         title: "{department.highRiskDepartmentName}退单风险最高，需优先复盘",
-        body: "证据：{department.highRiskDepartmentName}本期内退率为 <strong>{department.highRiskRefundRatePct}%</strong>，在 6 个设计部里风险最高；风险标签按“退单单数 / 转正式单数”生成，不按产值大小生成。动作：先复盘该部门退单客户清单，重点看设计方案、报价解释、承诺口径和交付预期是否一致；渠道线索已经进来后，减少浪费的关键在设计师有效沟通和控退。"
+        body: "证据：{department.highRiskDepartmentName}退单率为 <strong>{department.highRiskRefundRatePct}%</strong>，在 6 个设计部里风险最高；风险标签按“退单单数 / 草签单数”生成，不按产值大小生成。动作：先复盘该部门退单客户清单，重点看设计方案、报价解释、承诺口径和交付预期是否一致；渠道线索已经进来后，减少浪费的关键在设计师有效沟通和控退。"
       },
       {
         id: "department_multi_risk_watch",
@@ -979,7 +979,7 @@
 
     const kpiOutput = getKpiByLabel(data.kpis, "转正总产值");
     const kpiOrders = getKpiByLabel(data.kpis, "转正单数");
-    const kpiRefund = getKpiByLabel(data.kpis, "本期内退率");
+    const kpiRefund = getKpiByLabel(data.kpis, "退单率（按草签）") || getKpiByLabel(data.kpis, "本期内退率");
     const totalOutputMetric = getMultiMetric(data.multiMetrics, "转正总产值");
     const totalOrdersMetric = getMultiMetric(data.multiMetrics, "转正总单数");
     const monthlyOutputMetric = getMultiMetric(data.multiMetrics, "月均产值");
