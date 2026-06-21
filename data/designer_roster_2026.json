@@ -1,6 +1,6 @@
 {
   "source": "feishu_bitable",
-  "generatedAt": "2026-06-20T15:25:48.303Z",
+  "generatedAt": "2026-06-21T15:31:50.925Z",
   "activeRule": "读取含 2026 行程字段的月表；行程不等于“离职”的设计师计入；同一部门同名设计师去重",
   "departmentNormalizeMap": {
     "设计一组": "设计一部",
