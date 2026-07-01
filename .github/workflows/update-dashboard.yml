@@ -45,3 +45,11 @@ jobs:
             git commit -m "Update dashboard data"
             git push
           fi
+
+      - name: Notify Feishu
+        if: always()
+        env:
+          FEISHU_BOT_WEBHOOK: ${{ secrets.FEISHU_BOT_WEBHOOK }}
+          FEISHU_BOT_SECRET: ${{ secrets.FEISHU_BOT_SECRET }}
+          DASHBOARD_REFRESH_STATUS: ${{ job.status }}
+        run: node scripts/notify_feishu_bot.js
