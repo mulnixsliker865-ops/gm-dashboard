@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-30T16:39:18.861Z",
-  "totalSystemOutputRecords": 1221,
+  "generatedAt": "2026-07-01T09:27:18.097Z",
+  "totalSystemOutputRecords": 1404,
   "mappingTableRecords": 88,
   "mappingSummary": {
     "records": 88,
     "level2Rules": 25,
     "sourceFallbackRules": 24
   },
-  "emptyLevel2Count": 114,
+  "emptyLevel2Count": 164,
   "emptyLevel2Fallback": {
     "99": {
       "top": "广播",
@@ -85,9 +85,9 @@
       "top": "官网自然流量",
       "system": "线上"
     },
-    "21世纪": {
-      "top": "21世纪",
-      "system": "市场部"
+    "广播": {
+      "top": "广播",
+      "system": "广播"
     },
     "其他中介": {
       "top": "其他中介",
@@ -97,17 +97,24 @@
       "top": "自然客流",
       "system": "其他"
     },
-    "广播": {
-      "top": "广播",
-      "system": "广播"
+    "百度系": {
+      "top": "不详，待人工确认",
+      "system": "不详，待人工确认"
     },
     "展会": {
       "top": "展会",
       "system": "其他"
+    },
+    "抖音直播类": {
+      "top": "不详，待人工确认",
+      "system": "不详，待人工确认"
+    },
+    "小区(定点)": {
+      "top": "不详，待人工确认",
+      "system": "不详，待人工确认"
     }
   },
   "topDisplayChannelNames": [
-    "21世纪",
     "百度系",
     "不详，待人工确认",
     "第三方平台垂直类",
