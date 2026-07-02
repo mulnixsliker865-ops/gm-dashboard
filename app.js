@@ -582,7 +582,7 @@ function aggregateMonthSnapshots(snapshots) {
     productSummary: {
       topProductName: products[0]?.name || "主力产品线",
       topProductOutputSharePct: products[0]?.value || 0,
-      topProductOutputWan: round(products[0]?.netValueWan || totalNetOutput * ((products[0]?.value || 0) / 100)),
+      topProductOutputWan: round(products[0]?.dealOutputWan || products[0]?.netValueWan || totalNetOutput * ((products[0]?.value || 0) / 100)),
       topProductOrders: Math.round(totalOrders * ((productContribution[0]?.orders || 0) / 100)),
       softSelectedRatePct: 34,
       softPotentialWanPer10Pp: 250,
@@ -850,26 +850,38 @@ function aggregateNetFlowRows(snapshots, key, palette) {
   const totals = new Map();
   snapshots.forEach(snapshot => {
     (snapshot[key] || []).forEach(row => {
-      const current = totals.get(row.name) || { ...row, name: row.name, netValueWan: 0 };
+      const current = totals.get(row.name) || { name: row.name, netValueWan: 0, dealOutputWan: 0, draftWan: 0, formalWan: 0, refundWan: 0, color: row.color };
       const rowNetValue = Number(row.netValueWan);
+      const rowDealValue = Number(row.dealOutputWan);
       const rowPctValue = Number(row.value);
       const baseValue = Number(snapshot.summary?.productNetOutputWan ?? snapshot.summary?.netOutputWan ?? snapshot.summary?.currentOutputWan) || 0;
       current.netValueWan += Number.isFinite(rowNetValue)
         ? rowNetValue
         : safeDivide(rowPctValue * baseValue, 100);
+      current.dealOutputWan += Number.isFinite(rowDealValue)
+        ? rowDealValue
+        : Math.max(0, Number(current.netValueWan) || 0);
+      current.draftWan = (Number(current.draftWan) || 0) + (Number(row.draftWan) || 0);
+      current.formalWan = (Number(current.formalWan) || 0) + (Number(row.formalWan) || 0);
+      current.refundWan = (Number(current.refundWan) || 0) + (Number(row.refundWan) || 0);
       current.color = row.color;
       totals.set(row.name, current);
     });
   });
 
-  const denominator = sum([...totals.values()], row => Math.abs(row.netValueWan || 0));
+  const hasDealOutput = [...totals.values()].some(row => Number(row.dealOutputWan) > 0);
+  const denominator = sum([...totals.values()], row => Math.abs((hasDealOutput ? row.dealOutputWan : row.netValueWan) || 0));
   return [...totals.values()]
-    .filter(row => row.netValueWan !== 0)
-    .sort((a, b) => Math.abs(b.netValueWan || 0) - Math.abs(a.netValueWan || 0))
+    .filter(row => (hasDealOutput ? row.dealOutputWan : row.netValueWan) !== 0)
+    .sort((a, b) => Math.abs((hasDealOutput ? b.dealOutputWan : b.netValueWan) || 0) - Math.abs((hasDealOutput ? a.dealOutputWan : a.netValueWan) || 0))
     .map((row, index) => ({
       ...row,
       netValueWan: round(row.netValueWan),
-      value: round(safeDivide(Math.abs(row.netValueWan || 0) * 100, denominator)),
+      dealOutputWan: round(row.dealOutputWan),
+      draftWan: round(row.draftWan),
+      formalWan: round(row.formalWan),
+      refundWan: round(row.refundWan),
+      value: round(safeDivide(Math.abs((hasDealOutput ? row.dealOutputWan : row.netValueWan) || 0) * 100, denominator)),
       color: row.color || palette[index % palette.length] || "#3b82f6"
     }));
 }
@@ -1132,7 +1144,8 @@ function aggregateDesignerHeatmap(snapshots) {
       ...row,
       draftWan: round(row.draftWan),
       formalWan: round(row.formalWan),
-      refundWan: round(row.refundWan)
+      refundWan: round(row.refundWan),
+      netWan: round(row.draftWan + row.formalWan - row.refundWan)
     }))
     .sort(sortDesignerByDepartment);
 }
@@ -1333,7 +1346,7 @@ function getStructureTalks(data) {
 }
 
 function buildChannelStructureFallback(data) {
-  return "看渠道净额、正值渠道和受退单影响渠道，避免负数被结构占比掩盖";
+  return "按草签产值、转正产值、退单产值和净产值拆开看，避免净额掩盖过程波动";
 }
 
 function buildProductStructureFallback(data) {
@@ -1463,143 +1476,99 @@ function generateRuleInsights(data, moduleName, fallbackRows, limit) {
   return rows.map(row => [row.title, row.body]);
 }
 
-function renderChannelFlow(data) {
-  const root = document.getElementById("channelFlow");
+function renderBreakdownFlow(rootId, rows, options = {}) {
+  const root = document.getElementById(rootId);
   if (!root) return;
 
-  const rows = (data.channels || [])
+  const {
+    itemLabel = "项目",
+    emptyText = "暂无拆分数据",
+    colors = {},
+    valueKey = "netValueWan",
+    valueLabel = "净产值",
+    formulaText = "净产值 = 草签产值 + 转正产值 - 退单产值",
+    detailText = row => `草签 ${formatNumber(row.draftWan)} 万｜转正 ${formatNumber(row.formalWan)} 万｜退单 ${formatNumber(row.refundWan)} 万`
+  } = options;
+
+  const normalized = (rows || [])
     .map((row, index) => ({
       ...row,
+      hasBreakdown: row.draftWan !== undefined || row.formalWan !== undefined || row.refundWan !== undefined,
+      draftWan: Number(row.draftWan) || 0,
+      formalWan: Number(row.formalWan) || 0,
+      refundWan: Number(row.refundWan) || 0,
+      dealOutputWan: Number(row.dealOutputWan) || ((Number(row.draftWan) || 0) + (Number(row.formalWan) || 0)),
       netValueWan: Number(row.netValueWan) || 0,
       color: row.color || CHANNEL_FLOW_COLORS[index % CHANNEL_FLOW_COLORS.length]
     }))
-    .filter(row => row.netValueWan !== 0);
+    .filter(row => row.draftWan || row.formalWan || row.refundWan || row.netValueWan)
+    .sort((a, b) => Math.abs(b[valueKey]) - Math.abs(a[valueKey]));
 
-  const netWan = round(sum(rows, row => row.netValueWan));
-  const positiveWan = round(sum(rows.filter(row => row.netValueWan > 0), row => row.netValueWan));
-  const dragWan = round(sum(rows.filter(row => row.netValueWan < 0), row => row.netValueWan));
-  const totalAbsWan = round(positiveWan + Math.abs(dragWan));
-  const maxAbs = Math.max(...rows.map(row => Math.abs(row.netValueWan)), 1);
-  const positiveRows = rows.filter(row => row.netValueWan > 0).sort((a, b) => b.netValueWan - a.netValueWan);
-  const negativeRows = rows.filter(row => row.netValueWan < 0).sort((a, b) => Math.abs(b.netValueWan) - Math.abs(a.netValueWan));
-  const status = netWan >= 0 ? "正向净贡献" : "退单负向影响";
+  if (!normalized.length) {
+    root.innerHTML = `<div class="channel-empty">${emptyText}</div>`;
+    return;
+  }
 
-  const renderRows = (items, type) => {
-    if (!items.length) return `<div class="channel-empty">暂无${type === "positive" ? "正值" : "受退单影响"}渠道</div>`;
-    return items.map(row => {
-      const absValue = Math.abs(row.netValueWan);
-      return `
-        <div class="channel-flow-row ${type}" tabindex="0" data-chart-item data-chart-tip="${row.name}｜净产值 ${formatNumber(row.netValueWan)} 万｜贡献 ${formatNumber(safeDivide(absValue * 100, totalAbsWan))}%">
-          <div class="channel-flow-label">
-            <span>${row.name}</span>
-            <strong>${row.netValueWan > 0 ? "+" : ""}${formatNumber(row.netValueWan)} 万</strong>
-          </div>
-          <div class="channel-flow-track"><i style="--w:${pct(absValue, maxAbs)}%; --color:${row.netValueWan > 0 ? "#16b981" : "#ef4444"}"></i></div>
-        </div>
-      `;
-    }).join("");
+  const totals = {
+    draftWan: round(sum(normalized, row => row.draftWan)),
+    formalWan: round(sum(normalized, row => row.formalWan)),
+    refundWan: round(sum(normalized, row => row.refundWan)),
+    dealOutputWan: round(sum(normalized, row => row.dealOutputWan)),
+    netValueWan: round(sum(normalized, row => row.netValueWan))
   };
+  const maxAbs = Math.max(...normalized.map(row => Math.abs(row[valueKey])), 1);
+  const totalValue = totals[valueKey] || 0;
 
   root.innerHTML = `
-    <div class="channel-flow-summary">
-      <article class="channel-flow-card ${netWan >= 0 ? "positive" : "negative"}">
-        <span>净产值合计</span>
-        <strong>${formatNumber(netWan)} 万</strong>
-        <small>${status}</small>
-      </article>
-      <article class="channel-flow-card positive">
-        <span>正值渠道</span>
-        <strong>+${formatNumber(positiveWan)} 万</strong>
-        <small>占绝对贡献 ${formatNumber(safeDivide(positiveWan * 100, totalAbsWan))}%</small>
-      </article>
-      <article class="channel-flow-card negative">
-        <span>退单负向影响</span>
-        <strong>${formatNumber(dragWan)} 万</strong>
-        <small>占绝对贡献 ${formatNumber(safeDivide(Math.abs(dragWan) * 100, totalAbsWan))}%</small>
+    <div class="channel-flow-summary net-only">
+      <article class="channel-flow-card ${totalValue >= 0 ? "positive" : "negative"}">
+        <span>${valueLabel}合计</span>
+        <strong>${totalValue > 0 ? "+" : ""}${formatNumber(totalValue)} 万</strong>
+        <small>${formulaText}</small>
       </article>
     </div>
-    <div class="channel-flow-columns">
-      <section>
-        <h4>正值渠道</h4>
-        ${renderRows(positiveRows, "positive")}
-      </section>
-      <section>
-        <h4>受退单影响渠道</h4>
-        ${renderRows(negativeRows, "negative")}
-      </section>
+    <div class="breakdown-table net-table">
+      <div class="breakdown-head">
+        <span>${itemLabel}</span>
+        <span>${valueLabel}</span>
+      </div>
+      ${normalized.map(row => `
+        <div class="breakdown-row" tabindex="0" data-chart-item data-chart-tip="${row.name}｜草签 ${formatNumber(row.draftWan)} 万｜转正 ${formatNumber(row.formalWan)} 万｜退单 ${formatNumber(row.refundWan)} 万｜${valueLabel} ${formatNumber(row[valueKey])} 万">
+          <div class="breakdown-name">
+            <strong>${row.name}</strong>
+            <small>${detailText(row)}</small>
+          </div>
+          <div class="net-value-cell ${row[valueKey] >= 0 ? "positive" : "negative"}">
+            <strong>${row[valueKey] > 0 ? "+" : ""}${formatNumber(row[valueKey])}万</strong>
+            <div class="channel-flow-track"><i style="--w:${pct(Math.abs(row[valueKey]), maxAbs)}%; --color:${row[valueKey] >= 0 ? "#16b981" : "#ef4444"}"></i></div>
+          </div>
+        </div>
+      `).join("")}
     </div>
   `;
 }
 
+function renderChannelFlow(data) {
+  renderBreakdownFlow("channelFlow", data.channels || [], {
+    itemLabel: "渠道",
+    emptyText: "暂无渠道产值拆分数据"
+  });
+}
+
 function renderProductFlow(data) {
-  const root = document.getElementById("productFlow");
-  if (!root) return;
-
-  const productBaseValue = Number(data.summary?.productNetOutputWan ?? data.summary?.netOutputWan ?? data.summary?.currentOutputWan) || 0;
-  const rows = (data.products || [])
-    .map((row, index) => {
-      const rowNetValue = Number(row.netValueWan);
-      return {
-        ...row,
-        netValueWan: Number.isFinite(rowNetValue) ? rowNetValue : safeDivide((Number(row.value) || 0) * productBaseValue, 100),
-        color: row.color || PRODUCT_FLOW_COLORS[index % PRODUCT_FLOW_COLORS.length]
-      };
-    })
-    .filter(row => row.netValueWan !== 0);
-
-  const netWan = round(sum(rows, row => row.netValueWan));
-  const positiveWan = round(sum(rows.filter(row => row.netValueWan > 0), row => row.netValueWan));
-  const impactWan = round(sum(rows.filter(row => row.netValueWan < 0), row => row.netValueWan));
-  const totalAbsWan = round(positiveWan + Math.abs(impactWan));
-  const maxAbs = Math.max(...rows.map(row => Math.abs(row.netValueWan)), 1);
-  const positiveRows = rows.filter(row => row.netValueWan > 0).sort((a, b) => b.netValueWan - a.netValueWan);
-  const negativeRows = rows.filter(row => row.netValueWan < 0).sort((a, b) => Math.abs(b.netValueWan) - Math.abs(a.netValueWan));
-
-  const renderRows = (items, type) => {
-    if (!items.length) return `<div class="channel-empty">暂无${type === "positive" ? "正值" : "受退单影响"}产品线</div>`;
-    return items.map(row => {
-      const absValue = Math.abs(row.netValueWan);
-      return `
-        <div class="channel-flow-row ${type}" tabindex="0" data-chart-item data-chart-tip="${row.name}｜净产值 ${formatNumber(row.netValueWan)} 万｜贡献 ${formatNumber(safeDivide(absValue * 100, totalAbsWan))}%">
-          <div class="channel-flow-label">
-            <span>${row.name}</span>
-            <strong>${row.netValueWan > 0 ? "+" : ""}${formatNumber(row.netValueWan)} 万</strong>
-          </div>
-          <div class="channel-flow-track"><i style="--w:${pct(absValue, maxAbs)}%; --color:${row.netValueWan > 0 ? "#3b82f6" : "#ef4444"}"></i></div>
-        </div>
-      `;
-    }).join("");
-  };
-
-  root.innerHTML = `
-    <div class="channel-flow-summary">
-      <article class="channel-flow-card ${netWan >= 0 ? "positive" : "negative"}">
-        <span>产品净产值合计</span>
-        <strong>${formatNumber(netWan)} 万</strong>
-        <small>${netWan >= 0 ? "正向净贡献" : "退单负向影响"}</small>
-      </article>
-      <article class="channel-flow-card positive">
-        <span>正值产品线</span>
-        <strong>+${formatNumber(positiveWan)} 万</strong>
-        <small>占绝对贡献 ${formatNumber(safeDivide(positiveWan * 100, totalAbsWan))}%</small>
-      </article>
-      <article class="channel-flow-card negative">
-        <span>退单负向影响</span>
-        <strong>${formatNumber(impactWan)} 万</strong>
-        <small>占绝对贡献 ${formatNumber(safeDivide(Math.abs(impactWan) * 100, totalAbsWan))}%</small>
-      </article>
-    </div>
-    <div class="channel-flow-columns">
-      <section>
-        <h4>正值产品线</h4>
-        ${renderRows(positiveRows, "positive")}
-      </section>
-      <section>
-        <h4>受退单影响产品线</h4>
-        ${renderRows(negativeRows, "negative")}
-      </section>
-    </div>
-  `;
+  renderBreakdownFlow("productFlow", data.products || [], {
+    itemLabel: "产品线",
+    emptyText: "暂无产品线产值拆分数据",
+    valueKey: "dealOutputWan",
+    valueLabel: "草签+转正",
+    formulaText: "草签+转正 = 草签产值 + 转正产值",
+    detailText: row => `草签 ${formatNumber(row.draftWan)} 万｜转正 ${formatNumber(row.formalWan)} 万；退单来源含 25 年订单，暂不按产品扣减`,
+    colors: {
+      draft: "#14b8a6",
+      formal: "#3b82f6",
+      refund: "#ef4444"
+    }
+  });
 }
 
 function renderDonut(donutId, legendId, rows) {

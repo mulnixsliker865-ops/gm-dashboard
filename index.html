@@ -76,8 +76,8 @@
         <article class="panel">
           <div class="panel-head">
             <div>
-              <h3>渠道净产值：正值与退单影响 <span class="metric-tag metric-tag-net">净产值</span></h3>
-              <p id="channelStructureTalk">看渠道净额、正值渠道和受退单影响渠道，避免负数被结构占比掩盖</p>
+              <h3>渠道净产值拆分 <span class="metric-tag metric-tag-net">净产值</span></h3>
+              <p id="channelStructureTalk">按草签产值、转正产值、退单产值和净产值拆开看，避免净额掩盖过程波动</p>
             </div>
           </div>
           <div class="channel-flow" id="channelFlow"></div>
@@ -85,8 +85,9 @@
         <article class="panel">
           <div class="panel-head">
             <div>
-              <h3>产品线产值分布 <span class="metric-tag metric-tag-net">净产值</span></h3>
+              <h3>产品线产值拆分 <span class="metric-tag metric-tag-net">草签+转正</span></h3>
               <p id="productStructureTalk">任性装贡献最高，单品集中风险需培育第二曲线</p>
+              <p class="panel-note">说明：因退单来源包含 25 年订单，暂不按产品线扣减退单；这里展示某个产品成交后更能带来产值的优势。</p>
             </div>
           </div>
           <div class="channel-flow product-flow" id="productFlow"></div>
@@ -106,8 +107,8 @@
       <section class="panel" id="product">
         <div class="panel-head">
           <div>
-            <h3>走量型 vs 高客单型：产值占比与单数占比对照 <span class="metric-tag metric-tag-net">净产值</span></h3>
-            <p>蓝条为产值占比，灰条为单数占比；蓝条高于灰条说明更偏高客单贡献</p>
+            <h3>走量型 vs 高客单型：产值占比与单数占比对照 <span class="metric-tag metric-tag-net">草签+转正</span></h3>
+            <p>蓝条为草签+转正产值占比，灰条为单数占比；蓝条高于灰条说明更偏高客单贡献</p>
           </div>
         </div>
         <div class="paired-bars" id="productContribution"></div>
@@ -247,7 +248,7 @@
     </main>
 
     <script src="./rules-engine.js?v=20260702-draft-kpi-v2"></script>
-    <script src="./dashboard.js?v=20260702-draft-kpi-v2"></script>
+    <script src="./data/dashboard.js?v=20260702-draft-kpi-v2"></script>
     <script src="./app.js?v=20260702-draft-kpi-v2"></script>
   </body>
 </html>

@@ -161,7 +161,7 @@
         enabled: true,
         when: [],
         title: "结构风险播报",
-        body: "渠道侧看正值渠道和受退单影响渠道，产品侧看净产值结构与单品集中度；负值代表退单负向影响，不按饼图解读。"
+        body: "渠道侧看正值渠道和受退单影响渠道，产品侧看草签+转正成单结构与单品集中度；产品不按退单扣减，退单风险回到总盘和部门复盘。"
       },
       {
         id: "daily_action_focus",
@@ -273,7 +273,7 @@
           { path: "summary.annualizedOutputYi", op: "lt", valuePath: "summary.yearTargetYi" }
         ],
         title: "经营节奏：当前规模可观察，但全年兑现仍要滚动追",
-        body: "证据：{summary.statDays} 天实现净产值 {summary.currentOutputWan} 万、转正 {summary.currentOrders} 单、月均净产值 {summary.monthlyOutputWan} 万，线性外推全年约 {summary.annualizedOutputYi} 亿，低于年目标 {summary.yearTargetYi} 亿。判断：家装成交有明显季节性，淡旺季、交付周期和退单都会影响全年节奏，不能只用当前月份简单外推。动作：按月建立“净产值 / 转正单数 / 报价单均单 / 退单率”滚动盘点；旺季前优先确认主力产品承接、重点渠道预算、设计部产能和退单预警，避免到旺季才被动追量。"
+        body: "证据：{summary.statDays} 天实现净产值 {summary.currentOutputWan} 万、转正 {summary.currentOrders} 单、月均净产值 {summary.monthlyOutputWan} 万，线性外推全年约 {summary.annualizedOutputYi} 亿，低于年目标 {summary.yearTargetYi} 亿。判断：家装成交有明显季节性，淡旺季、交付周期和退单都会影响全年节奏，不能只用当前月份简单外推。动作：按月建立“总盘净产值 / 转正单数 / 报价单均单 / 总退单率”滚动盘点；产品侧看草签+转正成单产值，退单侧回到总盘和设计承接复盘，避免把 25 年来源退单误扣到某个产品。"
       },
       {
         id: "product_annualized_on_track",
@@ -285,7 +285,7 @@
           { path: "summary.annualizedOutputYi", op: "gte", valuePath: "summary.yearTargetYi" }
         ],
         title: "经营节奏：当前年化可覆盖目标，但仍需看结构质量",
-        body: "证据：当前净产值线性外推年化达到 {summary.annualizedOutputYi} 亿，高于年目标 {summary.yearTargetYi} 亿，规模节奏暂时站得住。判断：目标覆盖只说明当期速度不错，不代表结构健康；如果净产值来自少数产品、少数渠道或少数大单，后续波动会比较大。动作：经营会上不要只看达成率，建议同步固定三张追踪表：产品结构表、退单原因表、高客单产品渗透表；如果连续两个月结构稳定，再考虑加大预算或复制打法。"
+        body: "证据：当前净产值线性外推年化达到 {summary.annualizedOutputYi} 亿，高于年目标 {summary.yearTargetYi} 亿，规模节奏暂时站得住。判断：目标覆盖只说明当期速度不错，不代表结构健康；如果成单产值集中在少数产品、少数渠道或少数大单，后续波动会比较大。动作：经营会上不要只看达成率，建议同步固定三张追踪表：产品成单结构表、总盘退单原因表、高客单产品渗透表；如果连续两个月结构稳定，再考虑加大预算或复制打法。"
       },
       {
         id: "product_structure_extreme_concentration",
@@ -297,7 +297,7 @@
           { path: "product.topProductOutputSharePct", op: "gte", value: 65 }
         ],
         title: "产品结构：{product.topProductName}占比较高，主力打法要稳，第二支柱要补",
-        body: "证据：{product.topProductName}贡献 {product.topProductOutputSharePct}% 净产值，前两大产品合计约 {product.topTwoProductSharePct}%。判断：主力产品清晰有利于组织复制，但占比过高时，退单、交付压力、报价政策变化都会集中影响大盘。动作：{product.topProductName}继续做标准化报价、交付清单和退单预警；同时给{product.secondProductName}设置独立观察目标，明确适合的客户画像、渠道入口、设计师话术和样板展示，先验证稳定成交路径，再逐步放大。"
+        body: "证据：{product.topProductName}贡献 {product.topProductOutputSharePct}% 草签+转正成单产值，前两大产品合计约 {product.topTwoProductSharePct}%。判断：主力产品清晰有利于组织复制，但占比过高时，交付压力、报价政策变化和客户预期都会集中影响大盘；退单风险不下钻到单个产品扣减，统一看总盘退单和设计承接。动作：{product.topProductName}继续做标准化报价、交付清单和关键配置说明；同时给{product.secondProductName}设置独立观察目标，明确适合的客户画像、渠道入口、设计师话术和样板展示，先验证稳定成交路径，再逐步放大。"
       },
       {
         id: "product_structure_concentration",
@@ -309,7 +309,7 @@
           { path: "product.topProductOutputSharePct", op: "gte", value: 50 }
         ],
         title: "产品结构：{product.topProductName}是主力盘，适合做标准化经营",
-        body: "证据：{product.topProductName}贡献 <strong>{product.topProductOutputSharePct}% 净产值</strong>，{product.secondProductName}贡献 {product.secondProductOutputSharePct}%。判断：这类结构适合先把主力产品做稳，再逐步培养第二曲线；不宜同时推太多产品，容易分散销售和设计动作。动作：主力产品统一报价模板、关键配置、交付节点和退单预警；第二产品线先配置一套销售话术、一套样板展示和一个重点渠道来源，观察 1-2 个周期后再决定是否加资源。"
+        body: "证据：{product.topProductName}贡献 <strong>{product.topProductOutputSharePct}% 草签+转正成单产值</strong>，{product.secondProductName}贡献 {product.secondProductOutputSharePct}%。判断：这类结构适合先把主力产品做稳，再逐步培养第二曲线；不宜同时推太多产品，容易分散销售和设计动作。动作：主力产品统一报价模板、关键配置和交付节点；第二产品线先配置一套销售话术、一套样板展示和一个重点渠道来源，观察 1-2 个周期后再决定是否加资源；退单另看总盘和设计沟通原因。"
       },
       {
         id: "product_structure_balanced_portfolio",
@@ -322,7 +322,7 @@
           { path: "product.secondProductOutputSharePct", op: "gte", value: 20 }
         ],
         title: "产品结构：相对均衡，适合做双主力打法",
-        body: "证据：{product.topProductName}占比 {product.topProductOutputSharePct}%，{product.secondProductName}占比 {product.secondProductOutputSharePct}%，没有出现单一产品过度独大。判断：当前更适合“双主力产品”打法，既能稳规模，也能降低对单一产品的依赖。动作：把{product.topProductName}作为稳规模产品，把{product.secondProductName}作为增长承接产品；渠道预算、设计师话术、样板间陈列和活动政策按两套主推逻辑配置，同时持续看各自产值、单数、均单和退单率。"
+        body: "证据：{product.topProductName}占比 {product.topProductOutputSharePct}%，{product.secondProductName}占比 {product.secondProductOutputSharePct}%，没有出现单一产品过度独大。判断：当前更适合“双主力产品”打法，既能稳规模，也能降低对单一产品的依赖。动作：把{product.topProductName}作为稳规模产品，把{product.secondProductName}作为增长承接产品；渠道预算、设计师话术、样板间陈列和活动政策按两套主推逻辑配置，同时持续看各自产值、单数和均单；退单率单独回到总盘和部门复盘。"
       },
       {
         id: "product_structure_top_two_concentration",
@@ -334,7 +334,7 @@
           { path: "product.topTwoProductSharePct", op: "gte", value: 70 }
         ],
         title: "产品结构：组合集中在{product.topProductName}+{product.secondProductName}，要防止结构单薄",
-        body: "证据：{product.topProductName}和{product.secondProductName}合计贡献 {product.topTwoProductSharePct}% 产值。判断：主力盘清晰是好事，但增长弹性也集中在少数产品，尾部产品如果没有明确角色，很难自然成长。动作：两大主力先稳交付和退单率；第三梯队产品只做小范围试点，例如绑定特定渠道、特定户型或特定设计师团队，先看单数、均单和退单表现，再决定是否扩大。"
+        body: "证据：{product.topProductName}和{product.secondProductName}合计贡献 {product.topTwoProductSharePct}% 草签+转正成单产值。判断：主力盘清晰是好事，但增长弹性也集中在少数产品，尾部产品如果没有明确角色，很难自然成长。动作：两大主力先稳报价、配置和交付表达；第三梯队产品只做小范围试点，例如绑定特定渠道、特定户型或特定设计师团队，先看单数和均单，再结合总盘退单情况决定是否扩大。"
       },
       {
         id: "product_price_soft_booster",
@@ -408,7 +408,7 @@
           { path: "product.highEndPenetrationPct", op: "lt", value: 8 }
         ],
         title: "转化优化：高客单产品渗透率偏低，适合先做条件化推荐",
-        body: "证据：{product.highEndNames}等高客单产品当前约 {product.highEndOrders} 单，渗透率约 {product.highEndPenetrationPct}%。判断：高客单产品单数少不一定是坏事，关键要看是否有清晰触发条件，例如户型面积、预算能力、客户关注点和设计师配置能力。动作：不要全员硬推高客单，先建立“适合推荐”的客户画像和话术条件；对符合条件的客户，要求设计师给出标准版和升级版两套方案，观察升级接受率、退单率和毛利表现。"
+        body: "证据：{product.highEndNames}等高客单产品当前约 {product.highEndOrders} 单，渗透率约 {product.highEndPenetrationPct}%。判断：高客单产品单数少不一定是坏事，关键要看是否有清晰触发条件，例如户型面积、预算能力、客户关注点和设计师配置能力。动作：不要全员硬推高客单，先建立“适合推荐”的客户画像和话术条件；对符合条件的客户，要求设计师给出标准版和升级版两套方案，观察升级接受率、报价完整度和毛利表现；退单风险另看总盘与部门原因。"
       },
       {
         id: "product_conversion_second_curve_candidate",
@@ -420,7 +420,7 @@
           { path: "product.secondProductOutputSharePct", op: "gte", value: 25 }
         ],
         title: "转化优化：{product.secondProductName}已具备第二曲线基础",
-        body: "证据：{product.secondProductName}产值占比达到 {product.secondProductOutputSharePct}%，已经不是边缘产品。判断：这类产品最适合从“自然成交”升级为“明确打法”，但仍要看它的单数基础和退单质量。动作：单独看{product.secondProductName}的渠道来源、设计师成交动作、均单、退单率和配置升级空间；如果连续两个周期表现稳定，再配置独立目标和预算。"
+        body: "证据：{product.secondProductName}草签+转正产值占比达到 {product.secondProductOutputSharePct}%，已经不是边缘产品。判断：这类产品最适合从“自然成交”升级为“明确打法”，但仍要看它的单数基础和报价质量。动作：单独看{product.secondProductName}的渠道来源、设计师成交动作、均单和配置升级空间；退单质量放在总盘和部门层面复盘，如果连续两个周期表现稳定，再配置独立目标和预算。"
       },
       {
         id: "product_conversion_high_value_stable",
@@ -432,7 +432,7 @@
           { path: "product.highEndPenetrationPct", op: "gte", value: 8 }
         ],
         title: "转化优化：高客单产品已有一定渗透，下一步看质量",
-        body: "证据：{product.highEndNames}等高客单产品渗透率约 {product.highEndPenetrationPct}%，已经不是完全空白。判断：此时继续只追高客单单数意义有限，更要确认退单率、毛利率和交付复杂度是否可控。动作：把高客单管理从“有没有卖出去”升级为“卖给谁、怎么卖、交付是否稳定”；优先复盘稳定成交案例，再决定是否扩大推荐范围。"
+        body: "证据：{product.highEndNames}等高客单产品渗透率约 {product.highEndPenetrationPct}%，已经不是完全空白。判断：此时继续只追高客单单数意义有限，更要确认毛利率、交付复杂度和客户预期是否可控。动作：把高客单管理从“有没有卖出去”升级为“卖给谁、怎么卖、交付是否稳定”；退单风险从总盘和部门原因里看，优先复盘稳定成交案例，再决定是否扩大推荐范围。"
       },
       {
         id: "product_foundation_low_value_volume",
@@ -444,7 +444,7 @@
           { path: "product.lowValueShareGapPct", op: "gte", value: 3 }
         ],
         title: "基础产品定位：{product.lowValueProductName}走量但低客单，要先明确角色",
-        body: "证据：{product.lowValueProductName}贡献 {product.lowValueOrderSharePct}% 单量，但产值占比仅 {product.lowValueOutputSharePct}%，均单 {product.lowValueAvgWan} 万。判断：这类产品可能是引流入口，也可能是低毛利消耗项，不能只用单数评价，也不宜简单砍掉。动作：如果定位为引流产品，就重点追踪升级到任性装、T1-2.0、新Q3、Q5 的比例；如果定位为利润产品，就必须核查毛利率、交付成本和退单率；如果两项都不成立，再考虑收缩。"
+        body: "证据：{product.lowValueProductName}贡献 {product.lowValueOrderSharePct}% 单量，但草签+转正产值占比仅 {product.lowValueOutputSharePct}%，均单 {product.lowValueAvgWan} 万。判断：这类产品可能是引流入口，也可能是低毛利消耗项，不能只用单数评价，也不宜简单砍掉。动作：如果定位为引流产品，就重点追踪升级到任性装、T1-2.0、新Q3、Q5 的比例；如果定位为利润产品，就必须核查毛利率和交付成本；总盘退单异常时再反查是否与低价入口客户预期有关。"
       },
       {
         id: "product_foundation_entry_package_pressure",
@@ -456,7 +456,7 @@
           { path: "product.lowValueAvgWan", op: "lte", value: 9 }
         ],
         title: "基础产品定位：{product.lowValueProductName}偏入口型，重点看升级能力",
-        body: "证据：{product.lowValueProductName}均单约 {product.lowValueAvgWan} 万，低于主力产品均单，更像入口型或基础型产品。判断：入口型产品的价值不只看当期产值，更要看是否带来客户进入、配置升级和后续加购。动作：给基础产品单独建立升级漏斗：成交单数、升级到主力产品比例、配置升级率、退单率、毛利率；如果只带来低价成交但不升级，就需要调整话术或控制占比。"
+        body: "证据：{product.lowValueProductName}均单约 {product.lowValueAvgWan} 万，低于主力产品均单，更像入口型或基础型产品。判断：入口型产品的价值不只看当期产值，更要看是否带来客户进入、配置升级和后续加购。动作：给基础产品单独建立升级漏斗：成交单数、升级到主力产品比例、配置升级率和毛利率；如果只带来低价成交但不升级，就需要调整话术或控制占比。"
       },
       {
         id: "product_foundation_no_low_value_gap",
@@ -468,7 +468,7 @@
           { path: "product.lowValueShareGapPct", op: "lt", value: 2 }
         ],
         title: "基础产品定位：单量和产值结构基本匹配，暂未形成明显负向影响",
-        body: "证据：当前低客单产品的单量占比和产值占比差距小于 2pp，没有明显“高单量、低产值”的负向影响项。判断：基础产品暂时没有明显挤压经营结构，但仍需要看毛利和退单质量。动作：继续按均单、退单率、毛利率和升级率做第二层筛查，不急于简单砍掉低客单产品；如果后续连续出现单量高但产值弱，再重新评估定位。"
+        body: "证据：当前低客单产品的单量占比和草签+转正产值占比差距小于 2pp，没有明显“高单量、低产值”的负向影响项。判断：基础产品暂时没有明显挤压经营结构，但仍需要看毛利和升级质量。动作：继续按均单、毛利率和升级率做第二层筛查，不急于简单砍掉低客单产品；总盘退单异常时，再回看低客单客户是否存在预期偏差。"
       },
       {
         id: "product_structure_second_curve_weak",
@@ -505,7 +505,7 @@
           { path: "product.areaLeaderAvgSqm", op: "lt", value: 95 }
         ],
         title: "客单价抓手：均单没有明显尖峰，先稳配置完整度",
-        body: "证据：当前最高均单产品约 {product.valueLeaderAvgWan} 万，最大均单面积约 {product.areaLeaderAvgSqm} 平方米，暂未看到特别突出的高客单尖峰。判断：这类结构通常不是靠少数大单拉动，更适合从标准配置、方案完整度和升级率里找稳定提升。动作：先统一主力产品的基础配置清单和升级项表达，要求报价中清楚区分基础项、可升级项和非必要项；每月看升级率、退单率和均单变化，不急于用激进政策拉高总价。"
+        body: "证据：当前最高均单产品约 {product.valueLeaderAvgWan} 万，最大均单面积约 {product.areaLeaderAvgSqm} 平方米，暂未看到特别突出的高客单尖峰。判断：这类结构通常不是靠少数大单拉动，更适合从标准配置、方案完整度和升级率里找稳定提升。动作：先统一主力产品的基础配置清单和升级项表达，要求报价中清楚区分基础项、可升级项和非必要项；每月看升级率和均单变化，不急于用激进政策拉高总价。"
       },
       {
         id: "product_foundation_tail_cleanup",
@@ -517,7 +517,7 @@
           { path: "product.tailProductSharePct", op: "lt", value: 2 }
         ],
         title: "基础产品定位：尾部产品贡献小，适合做模板清理",
-        body: "证据：尾部产品当前产值占比约 {product.tailProductSharePct}%，对规模贡献有限。判断：尾部产品如果没有明确战略意义，容易占用报价、培训和交付管理精力，但也可能承担特殊客户或特殊户型需求。动作：先按成交频次、毛利率、退单率和交付复杂度做一次清单分层；低频且低毛利的模板收缩，仍有战略意义的产品保留为专项场景，不放进日常主推。"
+        body: "证据：尾部产品当前草签+转正产值占比约 {product.tailProductSharePct}%，对规模贡献有限。判断：尾部产品如果没有明确战略意义，容易占用报价、培训和交付管理精力，但也可能承担特殊客户或特殊户型需求。动作：先按成交频次、毛利率和交付复杂度做一次清单分层；低频且低毛利的模板收缩，仍有战略意义的产品保留为专项场景，不放进日常主推。"
       },
       {
         id: "channel_top_dependency",
@@ -1072,12 +1072,13 @@
     }
 
     const top = [...(data.products || [])]
-      .filter(row => (row.netValueWan ?? row.value ?? 0) > 0)
-      .sort((a, b) => (b.netValueWan ?? b.value ?? 0) - (a.netValueWan ?? a.value ?? 0))[0] || {};
+      .map(row => ({ ...row, productDealWan: row.dealOutputWan ?? row.netValueWan ?? row.value ?? 0 }))
+      .filter(row => row.productDealWan > 0)
+      .sort((a, b) => b.productDealWan - a.productDealWan)[0] || {};
     return {
       topProductName: top.name || "主力产品线",
       topProductOutputSharePct: top.value || 0,
-      topProductOutputWan: pickNumber(input, ["top_product_output_wan", "topProductOutputWan"], 0),
+      topProductOutputWan: pickNumber(input, ["top_product_output_wan", "topProductOutputWan"], top.productDealWan || 0),
       topProductOrders: pickNumber(input, ["top_product_orders", "topProductOrders"], 0)
     };
   }
@@ -1118,8 +1119,9 @@
 
   function getProductPortfolio(data) {
     const products = [...(data.products || [])]
-      .filter(row => (row.netValueWan ?? row.value ?? 0) > 0)
-      .sort((a, b) => (b.netValueWan ?? b.value ?? 0) - (a.netValueWan ?? a.value ?? 0));
+      .map(row => ({ ...row, productDealWan: row.dealOutputWan ?? row.netValueWan ?? row.value ?? 0 }))
+      .filter(row => row.productDealWan > 0)
+      .sort((a, b) => b.productDealWan - a.productDealWan);
     const values = data.productValue || [];
     const areas = data.productArea || [];
     const second = products[1] || {};
