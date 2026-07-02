@@ -7,7 +7,7 @@ const CHANNEL_OUTREACH_COLORS = {
   "其他": "#64748b"
 };
 
-const DASHBOARD_APP_VERSION = "20260617-refund-draft-rate-v2";
+const DASHBOARD_APP_VERSION = "20260702-draft-kpi-v1";
 
 const CHANNEL_OUTREACH_MAP = new Map([
   ["99", "线上广播"],
@@ -698,8 +698,19 @@ function buildKpisFromSummary(summary, avgOrder, benchmark = fallbackData.benchm
   const monthlyOrders = safeDivide(summary.currentOrders, monthCount);
   const positiveOutput = summary.positiveOutputWan ?? summary.currentOutputWan;
   const monthlyPositiveOutput = summary.monthlyPositiveOutputWan ?? summary.monthlyOutputWan;
+  const draftOutput = summary.signSystemOutputWan ?? 0;
+  const monthlyDraftOutput = safeDivide(draftOutput, monthCount);
   const quoteAvgOrder = safeDivide(summary.quoteOutputWan ?? positiveOutput, summary.currentOrders);
   return [
+    {
+      label: "草签总产值",
+      value: formatNumber(draftOutput),
+      unit: "万",
+      note: `${summary.draftOrderCount || 0} 单草签 · 月均 ${formatNumber(monthlyDraftOutput)} 万`,
+      delta: getKpiBadgeLabel("monthlyOutputWan", monthlyDraftOutput, benchmark.monthlyOutputWanAvg),
+      color: "#06b6d4",
+      progress: getKpiProgress("monthlyOutputWan", monthlyDraftOutput, benchmark.monthlyOutputWanAvg)
+    },
     {
       label: "转正总产值",
       value: formatNumber(positiveOutput),
