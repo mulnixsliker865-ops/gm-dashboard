@@ -1,5 +1,5 @@
 window.GM_DASHBOARD_DATA = {
-  "generatedAt": "2026-07-02T16:18:35.735Z",
+  "generatedAt": "2026-07-03T06:54:19.114Z",
   "dashboardYear": 2026,
   "selectedTables": {
     "systemOutput": "产值2026.1-12月",
@@ -4793,49 +4793,49 @@ window.GM_DASHBOARD_DATA = {
     "06": {
       "summary": {
         "statDays": 30,
-        "currentOutputWan": -2.41,
-        "netOutputWan": -2.41,
-        "positiveOutputWan": 137.97,
-        "quoteOutputWan": 380.29,
+        "currentOutputWan": -100.3,
+        "netOutputWan": -100.3,
+        "positiveOutputWan": 164.04,
+        "quoteOutputWan": 488.88,
         "systemOutputWan": -100.28,
-        "signSystemOutputWan": 122.55,
-        "productNetOutputWan": 164.6,
-        "currentOrders": 26,
-        "draftOrderCount": 16,
-        "monthlyOutputWan": -2.41,
-        "monthlyNetOutputWan": -2.41,
-        "monthlyPositiveOutputWan": 137.97,
-        "monthlyQuoteOutputWan": 380.29,
+        "signSystemOutputWan": 292.48,
+        "productNetOutputWan": 200.87,
+        "currentOrders": 34,
+        "draftOrderCount": 37,
+        "monthlyOutputWan": -100.3,
+        "monthlyNetOutputWan": -100.3,
+        "monthlyPositiveOutputWan": 164.04,
+        "monthlyQuoteOutputWan": 488.88,
         "monthlySystemOutputWan": -100.28,
-        "annualizedOutputYi": 0,
-        "positiveAnnualizedOutputYi": 0.17,
+        "annualizedOutputYi": -0.12,
+        "positiveAnnualizedOutputYi": 0.2,
         "systemAnnualizedOutputYi": -0.12,
         "yearTargetYi": 1.5,
         "yearTargetWan": 15000,
-        "yearProgressPct": -0.02,
-        "positiveYearProgressPct": 0.92,
+        "yearProgressPct": -0.67,
+        "positiveYearProgressPct": 1.09,
         "systemYearProgressPct": -0.67,
         "yearTheoryProgressPct": 49.59,
         "monthTargetWan": 1100,
-        "monthProgressPct": -0.22,
-        "positiveMonthProgressPct": 12.54,
+        "monthProgressPct": -9.12,
+        "positiveMonthProgressPct": 14.91,
         "systemMonthProgressPct": -9.12,
-        "monthGoalGapWan": 1102.41,
-        "positiveMonthGoalGapWan": 962.03,
+        "monthGoalGapWan": 1200.3,
+        "positiveMonthGoalGapWan": 935.96,
         "systemMonthGoalGapWan": 1200.28,
         "monthDays": 30,
         "elapsedDays": 30,
         "elapsedDaysSource": "system_current_date",
-        "refundRatePct": 162.5,
-        "refundRateDeltaPp": 148.5,
-        "refundOrders": 26,
-        "refundLossWan": 262.93
+        "refundRatePct": 135.14,
+        "refundRateDeltaPp": 121.14,
+        "refundOrders": 50,
+        "refundLossWan": 556.82
       },
       "productSummary": {
         "topProductName": "任性装+成品家具+外加定制",
-        "topProductOutputSharePct": 47.68,
-        "topProductOutputWan": 89.8,
-        "topProductOrders": 18,
+        "topProductOutputSharePct": 45.14,
+        "topProductOutputWan": 122.18,
+        "topProductOrders": 30,
         "softSelectedRatePct": 0,
         "softPotentialWanPer10Pp": 0,
         "highEndOrders": 0
@@ -4844,13 +4844,23 @@ window.GM_DASHBOARD_DATA = {
         "productOutputSource": "净产值 = 签单表.系统产值 + 转正式表.转正式差额产值 + 转正式表.转正设计费 - 退单表.退单产值",
         "productAvgSource": "均单/面积类 = 转正式表.报价单产值（含设计费）/ 转正式单数；不扣退单产值",
         "refundDeductionSource": "退单表.退单产值",
-        "productOutputWan": 164.6,
-        "productOutputLevel2Wan": 176.37,
-        "productOrderCount": 36,
+        "productOutputWan": 200.87,
+        "productOutputLevel2Wan": 210.73,
+        "productOrderCount": 58,
         "unclassifiedProductOutputWan": 0,
-        "matchedProductRefundWan": 119.66,
-        "unmatchedProductRefundWan": 143.27,
+        "matchedProductRefundWan": 325.43,
+        "unmatchedProductRefundWan": 231.39,
         "unmatchedRefundProducts": {
+          "unmatched_refund:B175151": 1,
+          "unmatched_refund:B170229": 1,
+          "unmatched_refund:B166697": 1,
+          "unmatched_refund:B165397": 1,
+          "unmatched_refund:B082672": 1,
+          "unmatched_refund:B175551": 1,
+          "unmatched_refund:B168822": 1,
+          "unmatched_refund:B168355": 1,
+          "unmatched_refund:B160878": 1,
+          "unmatched_refund:B160689": 1,
           "unmatched_refund:B175334": 1,
           "unmatched_refund:B175218": 1,
           "unmatched_refund:B173284": 1,
@@ -4858,8 +4868,6 @@ window.GM_DASHBOARD_DATA = {
           "unmatched_refund:B167490": 1,
           "unmatched_refund:B163543": 1,
           "unmatched_refund:B160698": 1,
-          "unmatched_refund:B187012": 1,
-          "unmatched_refund:B187075": 1,
           "unmatched_refund:B175316": 1,
           "unmatched_refund:B174832": 1,
           "unmatched_refund:B174215": 1,
@@ -4911,89 +4919,95 @@ window.GM_DASHBOARD_DATA = {
       "products": [
         {
           "name": "任性装+成品家具+外加定制",
-          "netValueWan": 89.8,
-          "value": 47.68,
+          "netValueWan": 122.18,
+          "value": 45.14,
           "color": "#3b82f6"
         },
         {
           "name": "新Q3",
-          "netValueWan": 47.5,
-          "value": 25.22,
+          "netValueWan": 40.51,
+          "value": 14.97,
           "color": "#8b5cf6"
         },
         {
+          "name": "89900",
+          "netValueWan": -24.94,
+          "value": 9.21,
+          "color": "#06b6d4"
+        },
+        {
           "name": "71900",
-          "netValueWan": 27.09,
-          "value": 14.39,
+          "netValueWan": 24.29,
+          "value": 8.98,
+          "color": "#8b5cf6"
+        },
+        {
+          "name": "小包圆",
+          "netValueWan": -16.99,
+          "value": 6.28,
+          "color": "#ef4444"
+        },
+        {
+          "name": "T1-2.0",
+          "netValueWan": 13.68,
+          "value": 5.05,
           "color": "#f59f0a"
         },
         {
           "name": "基装",
           "netValueWan": -10.91,
-          "value": 5.79,
+          "value": 4.03,
           "color": "#64748b"
         },
         {
           "name": "轻松装",
           "netValueWan": -9.95,
-          "value": 5.28,
+          "value": 3.68,
           "color": "#16b981"
-        },
-        {
-          "name": "T1-2.0",
-          "netValueWan": -1.87,
-          "value": 0.99,
-          "color": "#f59f0a"
-        },
-        {
-          "name": "小包圆",
-          "netValueWan": -1,
-          "value": 0.53,
-          "color": "#64748b"
         },
         {
           "name": "Q5",
           "netValueWan": 0.2,
-          "value": 0.1,
+          "value": 0.07,
           "color": "#ef4444"
         }
       ],
       "productContribution": [
         {
           "name": "任性装+成品家具+外加定制",
-          "output": 50.92,
-          "orders": 50
+          "output": 57.98,
+          "orders": 51.72
         },
         {
           "name": "新Q3套内加定制",
-          "output": 26.94,
-          "orders": 16.67
+          "output": 19.23,
+          "orders": 10.34
         },
         {
           "name": "71900基装",
-          "output": 15.36,
-          "orders": 8.33
+          "output": 11.53,
+          "orders": 6.9
         },
         {
           "name": "T1套内加定制",
-          "output": 6.67,
-          "orders": 8.33
+          "output": 11.17,
+          "orders": 12.07
         },
         {
           "name": "Q5套内加定制",
-          "output": 0.11,
-          "orders": 2.78
+          "output": 0.09,
+          "orders": 1.72
         }
       ],
       "productValue": [
         {
           "name": "任性装+成品家具+外加定制",
-          "value": 17.46,
+          "value": 17.07,
           "color": "#3b82f6"
         },
         {
           "name": "T1套内加定制",
-          "value": 9.57,
+          "value": 10.77,
           "color": "#16b981"
         },
         {
@@ -5019,24 +5033,24 @@ window.GM_DASHBOARD_DATA = {
       ],
       "productArea": [
         {
-          "name": "小包圆",
-          "value": 50.33,
+          "name": "任性装+成品家具+外加定制",
+          "value": 104.8,
           "color": "#3b82f6"
         },
         {
-          "name": "任性装+成品家具+外加定制",
-          "value": 105.81,
+          "name": "T1套内加定制",
+          "value": 74,
           "color": "#16b981"
+        },
+        {
+          "name": "小包圆",
+          "value": 50.33,
+          "color": "#f59f0a"
         },
         {
           "name": "基装",
           "value": 83,
           "color": "#64748b"
-        },
-        {
-          "name": "T1套内加定制",
-          "value": 76.67,
-          "color": "#8b5cf6"
         },
         {
           "name": "新Q3套内加定制",
@@ -5136,41 +5150,13 @@ window.GM_DASHBOARD_DATA = {
       "channelInsights": [],
       "departments": [
         {
-          "name": "设计二部",
-          "output": 29.19,
-          "draftOrders": 2,
-          "orders": 7,
-          "avg": 17.16,
-          "quoteOutputWan": 120.12,
-          "netOutputWan": 29.19,
-          "people": 7,
-          "designerNames": [
-            "于双伟",
-            "夏清",
-            "李瑞娟",
-            "赵月月",
-            "郑志刚",
-            "郝丽维",
-            "陈灿"
-          ],
-          "peopleSource": "designer_roster",
-          "monthly": 29.19,
-          "refund": 4,
-          "refundWan": 38.37,
-          "controlRecoverWan": 7.67,
-          "controlledOutput": 36.86,
-          "refundRate": 200,
-          "perCapita": 4.17,
-          "risk": "高危"
-        },
-        {
           "name": "设计一部",
-          "output": 25.42,
-          "draftOrders": 1,
-          "orders": 3,
-          "avg": 17.51,
-          "quoteOutputWan": 52.52,
-          "netOutputWan": 25.42,
+          "output": 54.82,
+          "draftOrders": 8,
+          "orders": 6,
+          "avg": 16.09,
+          "quoteOutputWan": 96.56,
+          "netOutputWan": 54.82,
           "people": 5,
           "designerNames": [
             "于岚",
@@ -5180,78 +5166,23 @@ window.GM_DASHBOARD_DATA = {
             "李兰"
           ],
           "peopleSource": "designer_roster",
-          "monthly": 25.42,
-          "refund": 1,
-          "refundWan": 9.95,
-          "controlRecoverWan": 1.99,
-          "controlledOutput": 27.41,
-          "refundRate": 100,
-          "perCapita": 5.08,
-          "risk": "高危"
-        },
-        {
-          "name": "设计四部",
-          "output": 0.61,
-          "draftOrders": 5,
-          "orders": 6,
-          "avg": 14.81,
-          "quoteOutputWan": 88.84,
-          "netOutputWan": 0.61,
-          "people": 7,
-          "designerNames": [
-            "于瑞琨",
-            "刘东会",
-            "孙晶",
-            "张亚楠",
-            "张慧坤",
-            "张然",
-            "张磊"
-          ],
-          "peopleSource": "designer_roster",
-          "monthly": 0.61,
-          "refund": 8,
-          "refundWan": 83.8,
-          "controlRecoverWan": 16.76,
-          "controlledOutput": 17.37,
-          "refundRate": 160,
-          "perCapita": 0.09,
-          "risk": "高危"
-        },
-        {
-          "name": "设计五部",
-          "output": -17.39,
-          "draftOrders": 5,
-          "orders": 4,
-          "avg": 9.94,
-          "quoteOutputWan": 39.76,
-          "netOutputWan": -17.39,
-          "people": 6,
-          "designerNames": [
-            "尹佳林",
-            "曹成芳",
-            "杨旭",
-            "潘晖霞",
-            "白新宇",
-            "赵江梅"
-          ],
-          "peopleSource": "designer_roster",
-          "monthly": -17.39,
-          "refund": 6,
-          "refundWan": 62.06,
-          "controlRecoverWan": 12.41,
-          "controlledOutput": -4.98,
-          "refundRate": 120,
-          "perCapita": -2.9,
+          "monthly": 54.82,
+          "refund": 5,
+          "refundWan": 53.35,
+          "controlRecoverWan": 10.67,
+          "controlledOutput": 65.49,
+          "refundRate": 62.5,
+          "perCapita": 10.96,
           "risk": "高危"
         },
         {
           "name": "设计三部",
-          "output": -19.62,
-          "draftOrders": 2,
+          "output": -9.67,
+          "draftOrders": 5,
           "orders": 5,
           "avg": 12.24,
           "quoteOutputWan": 61.22,
-          "netOutputWan": -19.62,
+          "netOutputWan": -9.67,
           "people": 9,
           "designerNames": [
             "兰宇",
@@ -5265,23 +5196,79 @@ window.GM_DASHBOARD_DATA = {
             "赵洋"
           ],
           "peopleSource": "designer_roster",
-          "monthly": -19.62,
-          "refund": 5,
-          "refundWan": 43.87,
-          "controlRecoverWan": 8.77,
-          "controlledOutput": -10.85,
-          "refundRate": 250,
-          "perCapita": -2.18,
+          "monthly": -9.67,
+          "refund": 7,
+          "refundWan": 60.82,
+          "controlRecoverWan": 12.16,
+          "controlledOutput": 2.49,
+          "refundRate": 140,
+          "perCapita": -1.07,
+          "risk": "高危"
+        },
+        {
+          "name": "设计二部",
+          "output": -15.74,
+          "draftOrders": 4,
+          "orders": 9,
+          "avg": 16.25,
+          "quoteOutputWan": 146.25,
+          "netOutputWan": -15.74,
+          "people": 7,
+          "designerNames": [
+            "于双伟",
+            "夏清",
+            "李瑞娟",
+            "赵月月",
+            "郑志刚",
+            "郝丽维",
+            "陈灿"
+          ],
+          "peopleSource": "designer_roster",
+          "monthly": -15.74,
+          "refund": 9,
+          "refundWan": 103.31,
+          "controlRecoverWan": 20.66,
+          "controlledOutput": 4.92,
+          "refundRate": 225,
+          "perCapita": -2.25,
+          "risk": "高危"
+        },
+        {
+          "name": "设计四部",
+          "output": -27.21,
+          "draftOrders": 10,
+          "orders": 9,
+          "avg": 14.14,
+          "quoteOutputWan": 127.26,
+          "netOutputWan": -27.21,
+          "people": 7,
+          "designerNames": [
+            "于瑞琨",
+            "刘东会",
+            "孙晶",
+            "张亚楠",
+            "张慧坤",
+            "张然",
+            "张磊"
+          ],
+          "peopleSource": "designer_roster",
+          "monthly": -27.21,
+          "refund": 13,
+          "refundWan": 153.62,
+          "controlRecoverWan": 30.72,
+          "controlledOutput": 3.51,
+          "refundRate": 130,
+          "perCapita": -3.89,
           "risk": "高危"
         },
         {
           "name": "设计六部",
-          "output": -20.63,
+          "output": -47.56,
           "draftOrders": 1,
           "orders": 1,
           "avg": 17.84,
           "quoteOutputWan": 17.84,
-          "netOutputWan": -20.63,
+          "netOutputWan": -47.56,
           "people": 5,
           "designerNames": [
             "亢伟杰",
@@ -5291,13 +5278,40 @@ window.GM_DASHBOARD_DATA = {
             "高艳萍"
           ],
           "peopleSource": "designer_roster",
-          "monthly": -20.63,
-          "refund": 2,
-          "refundWan": 24.88,
-          "controlRecoverWan": 4.98,
-          "controlledOutput": -15.65,
-          "refundRate": 200,
-          "perCapita": -4.13,
+          "monthly": -47.56,
+          "refund": 5,
+          "refundWan": 51.81,
+          "controlRecoverWan": 10.36,
+          "controlledOutput": -37.2,
+          "refundRate": 500,
+          "perCapita": -9.51,
+          "risk": "高危"
+        },
+        {
+          "name": "设计五部",
+          "output": -54.96,
+          "draftOrders": 9,
+          "orders": 4,
+          "avg": 9.94,
+          "quoteOutputWan": 39.76,
+          "netOutputWan": -54.96,
+          "people": 6,
+          "designerNames": [
+            "尹佳林",
+            "曹成芳",
+            "杨旭",
+            "潘晖霞",
+            "白新宇",
+            "赵江梅"
+          ],
+          "peopleSource": "designer_roster",
+          "monthly": -54.96,
+          "refund": 11,
+          "refundWan": 133.92,
+          "controlRecoverWan": 26.78,
+          "controlledOutput": -28.18,
+          "refundRate": 122.22,
+          "perCapita": -9.16,
           "risk": "高危"
         }
       ],
@@ -5305,31 +5319,61 @@ window.GM_DASHBOARD_DATA = {
         {
           "designer": "归华",
           "department": "设计一部",
-          "draftWan": 0,
+          "draftWan": 14.38,
           "formalWan": 14.46,
           "refundWan": 0,
-          "draftOrders": 0,
+          "draftOrders": 2,
           "formalOrders": 1,
           "refundOrders": 0
         },
         {
           "designer": "李兰",
           "department": "设计一部",
+          "draftWan": 17.14,
+          "formalWan": 19.68,
+          "refundWan": 9.95,
+          "draftOrders": 2,
+          "formalOrders": 3,
+          "refundOrders": 1
+        },
+        {
+          "designer": "沈丹萍",
+          "department": "设计一部",
           "draftWan": 0,
-          "formalWan": 7.93,
-          "refundWan": 0,
+          "formalWan": 0,
+          "refundWan": 14.99,
           "draftOrders": 0,
-          "formalOrders": 1,
-          "refundOrders": 0
+          "formalOrders": 0,
+          "refundOrders": 1
+        },
+        {
+          "designer": "石臣",
+          "department": "设计一部",
+          "draftWan": 0,
+          "formalWan": 0,
+          "refundWan": 9.99,
+          "draftOrders": 0,
+          "formalOrders": 0,
+          "refundOrders": 1
+        },
+        {
+          "designer": "吴明心",
+          "department": "设计一部",
+          "draftWan": 0,
+          "formalWan": 0,
+          "refundWan": 8.47,
+          "draftOrders": 0,
+          "formalOrders": 0,
+          "refundOrders": 1
         },
         {
           "designer": "张长乐",
           "department": "设计一部",
-          "draftWan": 7.19,
-          "formalWan": 5.79,
+          "draftWan": 28.76,
+          "formalWan": 13.76,
           "refundWan": 9.95,
-          "draftOrders": 1,
-          "formalOrders": 1,
+          "draftOrders": 4,
+          "formalOrders": 2,
           "refundOrders": 1
         },
         {
@@ -5345,12 +5389,22 @@ window.GM_DASHBOARD_DATA = {
         {
           "designer": "郝丽维",
           "department": "设计二部",
+          "draftWan": 9.95,
+          "formalWan": 30.55,
+          "refundWan": 28.42,
+          "draftOrders": 1,
+          "formalOrders": 6,
+          "refundOrders": 3
+        },
+        {
+          "designer": "李瑞娟",
+          "department": "设计二部",
           "draftWan": 0,
-          "formalWan": 29.44,
-          "refundWan": 18.43,
+          "formalWan": 0,
+          "refundWan": 9.99,
           "draftOrders": 0,
-          "formalOrders": 5,
-          "refundOrders": 2
+          "formalOrders": 0,
+          "refundOrders": 1
         },
         {
           "designer": "刘燕",
@@ -5367,28 +5421,38 @@ window.GM_DASHBOARD_DATA = {
           "department": "设计二部",
           "draftWan": 7.19,
           "formalWan": 0,
-          "refundWan": 0,
+          "refundWan": 14.99,
           "draftOrders": 1,
           "formalOrders": 0,
-          "refundOrders": 0
+          "refundOrders": 1
+        },
+        {
+          "designer": "于双伟",
+          "department": "设计二部",
+          "draftWan": 0,
+          "formalWan": 1.76,
+          "refundWan": 14.99,
+          "draftOrders": 0,
+          "formalOrders": 1,
+          "refundOrders": 1
         },
         {
           "designer": "赵月月",
           "department": "设计二部",
           "draftWan": 0,
           "formalWan": 0,
-          "refundWan": 9.95,
+          "refundWan": 24.94,
           "draftOrders": 0,
           "formalOrders": 0,
-          "refundOrders": 1
+          "refundOrders": 2
         },
         {
           "designer": "郑志刚",
           "department": "设计二部",
-          "draftWan": 9.95,
+          "draftWan": 17.14,
           "formalWan": 0,
           "refundWan": 0,
-          "draftOrders": 1,
+          "draftOrders": 2,
           "formalOrders": 0,
           "refundOrders": 0
         },
@@ -5397,10 +5461,10 @@ window.GM_DASHBOARD_DATA = {
           "department": "设计三部",
           "draftWan": 0,
           "formalWan": 3.5,
-          "refundWan": 0,
+          "refundWan": 9.95,
           "draftOrders": 0,
           "formalOrders": 1,
-          "refundOrders": 0
+          "refundOrders": 1
         },
         {
           "designer": "王蒙",
@@ -5415,31 +5479,41 @@ window.GM_DASHBOARD_DATA = {
         {
           "designer": "卫恒",
           "department": "设计三部",
-          "draftWan": 0,
+          "draftWan": 9.95,
           "formalWan": 0.2,
-          "refundWan": 6.99,
-          "draftOrders": 0,
+          "refundWan": 13.98,
+          "draftOrders": 1,
           "formalOrders": 1,
-          "refundOrders": 1
+          "refundOrders": 2
         },
         {
           "designer": "赵洋",
           "department": "设计三部",
-          "draftWan": 6.99,
+          "draftWan": 23.93,
           "formalWan": 3.56,
           "refundWan": 26.93,
-          "draftOrders": 1,
+          "draftOrders": 3,
           "formalOrders": 1,
           "refundOrders": 3
         },
         {
           "designer": "刘东会",
           "department": "设计四部",
+          "draftWan": 9.95,
+          "formalWan": 4.19,
+          "refundWan": 24.94,
+          "draftOrders": 1,
+          "formalOrders": 1,
+          "refundOrders": 2
+        },
+        {
+          "designer": "殷碧瑶",
+          "department": "设计四部",
           "draftWan": 0,
-          "formalWan": 0,
-          "refundWan": 14.99,
+          "formalWan": -4.4,
+          "refundWan": 9.99,
           "draftOrders": 0,
-          "formalOrders": 0,
+          "formalOrders": 1,
           "refundOrders": 1
         },
         {
@@ -5455,40 +5529,40 @@ window.GM_DASHBOARD_DATA = {
         {
           "designer": "张磊",
           "department": "设计四部",
-          "draftWan": 0,
+          "draftWan": 14.38,
           "formalWan": 17.36,
-          "refundWan": 34.89,
-          "draftOrders": 0,
+          "refundWan": 49.88,
+          "draftOrders": 2,
           "formalOrders": 2,
-          "refundOrders": 3
+          "refundOrders": 4
         },
         {
           "designer": "张然",
           "department": "设计四部",
-          "draftWan": 17.14,
+          "draftWan": 24.33,
           "formalWan": 14.7,
           "refundWan": 0,
-          "draftOrders": 2,
+          "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 0
         },
         {
           "designer": "张亚楠",
           "department": "设计四部",
-          "draftWan": 7.19,
-          "formalWan": 2.08,
-          "refundWan": 16.98,
-          "draftOrders": 1,
-          "formalOrders": 1,
-          "refundOrders": 2
+          "draftWan": 14.18,
+          "formalWan": 5.78,
+          "refundWan": 51.87,
+          "draftOrders": 2,
+          "formalOrders": 2,
+          "refundOrders": 4
         },
         {
           "designer": "曹成芳",
           "department": "设计五部",
-          "draftWan": 29.86,
+          "draftWan": 37.05,
           "formalWan": -0.96,
           "refundWan": 9.99,
-          "draftOrders": 3,
+          "draftOrders": 4,
           "formalOrders": 1,
           "refundOrders": 1
         },
@@ -5497,10 +5571,20 @@ window.GM_DASHBOARD_DATA = {
           "department": "设计五部",
           "draftWan": 9.95,
           "formalWan": -1.93,
-          "refundWan": 19.94,
+          "refundWan": 66.86,
           "draftOrders": 1,
           "formalOrders": 2,
-          "refundOrders": 2
+          "refundOrders": 5
+        },
+        {
+          "designer": "杨旭",
+          "department": "设计五部",
+          "draftWan": 0,
+          "formalWan": 0,
+          "refundWan": 9.95,
+          "draftOrders": 0,
+          "formalOrders": 0,
+          "refundOrders": 1
         },
         {
           "designer": "尹佳林",
@@ -5515,32 +5599,32 @@ window.GM_DASHBOARD_DATA = {
         {
           "designer": "赵江梅",
           "department": "设计五部",
-          "draftWan": 0,
+          "draftWan": 27.09,
           "formalWan": 0,
-          "refundWan": 17.14,
-          "draftOrders": 0,
+          "refundWan": 32.13,
+          "draftOrders": 3,
           "formalOrders": 0,
-          "refundOrders": 2
+          "refundOrders": 3
         },
         {
           "designer": "亢伟杰",
           "department": "设计六部",
           "draftWan": 7.19,
           "formalWan": 0,
-          "refundWan": 0,
+          "refundWan": 6.99,
           "draftOrders": 1,
           "formalOrders": 0,
-          "refundOrders": 0
+          "refundOrders": 1
         },
         {
           "designer": "殷碧瑶",
           "department": "设计六部",
           "draftWan": 0,
           "formalWan": 0,
-          "refundWan": 24.88,
+          "refundWan": 44.82,
           "draftOrders": 0,
           "formalOrders": 0,
-          "refundOrders": 2
+          "refundOrders": 4
         },
         {
           "designer": "张敏",
@@ -5556,16 +5640,16 @@ window.GM_DASHBOARD_DATA = {
       "scenarios": [
         {
           "name": "当前",
-          "current": -2.41,
-          "value": -2.41,
+          "current": -100.3,
+          "value": -100.3,
           "delta": 0,
           "color": "#94a3b8"
         },
         {
           "name": "控退后",
-          "current": -2.41,
-          "value": 50.18,
-          "delta": 52.59,
+          "current": -100.3,
+          "value": 11.06,
+          "delta": 111.36,
           "color": "#ef4444"
         }
       ],
@@ -5575,50 +5659,50 @@ window.GM_DASHBOARD_DATA = {
     }
   },
   "benchmark": {
-    "monthlyOutputWanAvg": 88.39,
-    "monthlyOrdersAvg": 42.67,
+    "monthlyOutputWanAvg": 92.73,
+    "monthlyOrdersAvg": 44,
     "avgOrderWanAvg": 13.77,
-    "refundRatePctAvg": 54.17
+    "refundRatePctAvg": 57.28
   },
   "summary": {
     "statDays": 30,
-    "currentOutputWan": -2.41,
-    "netOutputWan": -2.41,
-    "positiveOutputWan": 137.97,
-    "quoteOutputWan": 380.29,
+    "currentOutputWan": -100.3,
+    "netOutputWan": -100.3,
+    "positiveOutputWan": 164.04,
+    "quoteOutputWan": 488.88,
     "systemOutputWan": -100.28,
-    "signSystemOutputWan": 122.55,
-    "productNetOutputWan": 164.6,
-    "currentOrders": 26,
-    "draftOrderCount": 16,
-    "monthlyOutputWan": -2.41,
-    "monthlyNetOutputWan": -2.41,
-    "monthlyPositiveOutputWan": 137.97,
-    "monthlyQuoteOutputWan": 380.29,
+    "signSystemOutputWan": 292.48,
+    "productNetOutputWan": 200.87,
+    "currentOrders": 34,
+    "draftOrderCount": 37,
+    "monthlyOutputWan": -100.3,
+    "monthlyNetOutputWan": -100.3,
+    "monthlyPositiveOutputWan": 164.04,
+    "monthlyQuoteOutputWan": 488.88,
     "monthlySystemOutputWan": -100.28,
-    "annualizedOutputYi": 0,
-    "positiveAnnualizedOutputYi": 0.17,
+    "annualizedOutputYi": -0.12,
+    "positiveAnnualizedOutputYi": 0.2,
     "systemAnnualizedOutputYi": -0.12,
     "yearTargetYi": 1.5,
     "yearTargetWan": 15000,
-    "yearProgressPct": -0.02,
-    "positiveYearProgressPct": 0.92,
+    "yearProgressPct": -0.67,
+    "positiveYearProgressPct": 1.09,
     "systemYearProgressPct": -0.67,
     "yearTheoryProgressPct": 49.59,
     "monthTargetWan": 1100,
-    "monthProgressPct": -0.22,
-    "positiveMonthProgressPct": 12.54,
+    "monthProgressPct": -9.12,
+    "positiveMonthProgressPct": 14.91,
     "systemMonthProgressPct": -9.12,
-    "monthGoalGapWan": 1102.41,
-    "positiveMonthGoalGapWan": 962.03,
+    "monthGoalGapWan": 1200.3,
+    "positiveMonthGoalGapWan": 935.96,
     "systemMonthGoalGapWan": 1200.28,
     "monthDays": 30,
     "elapsedDays": 30,
     "elapsedDaysSource": "system_current_date",
-    "refundRatePct": 162.5,
-    "refundRateDeltaPp": 148.5,
-    "refundOrders": 26,
-    "refundLossWan": 262.93
+    "refundRatePct": 135.14,
+    "refundRateDeltaPp": 121.14,
+    "refundOrders": 50,
+    "refundLossWan": 556.82
   },
   "dataSourceNotes": {
     "systemOutput": "年度/月度目标卡和渠道系统净产值来自 产值2026.1-12月.合计产值",
