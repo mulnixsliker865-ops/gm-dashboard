@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-04T12:49:26.268Z",
+  "generatedAt": "2026-07-04T17:12:17.903Z",
   "mappingTableRecords": 230,
   "exactRules": 72,
   "foldedRules": 27,
-  "coreRules": 229,
+  "coreRules": 228,
   "conflicts": [],
   "generalizationChecks": [
     {
