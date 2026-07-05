@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T17:12:17.903Z",
+  "generatedAt": "2026-07-05T14:55:33.078Z",
   "dashboardYear": 2026,
   "selectedTables": {
     "systemOutput": "产值2026.1-12月",
@@ -40,47 +40,47 @@
     "01": {
       "summary": {
         "statDays": 30,
-        "currentOutputWan": 494.22,
-        "netOutputWan": 494.22,
+        "currentOutputWan": 509.21,
+        "netOutputWan": 509.21,
         "positiveOutputWan": 54.19,
         "quoteOutputWan": 459.67,
         "systemOutputWan": 475,
-        "signSystemOutputWan": 771.9,
+        "signSystemOutputWan": 786.89,
         "productNetOutputWan": 826.1,
         "currentOrders": 32,
-        "draftOrderCount": 53,
-        "monthlyOutputWan": 494.22,
-        "monthlyNetOutputWan": 494.22,
+        "draftOrderCount": 54,
+        "monthlyOutputWan": 509.21,
+        "monthlyNetOutputWan": 509.21,
         "monthlyPositiveOutputWan": 54.19,
         "monthlyQuoteOutputWan": 459.67,
         "monthlySystemOutputWan": 475,
-        "annualizedOutputYi": 0.59,
+        "annualizedOutputYi": 0.61,
         "positiveAnnualizedOutputYi": 0.07,
         "systemAnnualizedOutputYi": 0.57,
         "yearTargetYi": 1.5,
         "yearTargetWan": 15000,
-        "yearProgressPct": 3.29,
+        "yearProgressPct": 3.39,
         "positiveYearProgressPct": 0.36,
         "systemYearProgressPct": 3.17,
         "yearTheoryProgressPct": 8.49,
         "monthTargetWan": 1260,
-        "monthProgressPct": 39.22,
+        "monthProgressPct": 40.41,
         "positiveMonthProgressPct": 4.3,
         "systemMonthProgressPct": 37.7,
-        "monthGoalGapWan": 765.78,
+        "monthGoalGapWan": 750.79,
         "positiveMonthGoalGapWan": 1205.81,
         "systemMonthGoalGapWan": 785,
         "monthDays": 31,
         "elapsedDays": 31,
         "elapsedDaysSource": "system_current_date",
-        "refundRatePct": 67.92,
-        "refundRateDeltaPp": 53.92,
+        "refundRatePct": 66.67,
+        "refundRateDeltaPp": 52.67,
         "refundOrders": 36,
         "refundLossWan": 331.87
       },
       "productSummary": {
         "topProductName": "任性装+成品家具+外加定制",
-        "topProductOutputSharePct": 46.15,
+        "topProductOutputSharePct": 45.33,
         "topProductOutputWan": 381.25,
         "topProductOrders": 29,
         "softSelectedRatePct": 0,
@@ -94,7 +94,7 @@
         "productOutputWan": 826.1,
         "productOutputLevel2Wan": 826.83,
         "productOrderCount": 73,
-        "unclassifiedProductOutputWan": 0,
+        "unclassifiedProductOutputWan": 14.99,
         "matchedProductRefundWan": 0,
         "unmatchedProductRefundWan": 331.87,
         "unmatchedRefundProducts": {
@@ -146,180 +146,100 @@
       "channels": [
         {
           "name": "广播",
-          "draftWan": 464.29,
-          "formalWan": 38.05,
-          "refundWan": 227.1,
-          "dealOutputWan": 502.34,
-          "netValueWan": 275.24,
-          "orders": 70,
-          "value": 55.69,
+          "netValueWan": 258.98,
+          "value": 54.52,
           "color": "#e9a6e8"
         },
         {
           "name": "市场部",
-          "draftWan": 79.85,
-          "formalWan": 0,
-          "refundWan": 0,
-          "dealOutputWan": 79.85,
           "netValueWan": 79.85,
-          "orders": 4,
-          "value": 16.16,
+          "value": 16.81,
           "color": "#ddef89"
         },
         {
           "name": "线上",
-          "draftWan": 141.64,
-          "formalWan": 3.28,
-          "refundWan": 74.83,
-          "dealOutputWan": 144.92,
-          "netValueWan": 70.09,
-          "orders": 21,
-          "value": 14.18,
+          "netValueWan": 67.97,
+          "value": 14.31,
           "color": "#a7e6df"
         },
         {
           "name": "回单",
-          "draftWan": 65.74,
-          "formalWan": 5.6,
-          "refundWan": 19.94,
-          "dealOutputWan": 71.34,
-          "netValueWan": 51.4,
-          "orders": 10,
-          "value": 10.4,
+          "netValueWan": 50.46,
+          "value": 10.62,
           "color": "#b9efb3"
         },
         {
           "name": "其他",
-          "draftWan": 20.38,
-          "formalWan": 7.27,
-          "refundWan": 9.99,
-          "dealOutputWan": 27.65,
-          "netValueWan": 17.66,
-          "orders": 4,
-          "value": 3.57,
+          "netValueWan": 17.73,
+          "value": 3.73,
           "color": "#a9dbf2"
         }
       ],
       "products": [
         {
           "name": "任性装+成品家具+外加定制",
-          "draftWan": 343.35,
-          "formalWan": 37.9,
-          "refundWan": 0,
-          "dealOutputWan": 381.25,
           "netValueWan": 381.25,
-          "orders": 29,
-          "value": 46.15,
+          "value": 45.33,
           "color": "#3b82f6"
         },
         {
           "name": "89900",
-          "draftWan": 114.74,
-          "formalWan": 4.49,
-          "refundWan": 0,
-          "dealOutputWan": 119.23,
           "netValueWan": 119.23,
-          "orders": 6,
-          "value": 14.43,
+          "value": 14.18,
           "color": "#06b6d4"
         },
         {
           "name": "999",
-          "draftWan": 110.31,
-          "formalWan": -1.36,
-          "refundWan": 0,
-          "dealOutputWan": 108.95,
           "netValueWan": 108.95,
-          "orders": 8,
-          "value": 13.19,
+          "value": 12.95,
           "color": "#f59f0a"
         },
         {
           "name": "71900",
-          "draftWan": 75.3,
-          "formalWan": 4.04,
-          "refundWan": 0,
-          "dealOutputWan": 79.34,
           "netValueWan": 79.34,
-          "orders": 6,
-          "value": 9.6,
+          "value": 9.43,
           "color": "#8b5cf6"
         },
         {
           "name": "新Q3",
-          "draftWan": 37.56,
-          "formalWan": 0,
-          "refundWan": 0,
-          "dealOutputWan": 37.56,
           "netValueWan": 37.56,
-          "orders": 4,
-          "value": 4.55,
+          "value": 4.47,
           "color": "#8b5cf6"
         },
         {
           "name": "小包圆",
-          "draftWan": 30.33,
-          "formalWan": -3.17,
-          "refundWan": 0,
-          "dealOutputWan": 27.16,
-          "netValueWan": 27.16,
-          "orders": 5,
-          "value": 3.29,
+          "netValueWan": 27.17,
+          "value": 3.23,
           "color": "#06b6d4"
         },
         {
           "name": "T1-2.0",
-          "draftWan": 24.94,
-          "formalWan": 0,
-          "refundWan": 0,
-          "dealOutputWan": 24.94,
           "netValueWan": 24.94,
-          "orders": 2,
-          "value": 3.02,
+          "value": 2.97,
           "color": "#f59f0a"
         },
         {
           "name": "T1",
-          "draftWan": 24.94,
-          "formalWan": -3.54,
-          "refundWan": 0,
-          "dealOutputWan": 21.4,
           "netValueWan": 21.4,
-          "orders": 2,
-          "value": 2.59,
+          "value": 2.54,
           "color": "#22c55e"
         },
         {
           "name": "Q5",
-          "draftWan": 0,
-          "formalWan": 11.9,
-          "refundWan": 0,
-          "dealOutputWan": 11.9,
           "netValueWan": 11.9,
-          "orders": 7,
-          "value": 1.44,
+          "value": 1.41,
           "color": "#ef4444"
         },
         {
           "name": "轻松装",
-          "draftWan": 10.43,
-          "formalWan": 0,
-          "refundWan": 0,
-          "dealOutputWan": 10.43,
           "netValueWan": 10.43,
-          "orders": 1,
-          "value": 1.26,
+          "value": 1.24,
           "color": "#16b981"
         },
         {
           "name": "Q3",
-          "draftWan": 0,
-          "formalWan": 3.93,
-          "refundWan": 0,
-          "dealOutputWan": 3.93,
           "netValueWan": 3.93,
-          "orders": 10,
-          "value": 0.48,
+          "value": 0.47,
           "color": "#d946ef"
         }
       ],
@@ -737,12 +657,12 @@
         },
         {
           "name": "设计二部",
-          "output": -5.17,
-          "draftOrders": 9,
+          "output": 16.61,
+          "draftOrders": 10,
           "orders": 6,
           "avg": 11.46,
           "quoteOutputWan": 68.74,
-          "netOutputWan": -5.17,
+          "netOutputWan": 16.61,
           "people": 13,
           "designerNames": [
             "于双伟",
@@ -760,13 +680,13 @@
             "陈灿"
           ],
           "peopleSource": "designer_roster",
-          "monthly": -5.17,
-          "refund": 14,
-          "refundWan": 118.71,
-          "controlRecoverWan": 23.74,
-          "controlledOutput": 18.57,
-          "refundRate": 155.56,
-          "perCapita": -0.4,
+          "monthly": 16.61,
+          "refund": 13,
+          "refundWan": 111.92,
+          "controlRecoverWan": 22.38,
+          "controlledOutput": 38.99,
+          "refundRate": 130,
+          "perCapita": 1.28,
           "risk": "高危"
         }
       ],
@@ -777,7 +697,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 7.19,
-          "netWan": -7.19,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -788,7 +707,6 @@
           "draftWan": 14.99,
           "formalWan": 0,
           "refundWan": 26.77,
-          "netWan": -11.78,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 2
@@ -799,7 +717,6 @@
           "draftWan": 35.77,
           "formalWan": -3.17,
           "refundWan": 16.98,
-          "netWan": 15.62,
           "draftOrders": 2,
           "formalOrders": 1,
           "refundOrders": 2
@@ -810,7 +727,6 @@
           "draftWan": 10.43,
           "formalWan": 18.05,
           "refundWan": 0,
-          "netWan": 28.48,
           "draftOrders": 1,
           "formalOrders": 4,
           "refundOrders": 0
@@ -821,7 +737,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -832,7 +747,6 @@
           "draftWan": 35.37,
           "formalWan": -1.49,
           "refundWan": 0,
-          "netWan": 33.88,
           "draftOrders": 3,
           "formalOrders": 1,
           "refundOrders": 0
@@ -843,7 +757,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 13.98,
-          "netWan": -13.98,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 2
@@ -854,7 +767,6 @@
           "draftWan": 34,
           "formalWan": 4.04,
           "refundWan": 0,
-          "netWan": 38.05,
           "draftOrders": 4,
           "formalOrders": 1,
           "refundOrders": 0
@@ -865,7 +777,6 @@
           "draftWan": 74.82,
           "formalWan": -6.43,
           "refundWan": 0,
-          "netWan": 68.39,
           "draftOrders": 4,
           "formalOrders": 1,
           "refundOrders": 0
@@ -876,7 +787,6 @@
           "draftWan": 31.29,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 31.29,
           "draftOrders": 3,
           "formalOrders": 0,
           "refundOrders": 0
@@ -887,7 +797,6 @@
           "draftWan": 9.95,
           "formalWan": 0,
           "refundWan": 13.98,
-          "netWan": -4.03,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 2
@@ -898,7 +807,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -908,11 +816,10 @@
           "department": "设计二部",
           "draftWan": 39.93,
           "formalWan": 8.56,
-          "refundWan": 26.69,
-          "netWan": 21.8,
+          "refundWan": 19.9,
           "draftOrders": 2,
           "formalOrders": 2,
-          "refundOrders": 3
+          "refundOrders": 2
         },
         {
           "designer": "杨云浩",
@@ -920,7 +827,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 16.94,
-          "netWan": -16.94,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 2
@@ -931,7 +837,6 @@
           "draftWan": 9.95,
           "formalWan": 0,
           "refundWan": 9.95,
-          "netWan": 0,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 1
@@ -942,7 +847,6 @@
           "draftWan": 9.95,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 9.95,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 0
@@ -950,11 +854,10 @@
         {
           "designer": "赵月月",
           "department": "设计二部",
-          "draftWan": 19.9,
+          "draftWan": 34.89,
           "formalWan": -11.55,
           "refundWan": 14.38,
-          "netWan": -6.03,
-          "draftOrders": 1,
+          "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 2
         },
@@ -964,7 +867,6 @@
           "draftWan": 30.81,
           "formalWan": -3.97,
           "refundWan": 26.77,
-          "netWan": 0.07,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 3
@@ -975,7 +877,6 @@
           "draftWan": 9.95,
           "formalWan": -0.19,
           "refundWan": 0,
-          "netWan": 9.77,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 0
@@ -986,7 +887,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -997,7 +897,6 @@
           "draftWan": 14.99,
           "formalWan": -3.54,
           "refundWan": 0,
-          "netWan": 11.45,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 0
@@ -1008,7 +907,6 @@
           "draftWan": 44.96,
           "formalWan": 9.74,
           "refundWan": 13.98,
-          "netWan": 40.73,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 2
@@ -1019,7 +917,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1030,7 +927,6 @@
           "draftWan": 14.99,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 14.99,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 0
@@ -1041,7 +937,6 @@
           "draftWan": 44.96,
           "formalWan": 8.78,
           "refundWan": 0,
-          "netWan": 53.74,
           "draftOrders": 3,
           "formalOrders": 5,
           "refundOrders": 0
@@ -1052,7 +947,6 @@
           "draftWan": 14.99,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 14.99,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 0
@@ -1063,7 +957,6 @@
           "draftWan": 25.66,
           "formalWan": 12.01,
           "refundWan": 9.99,
-          "netWan": 27.68,
           "draftOrders": 2,
           "formalOrders": 1,
           "refundOrders": 1
@@ -1074,7 +967,6 @@
           "draftWan": 9.95,
           "formalWan": 7.27,
           "refundWan": 9.99,
-          "netWan": 7.23,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 1
@@ -1085,7 +977,6 @@
           "draftWan": 29.74,
           "formalWan": 2.56,
           "refundWan": 29.89,
-          "netWan": 2.4,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 2
@@ -1096,7 +987,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 7.19,
-          "netWan": -7.19,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1107,7 +997,6 @@
           "draftWan": 39.93,
           "formalWan": 0,
           "refundWan": 7.19,
-          "netWan": 32.74,
           "draftOrders": 3,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1118,7 +1007,6 @@
           "draftWan": 19.9,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": 9.91,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1129,7 +1017,6 @@
           "draftWan": 64.87,
           "formalWan": 0.67,
           "refundWan": 0,
-          "netWan": 65.54,
           "draftOrders": 3,
           "formalOrders": 3,
           "refundOrders": 0
@@ -1140,7 +1027,6 @@
           "draftWan": 49.88,
           "formalWan": 3.1,
           "refundWan": 14.99,
-          "netWan": 37.99,
           "draftOrders": 2,
           "formalOrders": 1,
           "refundOrders": 1
@@ -1151,7 +1037,6 @@
           "draftWan": 14.99,
           "formalWan": 0,
           "refundWan": 8.07,
-          "netWan": 6.92,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1162,7 +1047,6 @@
           "draftWan": 14.99,
           "formalWan": 9.73,
           "refundWan": 6.99,
-          "netWan": 17.73,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 1
@@ -1171,15 +1055,15 @@
       "scenarios": [
         {
           "name": "当前",
-          "current": 494.22,
-          "value": 494.22,
+          "current": 509.21,
+          "value": 509.21,
           "delta": 0,
           "color": "#94a3b8"
         },
         {
           "name": "控退后",
-          "current": 494.22,
-          "value": 560.59,
+          "current": 509.21,
+          "value": 575.58,
           "delta": 66.37,
           "color": "#ef4444"
         }
@@ -1197,7 +1081,7 @@
         "quoteOutputWan": 231.77,
         "systemOutputWan": 21.63,
         "signSystemOutputWan": 264.14,
-        "productNetOutputWan": 297.66,
+        "productNetOutputWan": 269.37,
         "currentOrders": 18,
         "draftOrderCount": 20,
         "monthlyOutputWan": 34.14,
@@ -1231,8 +1115,8 @@
       },
       "productSummary": {
         "topProductName": "任性装+成品家具+外加定制",
-        "topProductOutputSharePct": 59.63,
-        "topProductOutputWan": 177.48,
+        "topProductOutputSharePct": 54.17,
+        "topProductOutputWan": 167.05,
         "topProductOrders": 19,
         "softSelectedRatePct": 0,
         "softPotentialWanPer10Pp": 0,
@@ -1242,8 +1126,8 @@
         "productOutputSource": "净产值 = 签单表.系统产值 + 转正式表.转正式差额产值 + 转正式表.转正设计费 - 退单表.退单产值",
         "productAvgSource": "均单/面积类 = 转正式表.报价单产值（含设计费）/ 转正式单数；不扣退单产值",
         "refundDeductionSource": "退单表.退单产值",
-        "productOutputWan": 297.66,
-        "productOutputLevel2Wan": 297.66,
+        "productOutputWan": 269.37,
+        "productOutputLevel2Wan": 272.24,
         "productOrderCount": 37,
         "unclassifiedProductOutputWan": 0,
         "matchedProductRefundWan": 67.3,
@@ -1280,212 +1164,126 @@
       "benchmark": {},
       "channels": [
         {
-          "name": "回单",
-          "draftWan": 34.89,
-          "formalWan": 18.04,
-          "refundWan": 17.42,
-          "dealOutputWan": 52.93,
-          "netValueWan": 35.51,
-          "orders": 9,
-          "value": 30.65,
+          "name": "广播",
+          "netValueWan": 39.6,
+          "value": 33.12,
           "color": "#e9a6e8"
         },
         {
           "name": "线上",
-          "draftWan": 49.4,
-          "formalWan": 0,
-          "refundWan": 80.46,
-          "dealOutputWan": 49.4,
-          "netValueWan": -31.06,
-          "orders": 12,
-          "value": 26.81,
+          "netValueWan": -39.06,
+          "value": 32.67,
           "color": "#ddef89"
         },
         {
-          "name": "不详，待人工确认",
-          "draftWan": 24.94,
-          "formalWan": 0,
-          "refundWan": 0,
-          "dealOutputWan": 24.94,
-          "netValueWan": 24.94,
-          "orders": 1,
-          "value": 21.53,
+          "name": "回单",
+          "netValueWan": 26.5,
+          "value": 22.17,
           "color": "#a7e6df"
         },
         {
           "name": "其他",
-          "draftWan": 0,
-          "formalWan": 7.63,
-          "refundWan": 17.42,
-          "dealOutputWan": 7.63,
-          "netValueWan": -9.79,
-          "orders": 3,
-          "value": 8.45,
+          "netValueWan": -9.91,
+          "value": 8.29,
           "color": "#b9efb3"
         },
         {
-          "name": "广播",
-          "draftWan": 144.96,
-          "formalWan": 12.01,
-          "refundWan": 148.21,
-          "dealOutputWan": 156.97,
-          "netValueWan": 8.76,
-          "orders": 35,
-          "value": 7.56,
-          "color": "#a9dbf2"
-        },
-        {
           "name": "市场部",
-          "draftWan": 9.95,
-          "formalWan": -4.15,
-          "refundWan": 0,
-          "dealOutputWan": 5.8,
-          "netValueWan": 5.8,
-          "orders": 2,
-          "value": 5.01,
-          "color": "#cfd4ff"
+          "netValueWan": 4.5,
+          "value": 3.76,
+          "color": "#a9dbf2"
         }
       ],
       "products": [
         {
           "name": "任性装+成品家具+外加定制",
-          "draftWan": 139.56,
-          "formalWan": 37.92,
-          "refundWan": 10.43,
-          "dealOutputWan": 177.48,
           "netValueWan": 167.05,
-          "orders": 20,
-          "value": 59.63,
+          "value": 54.17,
           "color": "#3b82f6"
         },
         {
           "name": "T1-2.0",
-          "draftWan": 44.84,
-          "formalWan": 0,
-          "refundWan": 0,
-          "dealOutputWan": 44.84,
           "netValueWan": 44.84,
-          "orders": 4,
-          "value": 15.06,
+          "value": 14.54,
           "color": "#f59f0a"
         },
         {
           "name": "T1",
-          "draftWan": 24.94,
-          "formalWan": 0,
-          "refundWan": 0,
-          "dealOutputWan": 24.94,
           "netValueWan": 24.94,
-          "orders": 1,
-          "value": 8.38,
+          "value": 8.09,
           "color": "#f59f0a"
         },
         {
           "name": "小包圆",
-          "draftWan": 29.86,
-          "formalWan": -5.18,
-          "refundWan": 0,
-          "dealOutputWan": 24.68,
-          "netValueWan": 24.68,
-          "orders": 6,
-          "value": 8.29,
+          "netValueWan": 24.67,
+          "value": 8,
           "color": "#8b5cf6"
         },
         {
           "name": "89900",
-          "draftWan": 14.99,
-          "formalWan": 0,
-          "refundWan": 34.89,
-          "dealOutputWan": 14.99,
           "netValueWan": -19.9,
-          "orders": 3,
-          "value": 5.04,
+          "value": 6.45,
+          "color": "#06b6d4"
+        },
+        {
+          "name": "999",
+          "netValueWan": -14.99,
+          "value": 4.86,
           "color": "#06b6d4"
         },
         {
           "name": "Q5",
-          "draftWan": 0,
-          "formalWan": 4.5,
-          "refundWan": 0,
-          "dealOutputWan": 4.5,
           "netValueWan": 4.5,
-          "orders": 1,
-          "value": 1.51,
+          "value": 1.46,
           "color": "#ef4444"
         },
         {
-          "name": "基装",
-          "draftWan": 9.95,
-          "formalWan": -6.58,
-          "refundWan": 0,
-          "dealOutputWan": 3.37,
-          "netValueWan": 3.37,
-          "orders": 2,
-          "value": 1.13,
-          "color": "#64748b"
-        },
-        {
           "name": "新Q3",
-          "draftWan": 0,
-          "formalWan": 2.87,
-          "refundWan": 6.99,
-          "dealOutputWan": 2.87,
           "netValueWan": -4.12,
-          "orders": 4,
-          "value": 0.96,
+          "value": 1.34,
           "color": "#8b5cf6"
         },
         {
-          "name": "999",
-          "draftWan": 0,
-          "formalWan": 0,
-          "refundWan": 14.99,
-          "dealOutputWan": 0,
-          "netValueWan": -14.99,
-          "orders": 1,
-          "value": 0,
-          "color": "#06b6d4"
+          "name": "基装",
+          "netValueWan": 3.37,
+          "value": 1.09,
+          "color": "#64748b"
         }
       ],
       "productContribution": [
         {
           "name": "任性装+成品家具+外加定制",
-          "output": 59.63,
+          "output": 61.36,
           "orders": 51.35
         },
         {
           "name": "T1",
-          "output": 15.07,
+          "output": 16.47,
           "orders": 10.81
         },
         {
           "name": "T1套内加定制",
-          "output": 8.38,
+          "output": 9.16,
           "orders": 2.7
         },
         {
           "name": "小包圆",
-          "output": 8.29,
+          "output": 9.06,
           "orders": 16.22
         },
         {
-          "name": "89900",
-          "output": 5.04,
-          "orders": 2.7
-        },
-        {
           "name": "Q5",
-          "output": 1.51,
+          "output": 1.65,
           "orders": 2.7
         },
         {
           "name": "基装",
-          "output": 1.13,
+          "output": 1.24,
           "orders": 5.41
         },
         {
           "name": "Q3套内加定制",
-          "output": 0.96,
+          "output": 1.05,
           "orders": 8.11
         }
       ],
@@ -1771,7 +1569,6 @@
           "draftWan": 10.43,
           "formalWan": 0,
           "refundWan": 14.99,
-          "netWan": -4.56,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1782,7 +1579,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 6.99,
-          "netWan": -6.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1793,7 +1589,6 @@
           "draftWan": 19.9,
           "formalWan": 4.61,
           "refundWan": 0,
-          "netWan": 24.51,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 0
@@ -1804,7 +1599,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 10.43,
-          "netWan": -10.43,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1815,7 +1609,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 16.98,
-          "netWan": -16.98,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 2
@@ -1826,7 +1619,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 15.5,
-          "netWan": -15.5,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 2
@@ -1837,7 +1629,6 @@
           "draftWan": 9.95,
           "formalWan": 3.37,
           "refundWan": 6.99,
-          "netWan": 6.34,
           "draftOrders": 1,
           "formalOrders": 2,
           "refundOrders": 1
@@ -1848,7 +1639,6 @@
           "draftWan": 9.95,
           "formalWan": -0.22,
           "refundWan": 14.99,
-          "netWan": -5.26,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 1
@@ -1859,7 +1649,6 @@
           "draftWan": 19.9,
           "formalWan": 4.01,
           "refundWan": 10.43,
-          "netWan": 13.48,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 1
@@ -1870,7 +1659,6 @@
           "draftWan": 19.9,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 19.9,
           "draftOrders": 2,
           "formalOrders": 0,
           "refundOrders": 0
@@ -1881,7 +1669,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1892,7 +1679,6 @@
           "draftWan": 0,
           "formalWan": 6.23,
           "refundWan": 6.99,
-          "netWan": -0.76,
           "draftOrders": 0,
           "formalOrders": 2,
           "refundOrders": 1
@@ -1903,7 +1689,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 14.99,
-          "netWan": -14.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1914,7 +1699,6 @@
           "draftWan": 34.89,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 34.89,
           "draftOrders": 2,
           "formalOrders": 0,
           "refundOrders": 0
@@ -1925,7 +1709,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1936,7 +1719,6 @@
           "draftWan": 0,
           "formalWan": 3.55,
           "refundWan": 0,
-          "netWan": 3.55,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 0
@@ -1947,7 +1729,6 @@
           "draftWan": 14.99,
           "formalWan": 0,
           "refundWan": 14.99,
-          "netWan": 0,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1958,7 +1739,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1969,7 +1749,6 @@
           "draftWan": 14.99,
           "formalWan": 0,
           "refundWan": 6.99,
-          "netWan": 8,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 1
@@ -1980,7 +1759,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 20,
-          "netWan": -20,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 2
@@ -1991,7 +1769,6 @@
           "draftWan": 9.59,
           "formalWan": 0,
           "refundWan": 6.99,
-          "netWan": 2.6,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 1
@@ -2002,7 +1779,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -2013,7 +1789,6 @@
           "draftWan": 9.95,
           "formalWan": -0.22,
           "refundWan": 0,
-          "netWan": 9.73,
           "draftOrders": 1,
           "formalOrders": 2,
           "refundOrders": 0
@@ -2024,7 +1799,6 @@
           "draftWan": 34.89,
           "formalWan": 0,
           "refundWan": 14.99,
-          "netWan": 19.9,
           "draftOrders": 2,
           "formalOrders": 0,
           "refundOrders": 1
@@ -2035,7 +1809,6 @@
           "draftWan": 19.9,
           "formalWan": 0,
           "refundWan": 19.9,
-          "netWan": 0,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 1
@@ -2046,7 +1819,6 @@
           "draftWan": 14.99,
           "formalWan": 6.08,
           "refundWan": 10.43,
-          "netWan": 10.64,
           "draftOrders": 1,
           "formalOrders": 2,
           "refundOrders": 1
@@ -2057,7 +1829,6 @@
           "draftWan": 0,
           "formalWan": 5.48,
           "refundWan": 0,
-          "netWan": 5.48,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 0
@@ -2068,7 +1839,6 @@
           "draftWan": 9.95,
           "formalWan": -4.34,
           "refundWan": 9.99,
-          "netWan": -4.38,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 1
@@ -2079,7 +1849,6 @@
           "draftWan": 9.95,
           "formalWan": 4.96,
           "refundWan": 0,
-          "netWan": 14.91,
           "draftOrders": 1,
           "formalOrders": 3,
           "refundOrders": 0
@@ -2114,7 +1883,7 @@
         "quoteOutputWan": 1061.51,
         "systemOutputWan": 2462.67,
         "signSystemOutputWan": 2445.77,
-        "productNetOutputWan": 2633.9,
+        "productNetOutputWan": 2614,
         "currentOrders": 72,
         "draftOrderCount": 181,
         "monthlyOutputWan": 2444.18,
@@ -2148,8 +1917,8 @@
       },
       "productSummary": {
         "topProductName": "T1-2.0",
-        "topProductOutputSharePct": 37.73,
-        "topProductOutputWan": 993.81,
+        "topProductOutputSharePct": 36.76,
+        "topProductOutputWan": 983.85,
         "topProductOrders": 79,
         "softSelectedRatePct": 0,
         "softPotentialWanPer10Pp": 0,
@@ -2159,8 +1928,8 @@
         "productOutputSource": "净产值 = 签单表.系统产值 + 转正式表.转正式差额产值 + 转正式表.转正设计费 - 退单表.退单产值",
         "productAvgSource": "均单/面积类 = 转正式表.报价单产值（含设计费）/ 转正式单数；不扣退单产值",
         "refundDeductionSource": "退单表.退单产值",
-        "productOutputWan": 2633.9,
-        "productOutputLevel2Wan": 2650.31,
+        "productOutputWan": 2614,
+        "productOutputLevel2Wan": 2630.41,
         "productOrderCount": 224,
         "unclassifiedProductOutputWan": 5.96,
         "matchedProductRefundWan": 60.31,
@@ -2189,217 +1958,143 @@
       "channels": [
         {
           "name": "广播",
-          "draftWan": 1180.6,
-          "formalWan": 152.64,
-          "refundWan": 139.62,
-          "dealOutputWan": 1333.24,
-          "netValueWan": 1193.62,
-          "orders": 130,
-          "value": 48.83,
+          "netValueWan": 1126.44,
+          "value": 45.74,
           "color": "#e9a6e8"
         },
         {
-          "name": "回单",
-          "draftWan": 580.54,
-          "formalWan": 32.94,
-          "refundWan": 23.14,
-          "dealOutputWan": 613.48,
-          "netValueWan": 590.34,
-          "orders": 53,
-          "value": 24.15,
+          "name": "线上",
+          "netValueWan": 627.78,
+          "value": 25.49,
           "color": "#ddef89"
         },
         {
-          "name": "线上",
-          "draftWan": 545.19,
-          "formalWan": -12.12,
-          "refundWan": 16.94,
-          "dealOutputWan": 533.07,
-          "netValueWan": 516.13,
-          "orders": 42,
-          "value": 21.12,
+          "name": "回单",
+          "netValueWan": 572,
+          "value": 23.23,
           "color": "#a7e6df"
         },
         {
           "name": "市场部",
-          "draftWan": 74.7,
-          "formalWan": 0,
-          "refundWan": 0,
-          "dealOutputWan": 74.7,
-          "netValueWan": 74.7,
-          "orders": 6,
-          "value": 3.06,
+          "netValueWan": 77.8,
+          "value": 3.16,
           "color": "#b9efb3"
         },
         {
           "name": "其他",
-          "draftWan": 64.75,
-          "formalWan": 4.65,
-          "refundWan": 0,
-          "dealOutputWan": 69.4,
-          "netValueWan": 69.4,
-          "orders": 7,
-          "value": 2.84,
+          "netValueWan": 58.3,
+          "value": 2.37,
           "color": "#a9dbf2"
+        },
+        {
+          "name": "不详，待人工确认",
+          "netValueWan": 0.34,
+          "value": 0.01,
+          "color": "#cfd4ff"
         }
       ],
       "products": [
         {
           "name": "T1-2.0",
-          "draftWan": 1010.23,
-          "formalWan": -16.42,
-          "refundWan": 9.95,
-          "dealOutputWan": 993.81,
-          "netValueWan": 983.86,
-          "orders": 79,
-          "value": 37.73,
+          "netValueWan": 983.85,
+          "value": 36.76,
           "color": "#f59f0a"
         },
         {
           "name": "任性装+成品家具+外加定制",
-          "draftWan": 636.98,
-          "formalWan": 172.15,
-          "refundWan": 0,
-          "dealOutputWan": 809.13,
           "netValueWan": 809.13,
-          "orders": 70,
-          "value": 30.72,
+          "value": 30.23,
           "color": "#16b981"
         },
         {
           "name": "新Q3",
-          "draftWan": 458.74,
-          "formalWan": 22.15,
-          "refundWan": 0,
-          "dealOutputWan": 480.89,
           "netValueWan": 480.89,
-          "orders": 36,
-          "value": 18.26,
+          "value": 17.97,
           "color": "#8b5cf6"
         },
         {
           "name": "小包圆",
-          "draftWan": 250.15,
-          "formalWan": -23.47,
-          "refundWan": 9.95,
-          "dealOutputWan": 226.68,
           "netValueWan": 216.73,
-          "orders": 29,
-          "value": 8.61,
+          "value": 8.1,
           "color": "#8b5cf6"
         },
         {
           "name": "89900",
-          "draftWan": 69.78,
-          "formalWan": 16.61,
-          "refundWan": 0,
-          "dealOutputWan": 86.39,
           "netValueWan": 86.39,
-          "orders": 7,
-          "value": 3.28,
+          "value": 3.23,
           "color": "#06b6d4"
         },
         {
           "name": "轻松装",
-          "draftWan": 19.9,
-          "formalWan": 11.84,
-          "refundWan": 0,
-          "dealOutputWan": 31.74,
           "netValueWan": 31.74,
-          "orders": 2,
-          "value": 1.21,
+          "value": 1.19,
           "color": "#16b981"
         },
         {
+          "name": "999",
+          "netValueWan": -25.42,
+          "value": 0.95,
+          "color": "#64748b"
+        },
+        {
+          "name": "T1",
+          "netValueWan": -15.97,
+          "value": 0.6,
+          "color": "#22c55e"
+        },
+        {
+          "name": "71900",
+          "netValueWan": -14.99,
+          "value": 0.56,
+          "color": "#f97316"
+        },
+        {
           "name": "基装",
-          "draftWan": 0,
-          "formalWan": 2.97,
-          "refundWan": 0,
-          "dealOutputWan": 2.97,
           "netValueWan": 2.97,
-          "orders": 1,
           "value": 0.11,
           "color": "#64748b"
         },
         {
           "name": "Q5",
-          "draftWan": 0,
-          "formalWan": 2.29,
-          "refundWan": 0,
-          "dealOutputWan": 2.29,
           "netValueWan": 2.29,
-          "orders": 7,
           "value": 0.09,
           "color": "#ef4444"
-        },
-        {
-          "name": "999",
-          "draftWan": 0,
-          "formalWan": 0,
-          "refundWan": 25.42,
-          "dealOutputWan": 0,
-          "netValueWan": -25.42,
-          "orders": 2,
-          "value": 0,
-          "color": "#64748b"
-        },
-        {
-          "name": "71900",
-          "draftWan": 0,
-          "formalWan": 0,
-          "refundWan": 14.99,
-          "dealOutputWan": 0,
-          "netValueWan": -14.99,
-          "orders": 1,
-          "value": 0,
-          "color": "#f97316"
-        },
-        {
-          "name": "T1",
-          "draftWan": 0,
-          "formalWan": -15.97,
-          "refundWan": 0,
-          "dealOutputWan": -15.97,
-          "netValueWan": -15.97,
-          "orders": 4,
-          "value": -0.61,
-          "color": "#22c55e"
         }
       ],
       "productContribution": [
         {
           "name": "T1",
-          "output": 38.12,
+          "output": 38.03,
           "orders": 35.27
         },
         {
           "name": "任性装+成品家具+外加定制",
-          "output": 30.53,
+          "output": 30.76,
           "orders": 31.25
         },
         {
           "name": "新Q3套内加定制",
-          "output": 17.47,
+          "output": 17.61,
           "orders": 13.39
         },
         {
           "name": "小包圆",
-          "output": 8.55,
+          "output": 8.24,
           "orders": 12.95
         },
         {
           "name": "89900",
-          "output": 2.63,
+          "output": 2.65,
           "orders": 2.23
         },
         {
           "name": "轻松装",
-          "output": 1.2,
+          "output": 1.21,
           "orders": 0.89
         },
         {
           "name": "Q3套内加定制",
-          "output": 0.67,
+          "output": 0.68,
           "orders": 2.68
         },
         {
@@ -2791,7 +2486,6 @@
           "draftWan": 64.75,
           "formalWan": 9.82,
           "refundWan": 0,
-          "netWan": 74.56,
           "draftOrders": 5,
           "formalOrders": 2,
           "refundOrders": 0
@@ -2802,7 +2496,6 @@
           "draftWan": 19.9,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 19.9,
           "draftOrders": 2,
           "formalOrders": 0,
           "refundOrders": 0
@@ -2813,7 +2506,6 @@
           "draftWan": 104.67,
           "formalWan": -3.63,
           "refundWan": 9.99,
-          "netWan": 91.06,
           "draftOrders": 7,
           "formalOrders": 2,
           "refundOrders": 1
@@ -2824,7 +2516,6 @@
           "draftWan": 9.95,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 9.95,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 0
@@ -2835,7 +2526,6 @@
           "draftWan": 127.69,
           "formalWan": 7.28,
           "refundWan": 9.95,
-          "netWan": 125.02,
           "draftOrders": 10,
           "formalOrders": 3,
           "refundOrders": 1
@@ -2846,7 +2536,6 @@
           "draftWan": 14.99,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 14.99,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 0
@@ -2857,7 +2546,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -2868,7 +2556,6 @@
           "draftWan": 144.36,
           "formalWan": 43.8,
           "refundWan": 27.37,
-          "netWan": 160.79,
           "draftOrders": 11,
           "formalOrders": 5,
           "refundOrders": 3
@@ -2879,7 +2566,6 @@
           "draftWan": 34.89,
           "formalWan": 5.78,
           "refundWan": 14.99,
-          "netWan": 25.69,
           "draftOrders": 3,
           "formalOrders": 1,
           "refundOrders": 1
@@ -2890,7 +2576,6 @@
           "draftWan": 64.37,
           "formalWan": 3.9,
           "refundWan": 0,
-          "netWan": 68.27,
           "draftOrders": 5,
           "formalOrders": 3,
           "refundOrders": 0
@@ -2901,7 +2586,6 @@
           "draftWan": 64.87,
           "formalWan": 13.62,
           "refundWan": 0,
-          "netWan": 78.49,
           "draftOrders": 5,
           "formalOrders": 3,
           "refundOrders": 0
@@ -2912,7 +2596,6 @@
           "draftWan": 44.84,
           "formalWan": 25.46,
           "refundWan": 9.99,
-          "netWan": 60.31,
           "draftOrders": 4,
           "formalOrders": 3,
           "refundOrders": 1
@@ -2923,7 +2606,6 @@
           "draftWan": 33.64,
           "formalWan": 5.39,
           "refundWan": 9.99,
-          "netWan": 29.04,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 1
@@ -2934,7 +2616,6 @@
           "draftWan": 44.84,
           "formalWan": 18.09,
           "refundWan": 0,
-          "netWan": 62.93,
           "draftOrders": 5,
           "formalOrders": 1,
           "refundOrders": 0
@@ -2945,7 +2626,6 @@
           "draftWan": 69.78,
           "formalWan": 4.74,
           "refundWan": 9.95,
-          "netWan": 64.57,
           "draftOrders": 5,
           "formalOrders": 1,
           "refundOrders": 1
@@ -2956,7 +2636,6 @@
           "draftWan": 99.76,
           "formalWan": -7.37,
           "refundWan": 0,
-          "netWan": 92.39,
           "draftOrders": 7,
           "formalOrders": 3,
           "refundOrders": 0
@@ -2967,7 +2646,6 @@
           "draftWan": 74.82,
           "formalWan": 21.7,
           "refundWan": 0,
-          "netWan": 96.52,
           "draftOrders": 7,
           "formalOrders": 4,
           "refundOrders": 0
@@ -2978,7 +2656,6 @@
           "draftWan": 79.85,
           "formalWan": 4.64,
           "refundWan": 0,
-          "netWan": 84.49,
           "draftOrders": 6,
           "formalOrders": 1,
           "refundOrders": 0
@@ -2989,7 +2666,6 @@
           "draftWan": 14.99,
           "formalWan": -1.56,
           "refundWan": 0,
-          "netWan": 13.42,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 0
@@ -3000,7 +2676,6 @@
           "draftWan": 124.7,
           "formalWan": 37.85,
           "refundWan": 0,
-          "netWan": 162.55,
           "draftOrders": 9,
           "formalOrders": 6,
           "refundOrders": 0
@@ -3011,7 +2686,6 @@
           "draftWan": 14.99,
           "formalWan": -2.7,
           "refundWan": 0,
-          "netWan": 12.29,
           "draftOrders": 1,
           "formalOrders": 2,
           "refundOrders": 0
@@ -3022,7 +2696,6 @@
           "draftWan": 44.96,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 44.96,
           "draftOrders": 3,
           "formalOrders": 0,
           "refundOrders": 0
@@ -3033,7 +2706,6 @@
           "draftWan": 79.73,
           "formalWan": 2.71,
           "refundWan": 0,
-          "netWan": 82.44,
           "draftOrders": 5,
           "formalOrders": 3,
           "refundOrders": 0
@@ -3044,7 +2716,6 @@
           "draftWan": 64.87,
           "formalWan": 1.38,
           "refundWan": 0,
-          "netWan": 66.25,
           "draftOrders": 5,
           "formalOrders": 3,
           "refundOrders": 0
@@ -3055,7 +2726,6 @@
           "draftWan": 29.86,
           "formalWan": 3.59,
           "refundWan": 0,
-          "netWan": 33.45,
           "draftOrders": 3,
           "formalOrders": 1,
           "refundOrders": 0
@@ -3066,7 +2736,6 @@
           "draftWan": 185.84,
           "formalWan": -1.4,
           "refundWan": 0,
-          "netWan": 184.44,
           "draftOrders": 14,
           "formalOrders": 5,
           "refundOrders": 0
@@ -3077,7 +2746,6 @@
           "draftWan": 29.86,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 29.86,
           "draftOrders": 3,
           "formalOrders": 0,
           "refundOrders": 0
@@ -3088,7 +2756,6 @@
           "draftWan": 114.74,
           "formalWan": 10.23,
           "refundWan": 0,
-          "netWan": 124.98,
           "draftOrders": 7,
           "formalOrders": 1,
           "refundOrders": 0
@@ -3099,7 +2766,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -3110,7 +2776,6 @@
           "draftWan": 164.62,
           "formalWan": -4.54,
           "refundWan": 0,
-          "netWan": 160.08,
           "draftOrders": 11,
           "formalOrders": 5,
           "refundOrders": 0
@@ -3121,7 +2786,6 @@
           "draftWan": 14.99,
           "formalWan": -2.61,
           "refundWan": 0,
-          "netWan": 12.37,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 0
@@ -3132,7 +2796,6 @@
           "draftWan": 69.78,
           "formalWan": 3.63,
           "refundWan": 0,
-          "netWan": 73.41,
           "draftOrders": 4,
           "formalOrders": 2,
           "refundOrders": 0
@@ -3143,7 +2806,6 @@
           "draftWan": 79.73,
           "formalWan": 2.56,
           "refundWan": 14.99,
-          "netWan": 67.3,
           "draftOrders": 5,
           "formalOrders": 2,
           "refundOrders": 1
@@ -3154,7 +2816,6 @@
           "draftWan": 104.79,
           "formalWan": -13.41,
           "refundWan": 24.94,
-          "netWan": 66.44,
           "draftOrders": 7,
           "formalOrders": 3,
           "refundOrders": 1
@@ -3165,7 +2826,6 @@
           "draftWan": 134.65,
           "formalWan": -7.25,
           "refundWan": 27.57,
-          "netWan": 99.83,
           "draftOrders": 10,
           "formalOrders": 1,
           "refundOrders": 3
@@ -3176,7 +2836,6 @@
           "draftWan": 74.7,
           "formalWan": -3.6,
           "refundWan": 0,
-          "netWan": 71.1,
           "draftOrders": 5,
           "formalOrders": 2,
           "refundOrders": 0
@@ -3211,7 +2870,7 @@
         "quoteOutputWan": 649.29,
         "systemOutputWan": -391.03,
         "signSystemOutputWan": 598.73,
-        "productNetOutputWan": 548.74,
+        "productNetOutputWan": 137.82,
         "currentOrders": 54,
         "draftOrderCount": 47,
         "monthlyOutputWan": -418.88,
@@ -3245,8 +2904,8 @@
       },
       "productSummary": {
         "topProductName": "T1-2.0",
-        "topProductOutputSharePct": 63.79,
-        "topProductOutputWan": 350.06,
+        "topProductOutputSharePct": 33.37,
+        "topProductOutputWan": 110.98,
         "topProductOrders": 33,
         "softSelectedRatePct": 0,
         "softPotentialWanPer10Pp": 0,
@@ -3256,8 +2915,8 @@
         "productOutputSource": "净产值 = 签单表.系统产值 + 转正式表.转正式差额产值 + 转正式表.转正设计费 - 退单表.退单产值",
         "productAvgSource": "均单/面积类 = 转正式表.报价单产值（含设计费）/ 转正式单数；不扣退单产值",
         "refundDeductionSource": "退单表.退单产值",
-        "productOutputWan": 548.74,
-        "productOutputLevel2Wan": 549.64,
+        "productOutputWan": 137.82,
+        "productOutputLevel2Wan": 138.72,
         "productOrderCount": 83,
         "unclassifiedProductOutputWan": 0,
         "matchedProductRefundWan": 579.75,
@@ -3310,200 +2969,104 @@
       "channels": [
         {
           "name": "广播",
-          "draftWan": 310.3,
-          "formalWan": -47.44,
-          "refundWan": 637.79,
-          "dealOutputWan": 262.86,
-          "netValueWan": -374.93,
-          "orders": 92,
-          "value": 62.51,
+          "netValueWan": -373.27,
+          "value": 64.73,
           "color": "#e9a6e8"
         },
         {
           "name": "线上",
-          "draftWan": 79.85,
-          "formalWan": -5.85,
-          "refundWan": 152.18,
-          "dealOutputWan": 74,
-          "netValueWan": -78.18,
-          "orders": 27,
-          "value": 13.03,
+          "netValueWan": -70.32,
+          "value": 12.19,
           "color": "#ddef89"
         },
         {
           "name": "其他",
-          "draftWan": 79.73,
-          "formalWan": 16.33,
-          "refundWan": 29.86,
-          "dealOutputWan": 96.06,
-          "netValueWan": 66.2,
-          "orders": 10,
-          "value": 11.04,
+          "netValueWan": 68.49,
+          "value": 11.88,
           "color": "#a7e6df"
         },
         {
           "name": "回单",
-          "draftWan": 88.91,
-          "formalWan": -33.25,
-          "refundWan": 111.9,
-          "dealOutputWan": 55.66,
-          "netValueWan": -56.24,
-          "orders": 30,
-          "value": 9.38,
+          "netValueWan": -40.24,
+          "value": 6.98,
           "color": "#b9efb3"
         },
         {
           "name": "市场部",
-          "draftWan": 39.93,
-          "formalWan": -5.72,
-          "refundWan": 9.95,
-          "dealOutputWan": 34.21,
-          "netValueWan": 24.26,
-          "orders": 5,
-          "value": 4.04,
+          "netValueWan": 24.31,
+          "value": 4.22,
           "color": "#a9dbf2"
         }
       ],
       "products": [
         {
           "name": "T1-2.0",
-          "draftWan": 342.02,
-          "formalWan": 8.03,
-          "refundWan": 239.08,
-          "dealOutputWan": 350.05,
-          "netValueWan": 110.97,
-          "orders": 52,
-          "value": 63.79,
+          "netValueWan": 110.98,
+          "value": 33.37,
           "color": "#f59f0a"
         },
         {
+          "name": "新Q3",
+          "netValueWan": -110.71,
+          "value": 33.29,
+          "color": "#8b5cf6"
+        },
+        {
+          "name": "小包圆",
+          "netValueWan": -31.57,
+          "value": 9.49,
+          "color": "#f59f0a"
+        },
+        {
+          "name": "999",
+          "netValueWan": -24.58,
+          "value": 7.39,
+          "color": "#8b5cf6"
+        },
+        {
           "name": "任性装+成品家具+外加定制",
-          "draftWan": 151.79,
-          "formalWan": -18.16,
-          "refundWan": 156.51,
-          "dealOutputWan": 133.63,
-          "netValueWan": -22.88,
-          "orders": 38,
-          "value": 24.35,
+          "netValueWan": -22.87,
+          "value": 6.88,
           "color": "#ef4444"
         },
         {
           "name": "定制升级",
-          "draftWan": 14.99,
-          "formalWan": 7.07,
-          "refundWan": 0,
-          "dealOutputWan": 22.06,
           "netValueWan": 22.06,
-          "orders": 3,
-          "value": 4.02,
+          "value": 6.63,
           "color": "#06b6d4"
         },
         {
-          "name": "71900",
-          "draftWan": 14.99,
-          "formalWan": 0,
-          "refundWan": 14.99,
-          "dealOutputWan": 14.99,
-          "netValueWan": 0,
-          "orders": 2,
-          "value": 2.73,
-          "color": "#f97316"
-        },
-        {
-          "name": "小包圆",
-          "draftWan": 64.99,
-          "formalWan": -51.72,
-          "refundWan": 44.84,
-          "dealOutputWan": 13.27,
-          "netValueWan": -31.57,
-          "orders": 19,
-          "value": 2.42,
-          "color": "#f59f0a"
-        },
-        {
           "name": "89900",
-          "draftWan": 9.95,
-          "formalWan": 0,
-          "refundWan": 14.99,
-          "dealOutputWan": 9.95,
           "netValueWan": -5.04,
-          "orders": 2,
-          "value": 1.81,
+          "value": 1.51,
           "color": "#06b6d4"
         },
         {
           "name": "基装",
-          "draftWan": 0,
-          "formalWan": 4.79,
-          "refundWan": 0,
-          "dealOutputWan": 4.79,
           "netValueWan": 4.79,
-          "orders": 2,
-          "value": 0.87,
+          "value": 1.44,
           "color": "#64748b"
-        },
-        {
-          "name": "999",
-          "draftWan": 0,
-          "formalWan": 0,
-          "refundWan": 24.58,
-          "dealOutputWan": 0,
-          "netValueWan": -24.58,
-          "orders": 2,
-          "value": 0,
-          "color": "#8b5cf6"
-        },
-        {
-          "name": "新Q3",
-          "draftWan": 0,
-          "formalWan": -25.94,
-          "refundWan": 84.77,
-          "dealOutputWan": -25.94,
-          "netValueWan": -110.71,
-          "orders": 14,
-          "value": -4.73,
-          "color": "#8b5cf6"
         }
       ],
       "productContribution": [
         {
           "name": "T1",
-          "output": 62.23,
+          "output": 74.21,
           "orders": 31.33
         },
         {
-          "name": "任性装+成品家具+外加定制",
-          "output": 24.31,
-          "orders": 30.12
-        },
-        {
           "name": "定制升级",
-          "output": 4.01,
+          "output": 15.9,
           "orders": 3.61
         },
         {
-          "name": "71900基装",
-          "output": 2.73,
-          "orders": 1.2
-        },
-        {
-          "name": "小包圆",
-          "output": 2.41,
-          "orders": 18.07
-        },
-        {
-          "name": "89900",
-          "output": 1.81,
-          "orders": 1.2
-        },
-        {
           "name": "T1套内加定制",
-          "output": 1.63,
+          "output": 6.44,
           "orders": 12.05
         },
         {
           "name": "基装",
-          "output": 0.87,
+          "output": 3.45,
           "orders": 2.41
         }
       ],
@@ -3594,11 +3157,11 @@
         },
         {
           "name": "腾讯系",
-          "value": -22.51,
-          "orders": 3,
-          "sharePct": 1.15,
+          "value": -22.53,
+          "orders": 4,
+          "sharePct": 1.54,
           "color": "#ddef89",
-          "label": "-22.51 万 / 3 单 / 订单占比 1.15%"
+          "label": "-22.53 万 / 4 单 / 订单占比 1.54%"
         },
         {
           "name": "百度系",
@@ -3665,19 +3228,11 @@
           "label": "8.16 万 / 5 单 / 订单占比 1.92%"
         },
         {
-          "name": "不详，待人工确认",
-          "value": 1.4,
-          "orders": 2,
-          "sharePct": 0.77,
-          "color": "#d9d6ff",
-          "label": "1.4 万 / 2 单 / 订单占比 0.77%"
-        },
-        {
           "name": "全包圆自然客流",
           "value": -0.24,
           "orders": 1,
           "sharePct": 0.38,
-          "color": "#f4d7a4",
+          "color": "#d9d6ff",
           "label": "-0.24 万 / 1 单 / 订单占比 0.38%"
         },
         {
@@ -3685,7 +3240,7 @@
           "value": -4.66,
           "orders": 3,
           "sharePct": 1.15,
-          "color": "#edf3bd",
+          "color": "#f4d7a4",
           "label": "-4.66 万 / 3 单 / 订单占比 1.15%"
         },
         {
@@ -3693,16 +3248,16 @@
           "value": -8.97,
           "orders": 2,
           "sharePct": 0.77,
-          "color": "#efe8bd",
+          "color": "#edf3bd",
           "label": "-8.97 万 / 2 单 / 订单占比 0.77%"
         },
         {
           "name": "设计回单",
-          "value": -93.38,
-          "orders": 25,
-          "sharePct": 9.62,
-          "color": "#ffd8a8",
-          "label": "-93.38 万 / 25 单 / 订单占比 9.62%"
+          "value": -91.96,
+          "orders": 26,
+          "sharePct": 10,
+          "color": "#efe8bd",
+          "label": "-91.96 万 / 26 单 / 订单占比 10%"
         }
       ],
       "channelInsights": [],
@@ -3877,7 +3432,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 19.9,
-          "netWan": -19.9,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 2
@@ -3888,7 +3442,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.95,
-          "netWan": -9.95,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -3899,7 +3452,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.95,
-          "netWan": -9.95,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -3910,7 +3462,6 @@
           "draftWan": 94.72,
           "formalWan": -8.87,
           "refundWan": 29.93,
-          "netWan": 55.92,
           "draftOrders": 6,
           "formalOrders": 4,
           "refundOrders": 3
@@ -3921,7 +3472,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 6.99,
-          "netWan": -6.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -3932,7 +3482,6 @@
           "draftWan": 19.9,
           "formalWan": 4.68,
           "refundWan": 20.38,
-          "netWan": 4.2,
           "draftOrders": 2,
           "formalOrders": 3,
           "refundOrders": 2
@@ -3943,7 +3492,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.95,
-          "netWan": -9.95,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -3954,7 +3502,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 6.99,
-          "netWan": -6.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -3965,7 +3512,6 @@
           "draftWan": 38.68,
           "formalWan": -1.7,
           "refundWan": 110.18,
-          "netWan": -73.2,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 11
@@ -3976,7 +3522,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.95,
-          "netWan": -9.95,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -3987,7 +3532,6 @@
           "draftWan": 14.99,
           "formalWan": 9.62,
           "refundWan": 0,
-          "netWan": 24.61,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 0
@@ -3998,7 +3542,6 @@
           "draftWan": 0,
           "formalWan": 0.84,
           "refundWan": 0,
-          "netWan": 0.84,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 0
@@ -4009,7 +3552,6 @@
           "draftWan": 54.91,
           "formalWan": -4.45,
           "refundWan": 29.98,
-          "netWan": 20.49,
           "draftOrders": 4,
           "formalOrders": 1,
           "refundOrders": 2
@@ -4020,7 +3562,6 @@
           "draftWan": 14.99,
           "formalWan": -0.9,
           "refundWan": 36.88,
-          "netWan": -22.79,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 4
@@ -4031,7 +3572,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 19.94,
-          "netWan": -19.94,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 2
@@ -4042,7 +3582,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 16.94,
-          "netWan": -16.94,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 2
@@ -4053,7 +3592,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 19.99,
-          "netWan": -19.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 2
@@ -4064,7 +3602,6 @@
           "draftWan": 14.99,
           "formalWan": 3.52,
           "refundWan": 14.99,
-          "netWan": 3.52,
           "draftOrders": 2,
           "formalOrders": 3,
           "refundOrders": 1
@@ -4075,7 +3612,6 @@
           "draftWan": 0,
           "formalWan": 2.76,
           "refundWan": 14.99,
-          "netWan": -12.23,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 1
@@ -4086,7 +3622,6 @@
           "draftWan": 0,
           "formalWan": 2.83,
           "refundWan": 19.9,
-          "netWan": -17.07,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 2
@@ -4097,7 +3632,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -4108,7 +3642,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 6.99,
-          "netWan": -6.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -4119,7 +3652,6 @@
           "draftWan": 14.99,
           "formalWan": -21.8,
           "refundWan": 24.94,
-          "netWan": -31.76,
           "draftOrders": 1,
           "formalOrders": 3,
           "refundOrders": 2
@@ -4130,7 +3662,6 @@
           "draftWan": 19.9,
           "formalWan": -3.59,
           "refundWan": 24.98,
-          "netWan": -8.67,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 2
@@ -4141,7 +3672,6 @@
           "draftWan": 0,
           "formalWan": -1.22,
           "refundWan": 26.89,
-          "netWan": -28.11,
           "draftOrders": 0,
           "formalOrders": 2,
           "refundOrders": 3
@@ -4152,7 +3682,6 @@
           "draftWan": 39.93,
           "formalWan": -0.44,
           "refundWan": 54.95,
-          "netWan": -15.46,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 4
@@ -4163,7 +3692,6 @@
           "draftWan": 0,
           "formalWan": -0.51,
           "refundWan": 0,
-          "netWan": -0.51,
           "draftOrders": 0,
           "formalOrders": 2,
           "refundOrders": 0
@@ -4174,7 +3702,6 @@
           "draftWan": 25.06,
           "formalWan": -5.39,
           "refundWan": 35.17,
-          "netWan": -15.5,
           "draftOrders": 2,
           "formalOrders": 4,
           "refundOrders": 3
@@ -4185,7 +3712,6 @@
           "draftWan": 9.95,
           "formalWan": 3.11,
           "refundWan": 0,
-          "netWan": 13.06,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 0
@@ -4196,7 +3722,6 @@
           "draftWan": 0,
           "formalWan": -9.29,
           "refundWan": 0,
-          "netWan": -9.29,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 0
@@ -4207,7 +3732,6 @@
           "draftWan": 36.93,
           "formalWan": -16.86,
           "refundWan": 53.83,
-          "netWan": -33.77,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 4
@@ -4218,7 +3742,6 @@
           "draftWan": 24.94,
           "formalWan": -18.01,
           "refundWan": 26.89,
-          "netWan": -19.97,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 2
@@ -4229,7 +3752,6 @@
           "draftWan": 14.99,
           "formalWan": -17.76,
           "refundWan": 14.99,
-          "netWan": -17.76,
           "draftOrders": 1,
           "formalOrders": 3,
           "refundOrders": 1
@@ -4240,7 +3762,6 @@
           "draftWan": 54.79,
           "formalWan": 5.09,
           "refundWan": 0,
-          "netWan": 59.88,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 0
@@ -4251,7 +3772,6 @@
           "draftWan": 9.95,
           "formalWan": -3.26,
           "refundWan": 38.25,
-          "netWan": -31.56,
           "draftOrders": 1,
           "formalOrders": 2,
           "refundOrders": 3
@@ -4262,7 +3782,6 @@
           "draftWan": 24.94,
           "formalWan": -1.29,
           "refundWan": 96.44,
-          "netWan": -72.79,
           "draftOrders": 2,
           "formalOrders": 3,
           "refundOrders": 6
@@ -4273,7 +3792,6 @@
           "draftWan": 29.86,
           "formalWan": 0,
           "refundWan": 19.9,
-          "netWan": 9.95,
           "draftOrders": 2,
           "formalOrders": 0,
           "refundOrders": 2
@@ -4284,7 +3802,6 @@
           "draftWan": 10.43,
           "formalWan": -2.96,
           "refundWan": 39.85,
-          "netWan": -32.38,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 3
@@ -4295,7 +3812,6 @@
           "draftWan": 9.95,
           "formalWan": 9.35,
           "refundWan": 9.95,
-          "netWan": 9.35,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 1
@@ -4306,7 +3822,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 34.89,
-          "netWan": -34.89,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 3
@@ -4317,7 +3832,6 @@
           "draftWan": 9.95,
           "formalWan": 1.33,
           "refundWan": 0,
-          "netWan": 11.28,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 0
@@ -4328,7 +3842,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 14.99,
-          "netWan": -14.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -4339,7 +3852,6 @@
           "draftWan": 8.99,
           "formalWan": -0.72,
           "refundWan": 0,
-          "netWan": 8.27,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 0
@@ -4372,32 +3884,32 @@
         "netOutputWan": 465.84,
         "positiveOutputWan": 202.47,
         "quoteOutputWan": 743.3,
-        "systemOutputWan": 508.4,
+        "systemOutputWan": 513.54,
         "signSystemOutputWan": 586.14,
-        "productNetOutputWan": 763.9,
+        "productNetOutputWan": 558.34,
         "currentOrders": 54,
         "draftOrderCount": 66,
         "monthlyOutputWan": 465.84,
         "monthlyNetOutputWan": 465.84,
         "monthlyPositiveOutputWan": 202.47,
         "monthlyQuoteOutputWan": 743.3,
-        "monthlySystemOutputWan": 508.4,
+        "monthlySystemOutputWan": 513.54,
         "annualizedOutputYi": 0.56,
         "positiveAnnualizedOutputYi": 0.24,
-        "systemAnnualizedOutputYi": 0.61,
+        "systemAnnualizedOutputYi": 0.62,
         "yearTargetYi": 1.5,
         "yearTargetWan": 15000,
         "yearProgressPct": 3.11,
         "positiveYearProgressPct": 1.35,
-        "systemYearProgressPct": 3.39,
+        "systemYearProgressPct": 3.42,
         "yearTheoryProgressPct": 41.37,
         "monthTargetWan": 1020,
         "monthProgressPct": 45.67,
         "positiveMonthProgressPct": 19.85,
-        "systemMonthProgressPct": 49.84,
+        "systemMonthProgressPct": 50.35,
         "monthGoalGapWan": 554.16,
         "positiveMonthGoalGapWan": 817.53,
-        "systemMonthGoalGapWan": 511.6,
+        "systemMonthGoalGapWan": 506.46,
         "monthDays": 31,
         "elapsedDays": 31,
         "elapsedDaysSource": "system_current_date",
@@ -4408,8 +3920,8 @@
       },
       "productSummary": {
         "topProductName": "任性装+成品家具+外加定制",
-        "topProductOutputSharePct": 43.29,
-        "topProductOutputWan": 330.69,
+        "topProductOutputSharePct": 37.45,
+        "topProductOutputWan": 238.5,
         "topProductOrders": 37,
         "softSelectedRatePct": 0,
         "softPotentialWanPer10Pp": 0,
@@ -4419,8 +3931,8 @@
         "productOutputSource": "净产值 = 签单表.系统产值 + 转正式表.转正式差额产值 + 转正式表.转正设计费 - 退单表.退单产值",
         "productAvgSource": "均单/面积类 = 转正式表.报价单产值（含设计费）/ 转正式单数；不扣退单产值",
         "refundDeductionSource": "退单表.退单产值",
-        "productOutputWan": 763.9,
-        "productOutputLevel2Wan": 763.9,
+        "productOutputWan": 558.34,
+        "productOutputLevel2Wan": 558.34,
         "productOrderCount": 94,
         "unclassifiedProductOutputWan": 39.12,
         "matchedProductRefundWan": 230.5,
@@ -4448,221 +3960,146 @@
       "channels": [
         {
           "name": "线上",
-          "draftWan": 165.95,
-          "formalWan": 48.52,
-          "refundWan": 33.49,
-          "dealOutputWan": 214.47,
-          "netValueWan": 180.98,
-          "orders": 33,
-          "value": 38.85,
+          "netValueWan": 206.89,
+          "value": 40.29,
           "color": "#e9a6e8"
         },
         {
           "name": "回单",
-          "draftWan": 115.6,
-          "formalWan": 41.5,
-          "refundWan": 9.95,
-          "dealOutputWan": 157.1,
-          "netValueWan": 147.15,
-          "orders": 19,
-          "value": 31.59,
+          "netValueWan": 151.54,
+          "value": 29.51,
           "color": "#ddef89"
         },
         {
           "name": "广播",
-          "draftWan": 242.81,
-          "formalWan": 77.82,
-          "refundWan": 242.06,
-          "dealOutputWan": 320.63,
-          "netValueWan": 78.57,
-          "orders": 56,
-          "value": 16.87,
+          "netValueWan": 83.47,
+          "value": 16.25,
           "color": "#a7e6df"
         },
         {
           "name": "其他",
-          "draftWan": 54.79,
-          "formalWan": 27.6,
-          "refundWan": 37.27,
-          "dealOutputWan": 82.39,
-          "netValueWan": 45.12,
-          "orders": 8,
-          "value": 9.69,
+          "netValueWan": 57.54,
+          "value": 11.2,
           "color": "#b9efb3"
         },
         {
           "name": "市场部",
-          "draftWan": 6.99,
-          "formalWan": 7.04,
-          "refundWan": 0,
-          "dealOutputWan": 14.03,
-          "netValueWan": 14.03,
-          "orders": 2,
-          "value": 3.01,
+          "netValueWan": 14.11,
+          "value": 2.75,
           "color": "#a9dbf2"
         }
       ],
       "products": [
         {
           "name": "任性装+成品家具+外加定制",
-          "draftWan": 203.17,
-          "formalWan": 127.52,
-          "refundWan": 92.18,
-          "dealOutputWan": 330.69,
-          "netValueWan": 238.51,
-          "orders": 43,
-          "value": 43.29,
+          "netValueWan": 238.5,
+          "value": 37.45,
           "color": "#3b82f6"
         },
         {
           "name": "T1-2.0",
-          "draftWan": 151.18,
-          "formalWan": 28.5,
-          "refundWan": 88.44,
-          "dealOutputWan": 179.68,
           "netValueWan": 91.24,
-          "orders": 28,
-          "value": 23.52,
+          "value": 14.33,
           "color": "#f59f0a"
         },
         {
-          "name": "71900",
-          "draftWan": 72.47,
-          "formalWan": 0,
-          "refundWan": 24.94,
-          "dealOutputWan": 72.47,
-          "netValueWan": 47.53,
-          "orders": 8,
-          "value": 9.49,
-          "color": "#8b5cf6"
-        },
-        {
           "name": "轻松装",
-          "draftWan": 48.46,
-          "formalWan": 0,
-          "refundWan": 0,
-          "dealOutputWan": 48.46,
           "netValueWan": 48.46,
-          "orders": 6,
-          "value": 6.34,
+          "value": 7.61,
           "color": "#16b981"
         },
         {
+          "name": "71900",
+          "netValueWan": 47.53,
+          "value": 7.46,
+          "color": "#8b5cf6"
+        },
+        {
           "name": "基装",
-          "draftWan": 9.95,
-          "formalWan": 35.66,
-          "refundWan": 0,
-          "dealOutputWan": 45.61,
           "netValueWan": 45.61,
-          "orders": 7,
-          "value": 5.97,
+          "value": 7.16,
           "color": "#64748b"
         },
         {
           "name": "小包圆",
-          "draftWan": 36.85,
-          "formalWan": 8.51,
-          "refundWan": 0,
-          "dealOutputWan": 45.36,
-          "netValueWan": 45.36,
-          "orders": 9,
-          "value": 5.94,
-          "color": "#06b6d4"
-        },
-        {
-          "name": "定制升级",
-          "draftWan": 24.94,
-          "formalWan": 0,
-          "refundWan": 0,
-          "dealOutputWan": 24.94,
-          "netValueWan": 24.94,
-          "orders": 2,
-          "value": 3.26,
-          "color": "#22c55e"
-        },
-        {
-          "name": "Q5",
-          "draftWan": 0,
-          "formalWan": 12.44,
-          "refundWan": 0,
-          "dealOutputWan": 12.44,
-          "netValueWan": 12.44,
-          "orders": 2,
-          "value": 1.63,
-          "color": "#ef4444"
-        },
-        {
-          "name": "89900",
-          "draftWan": 0,
-          "formalWan": 4.26,
-          "refundWan": 0,
-          "dealOutputWan": 4.26,
-          "netValueWan": 4.26,
-          "orders": 1,
-          "value": 0.56,
+          "netValueWan": 45.35,
+          "value": 7.12,
           "color": "#06b6d4"
         },
         {
           "name": "新Q3",
-          "draftWan": 0,
-          "formalWan": -14.4,
-          "refundWan": 24.94,
-          "dealOutputWan": -14.4,
           "netValueWan": -39.34,
-          "orders": 5,
-          "value": -1.89,
+          "value": 6.18,
           "color": "#8b5cf6"
+        },
+        {
+          "name": "定制升级",
+          "netValueWan": 24.94,
+          "value": 3.92,
+          "color": "#22c55e"
+        },
+        {
+          "name": "Q5",
+          "netValueWan": 12.44,
+          "value": 1.95,
+          "color": "#ef4444"
+        },
+        {
+          "name": "89900",
+          "netValueWan": 4.26,
+          "value": 0.67,
+          "color": "#06b6d4"
         }
       ],
       "productContribution": [
         {
           "name": "任性装+成品家具+外加定制",
-          "output": 43.29,
+          "output": 42.72,
           "orders": 39.36
         },
         {
           "name": "T1",
-          "output": 19.79,
+          "output": 11.24,
           "orders": 14.89
         },
         {
-          "name": "71900基装",
-          "output": 9.49,
-          "orders": 7.45
-        },
-        {
           "name": "轻松装",
-          "output": 6.34,
+          "output": 8.68,
           "orders": 6.38
         },
         {
+          "name": "71900基装",
+          "output": 8.51,
+          "orders": 7.45
+        },
+        {
           "name": "基装",
-          "output": 5.97,
+          "output": 8.17,
           "orders": 7.45
         },
         {
           "name": "小包圆",
-          "output": 5.94,
+          "output": 8.12,
           "orders": 9.57
         },
         {
           "name": "T1套内加定制",
-          "output": 3.73,
+          "output": 5.1,
           "orders": 13.83
         },
         {
           "name": "定制升级",
-          "output": 3.26,
+          "output": 4.47,
           "orders": 2.13
         },
         {
           "name": "Q5套内加定制",
-          "output": 1.63,
+          "output": 2.23,
           "orders": 2.13
         },
         {
           "name": "89900",
-          "output": 0.56,
+          "output": 0.76,
           "orders": 1.06
         }
       ],
@@ -4771,19 +4208,19 @@
         },
         {
           "name": "百度系",
-          "value": 116.66,
+          "value": 114.61,
           "orders": 29,
           "sharePct": 12.55,
           "color": "#a7e6df",
-          "label": "116.66 万 / 29 单 / 订单占比 12.55%"
+          "label": "114.61 万 / 29 单 / 订单占比 12.55%"
         },
         {
           "name": "抖音直播类",
-          "value": 62.76,
+          "value": 69.95,
           "orders": 24,
           "sharePct": 10.39,
           "color": "#b9efb3",
-          "label": "62.76 万 / 24 单 / 订单占比 10.39%"
+          "label": "69.95 万 / 24 单 / 订单占比 10.39%"
         },
         {
           "name": "工程回单",
@@ -5048,7 +4485,6 @@
           "draftWan": 0,
           "formalWan": 13.08,
           "refundWan": 39.85,
-          "netWan": -26.77,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 3
@@ -5059,7 +4495,6 @@
           "draftWan": 47,
           "formalWan": 0,
           "refundWan": 17.37,
-          "netWan": 29.63,
           "draftOrders": 5,
           "formalOrders": 0,
           "refundOrders": 1
@@ -5070,7 +4505,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 26.89,
-          "netWan": -26.89,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 3
@@ -5081,7 +4515,6 @@
           "draftWan": 9.95,
           "formalWan": 18.87,
           "refundWan": 0,
-          "netWan": 28.82,
           "draftOrders": 1,
           "formalOrders": 4,
           "refundOrders": 0
@@ -5092,7 +4525,6 @@
           "draftWan": 17.14,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 17.14,
           "draftOrders": 2,
           "formalOrders": 0,
           "refundOrders": 0
@@ -5103,7 +4535,6 @@
           "draftWan": 19.9,
           "formalWan": 13.62,
           "refundWan": 0,
-          "netWan": 33.53,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 0
@@ -5114,7 +4545,6 @@
           "draftWan": 27.09,
           "formalWan": 4.23,
           "refundWan": 0,
-          "netWan": 31.32,
           "draftOrders": 4,
           "formalOrders": 2,
           "refundOrders": 0
@@ -5125,7 +4555,6 @@
           "draftWan": 0,
           "formalWan": 10.74,
           "refundWan": 0,
-          "netWan": 10.74,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 0
@@ -5136,7 +4565,6 @@
           "draftWan": 38.25,
           "formalWan": 4.76,
           "refundWan": 0,
-          "netWan": 43.01,
           "draftOrders": 3,
           "formalOrders": 3,
           "refundOrders": 0
@@ -5147,7 +4575,6 @@
           "draftWan": 39.32,
           "formalWan": 9.1,
           "refundWan": 14.99,
-          "netWan": 33.43,
           "draftOrders": 4,
           "formalOrders": 5,
           "refundOrders": 1
@@ -5158,7 +4585,6 @@
           "draftWan": 22.18,
           "formalWan": -0.23,
           "refundWan": 0,
-          "netWan": 21.94,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 0
@@ -5169,7 +4595,6 @@
           "draftWan": 13.98,
           "formalWan": 43.64,
           "refundWan": 0,
-          "netWan": 57.62,
           "draftOrders": 3,
           "formalOrders": 4,
           "refundOrders": 0
@@ -5180,7 +4605,6 @@
           "draftWan": 9.95,
           "formalWan": -2.38,
           "refundWan": 0,
-          "netWan": 7.57,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 0
@@ -5191,7 +4615,6 @@
           "draftWan": 6.99,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 6.99,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 0
@@ -5202,7 +4625,6 @@
           "draftWan": 44.84,
           "formalWan": 15.3,
           "refundWan": 0,
-          "netWan": 60.14,
           "draftOrders": 4,
           "formalOrders": 3,
           "refundOrders": 0
@@ -5213,7 +4635,6 @@
           "draftWan": 16.94,
           "formalWan": 7.45,
           "refundWan": 0,
-          "netWan": 24.39,
           "draftOrders": 3,
           "formalOrders": 6,
           "refundOrders": 0
@@ -5224,7 +4645,6 @@
           "draftWan": 42.08,
           "formalWan": 8.04,
           "refundWan": 0,
-          "netWan": 50.12,
           "draftOrders": 4,
           "formalOrders": 3,
           "refundOrders": 0
@@ -5235,7 +4655,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 19.9,
-          "netWan": -19.9,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -5246,7 +4665,6 @@
           "draftWan": 32.13,
           "formalWan": 3.46,
           "refundWan": 0,
-          "netWan": 35.59,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 0
@@ -5257,7 +4675,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 28.46,
-          "netWan": -28.46,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 3
@@ -5268,7 +4685,6 @@
           "draftWan": 19.9,
           "formalWan": -1.15,
           "refundWan": 69.78,
-          "netWan": -51.03,
           "draftOrders": 2,
           "formalOrders": 1,
           "refundOrders": 3
@@ -5279,7 +4695,6 @@
           "draftWan": 27.09,
           "formalWan": 0,
           "refundWan": 14.99,
-          "netWan": 12.11,
           "draftOrders": 3,
           "formalOrders": 0,
           "refundOrders": 1
@@ -5290,7 +4705,6 @@
           "draftWan": 0,
           "formalWan": 10.01,
           "refundWan": 19.9,
-          "netWan": -9.9,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 1
@@ -5301,7 +4715,6 @@
           "draftWan": 49.27,
           "formalWan": 12.62,
           "refundWan": 31.97,
-          "netWan": 29.93,
           "draftOrders": 5,
           "formalOrders": 4,
           "refundOrders": 3
@@ -5312,7 +4725,6 @@
           "draftWan": 24.94,
           "formalWan": 6.47,
           "refundWan": 14.99,
-          "netWan": 16.42,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 1
@@ -5323,7 +4735,6 @@
           "draftWan": 14.38,
           "formalWan": 10.01,
           "refundWan": 9.95,
-          "netWan": 14.44,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 1
@@ -5334,7 +4745,6 @@
           "draftWan": 20.93,
           "formalWan": 12.76,
           "refundWan": 13.74,
-          "netWan": 19.95,
           "draftOrders": 2,
           "formalOrders": 1,
           "refundOrders": 1
@@ -5345,7 +4755,6 @@
           "draftWan": 6.99,
           "formalWan": 6.63,
           "refundWan": 0,
-          "netWan": 13.62,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 0
@@ -5356,7 +4765,6 @@
           "draftWan": 34.89,
           "formalWan": -4.54,
           "refundWan": 0,
-          "netWan": 30.35,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 0
@@ -5391,7 +4799,7 @@
         "quoteOutputWan": 488.88,
         "systemOutputWan": -100.28,
         "signSystemOutputWan": 292.48,
-        "productNetOutputWan": 457.47,
+        "productNetOutputWan": 200.87,
         "currentOrders": 34,
         "draftOrderCount": 37,
         "monthlyOutputWan": -100.3,
@@ -5425,8 +4833,8 @@
       },
       "productSummary": {
         "topProductName": "任性装+成品家具+外加定制",
-        "topProductOutputSharePct": 56.61,
-        "topProductOutputWan": 258.98,
+        "topProductOutputSharePct": 45.14,
+        "topProductOutputWan": 122.18,
         "topProductOrders": 30,
         "softSelectedRatePct": 0,
         "softPotentialWanPer10Pp": 0,
@@ -5436,8 +4844,8 @@
         "productOutputSource": "净产值 = 签单表.系统产值 + 转正式表.转正式差额产值 + 转正式表.转正设计费 - 退单表.退单产值",
         "productAvgSource": "均单/面积类 = 转正式表.报价单产值（含设计费）/ 转正式单数；不扣退单产值",
         "refundDeductionSource": "退单表.退单产值",
-        "productOutputWan": 457.47,
-        "productOutputLevel2Wan": 457.47,
+        "productOutputWan": 200.87,
+        "productOutputLevel2Wan": 210.73,
         "productOrderCount": 58,
         "unclassifiedProductOutputWan": 0,
         "matchedProductRefundWan": 325.43,
@@ -5479,217 +4887,115 @@
       "channels": [
         {
           "name": "广播",
-          "draftWan": 141.16,
-          "formalWan": 68.4,
-          "refundWan": 287.87,
-          "dealOutputWan": 209.56,
-          "netValueWan": -78.31,
-          "orders": 53,
-          "value": 64.72,
+          "netValueWan": -76.3,
+          "value": 54.25,
           "color": "#e9a6e8"
         },
         {
-          "name": "回单",
-          "draftWan": 38.71,
-          "formalWan": 49.98,
-          "refundWan": 109.82,
-          "dealOutputWan": 88.69,
-          "netValueWan": -21.13,
-          "orders": 18,
-          "value": 17.46,
+          "name": "线上",
+          "netValueWan": -23.45,
+          "value": 16.67,
           "color": "#ddef89"
         },
         {
-          "name": "进线",
-          "draftWan": 0,
-          "formalWan": 0,
-          "refundWan": 8.47,
-          "dealOutputWan": 0,
-          "netValueWan": -8.47,
-          "orders": 1,
-          "value": 7,
+          "name": "不详，待人工确认",
+          "netValueWan": -20.71,
+          "value": 14.72,
           "color": "#a7e6df"
         },
         {
           "name": "其他",
-          "draftWan": 24.33,
-          "formalWan": 0,
-          "refundWan": 19.9,
-          "dealOutputWan": 24.33,
-          "netValueWan": 4.43,
-          "orders": 5,
-          "value": 3.66,
+          "netValueWan": 12.75,
+          "value": 9.06,
           "color": "#b9efb3"
         },
         {
-          "name": "不详，待人工确认",
-          "draftWan": 0,
-          "formalWan": 3.5,
-          "refundWan": 0,
-          "dealOutputWan": 3.5,
-          "netValueWan": 3.5,
-          "orders": 1,
-          "value": 2.89,
+          "name": "回单",
+          "netValueWan": 7.44,
+          "value": 5.29,
           "color": "#a9dbf2"
-        },
-        {
-          "name": "市场部",
-          "draftWan": 7.19,
-          "formalWan": -2.94,
-          "refundWan": 6.99,
-          "dealOutputWan": 4.25,
-          "netValueWan": -2.74,
-          "orders": 3,
-          "value": 2.26,
-          "color": "#cfd4ff"
-        },
-        {
-          "name": "线上",
-          "draftWan": 81.08,
-          "formalWan": 45.1,
-          "refundWan": 123.77,
-          "dealOutputWan": 126.18,
-          "netValueWan": 2.41,
-          "orders": 25,
-          "value": 1.99,
-          "color": "#dcefff"
         }
       ],
       "products": [
         {
           "name": "任性装+成品家具+外加定制",
-          "draftWan": 124.42,
-          "formalWan": 134.56,
-          "refundWan": 136.8,
-          "dealOutputWan": 258.98,
           "netValueWan": 122.18,
-          "orders": 39,
-          "value": 56.61,
+          "value": 45.14,
           "color": "#3b82f6"
         },
         {
-          "name": "T1-2.0",
-          "draftWan": 79.99,
-          "formalWan": 13.59,
-          "refundWan": 79.89,
-          "dealOutputWan": 93.58,
-          "netValueWan": 13.69,
-          "orders": 22,
-          "value": 20.46,
-          "color": "#f59f0a"
-        },
-        {
           "name": "新Q3",
-          "draftWan": 39.81,
-          "formalWan": 7.7,
-          "refundWan": 6.99,
-          "dealOutputWan": 47.51,
-          "netValueWan": 40.52,
-          "orders": 7,
-          "value": 10.39,
+          "netValueWan": 40.51,
+          "value": 14.97,
           "color": "#8b5cf6"
         },
         {
+          "name": "89900",
+          "netValueWan": -24.94,
+          "value": 9.21,
+          "color": "#06b6d4"
+        },
+        {
           "name": "71900",
-          "draftWan": 34.28,
-          "formalWan": 0,
-          "refundWan": 9.99,
-          "dealOutputWan": 34.28,
           "netValueWan": 24.29,
-          "orders": 5,
-          "value": 7.49,
+          "value": 8.98,
           "color": "#8b5cf6"
         },
         {
           "name": "小包圆",
-          "draftWan": 13.98,
-          "formalWan": 8.95,
-          "refundWan": 39.93,
-          "dealOutputWan": 22.93,
-          "netValueWan": -17,
-          "orders": 7,
-          "value": 5.01,
+          "netValueWan": -16.99,
+          "value": 6.28,
           "color": "#ef4444"
         },
         {
-          "name": "Q5",
-          "draftWan": 0,
-          "formalWan": 0.2,
-          "refundWan": 0,
-          "dealOutputWan": 0.2,
-          "netValueWan": 0.2,
-          "orders": 1,
-          "value": 0.04,
-          "color": "#ef4444"
-        },
-        {
-          "name": "89900",
-          "draftWan": 0,
-          "formalWan": 0,
-          "refundWan": 24.94,
-          "dealOutputWan": 0,
-          "netValueWan": -24.94,
-          "orders": 1,
-          "value": 0,
-          "color": "#06b6d4"
-        },
-        {
-          "name": "轻松装",
-          "draftWan": 0,
-          "formalWan": 0,
-          "refundWan": 9.95,
-          "dealOutputWan": 0,
-          "netValueWan": -9.95,
-          "orders": 1,
-          "value": 0,
-          "color": "#16b981"
+          "name": "T1-2.0",
+          "netValueWan": 13.68,
+          "value": 5.05,
+          "color": "#f59f0a"
         },
         {
           "name": "基装",
-          "draftWan": 0,
-          "formalWan": -0.96,
-          "refundWan": 9.95,
-          "dealOutputWan": -0.96,
           "netValueWan": -10.91,
-          "orders": 2,
-          "value": -0.21,
+          "value": 4.03,
           "color": "#64748b"
+        },
+        {
+          "name": "轻松装",
+          "netValueWan": -9.95,
+          "value": 3.68,
+          "color": "#16b981"
+        },
+        {
+          "name": "Q5",
+          "netValueWan": 0.2,
+          "value": 0.07,
+          "color": "#ef4444"
         }
       ],
       "productContribution": [
         {
           "name": "任性装+成品家具+外加定制",
-          "output": 56.61,
+          "output": 57.98,
           "orders": 51.72
         },
         {
-          "name": "T1",
-          "output": 15.31,
-          "orders": 15.52
-        },
-        {
           "name": "新Q3套内加定制",
-          "output": 10.38,
+          "output": 19.23,
           "orders": 10.34
         },
         {
           "name": "71900基装",
-          "output": 7.49,
+          "output": 11.53,
           "orders": 6.9
         },
         {
           "name": "T1套内加定制",
-          "output": 5.15,
+          "output": 11.17,
           "orders": 12.07
         },
         {
-          "name": "小包圆",
-          "output": 5.01,
-          "orders": 6.9
-        },
-        {
           "name": "Q5套内加定制",
-          "output": 0.04,
+          "output": 0.09,
           "orders": 1.72
         }
       ],
@@ -5778,11 +5084,11 @@
         },
         {
           "name": "百度系",
-          "value": -0.12,
-          "orders": 28,
-          "sharePct": 13.08,
+          "value": 0.04,
+          "orders": 29,
+          "sharePct": 13.55,
           "color": "#a7e6df",
-          "label": "-0.12 万 / 28 单 / 订单占比 13.08%"
+          "label": "0.04 万 / 29 单 / 订单占比 13.55%"
         },
         {
           "name": "抖音直播类",
@@ -5834,11 +5140,11 @@
         },
         {
           "name": "不详，待人工确认",
-          "value": -20.55,
-          "orders": 10,
-          "sharePct": 4.67,
+          "value": -20.71,
+          "orders": 9,
+          "sharePct": 4.21,
           "color": "#b7e7f0",
-          "label": "-20.55 万 / 10 单 / 订单占比 4.67%"
+          "label": "-20.71 万 / 9 单 / 订单占比 4.21%"
         }
       ],
       "channelInsights": [],
@@ -6016,7 +5322,6 @@
           "draftWan": 14.38,
           "formalWan": 14.46,
           "refundWan": 0,
-          "netWan": 28.84,
           "draftOrders": 2,
           "formalOrders": 1,
           "refundOrders": 0
@@ -6027,7 +5332,6 @@
           "draftWan": 17.14,
           "formalWan": 19.68,
           "refundWan": 9.95,
-          "netWan": 26.87,
           "draftOrders": 2,
           "formalOrders": 3,
           "refundOrders": 1
@@ -6038,7 +5342,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 14.99,
-          "netWan": -14.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -6049,7 +5352,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -6060,7 +5362,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 8.47,
-          "netWan": -8.47,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -6071,7 +5372,6 @@
           "draftWan": 28.76,
           "formalWan": 13.76,
           "refundWan": 9.95,
-          "netWan": 32.57,
           "draftOrders": 4,
           "formalOrders": 2,
           "refundOrders": 1
@@ -6082,7 +5382,6 @@
           "draftWan": 0,
           "formalWan": 20.98,
           "refundWan": 0,
-          "netWan": 20.98,
           "draftOrders": 0,
           "formalOrders": 2,
           "refundOrders": 0
@@ -6093,7 +5392,6 @@
           "draftWan": 9.95,
           "formalWan": 30.55,
           "refundWan": 28.42,
-          "netWan": 12.09,
           "draftOrders": 1,
           "formalOrders": 6,
           "refundOrders": 3
@@ -6104,7 +5402,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -6115,7 +5412,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.99,
-          "netWan": -9.99,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -6126,7 +5422,6 @@
           "draftWan": 7.19,
           "formalWan": 0,
           "refundWan": 14.99,
-          "netWan": -7.8,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 1
@@ -6137,7 +5432,6 @@
           "draftWan": 0,
           "formalWan": 1.76,
           "refundWan": 14.99,
-          "netWan": -13.23,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 1
@@ -6148,7 +5442,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 24.94,
-          "netWan": -24.94,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 2
@@ -6159,7 +5452,6 @@
           "draftWan": 17.14,
           "formalWan": 0,
           "refundWan": 0,
-          "netWan": 17.14,
           "draftOrders": 2,
           "formalOrders": 0,
           "refundOrders": 0
@@ -6170,7 +5462,6 @@
           "draftWan": 0,
           "formalWan": 3.5,
           "refundWan": 9.95,
-          "netWan": -6.45,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 1
@@ -6181,7 +5472,6 @@
           "draftWan": 0,
           "formalWan": 10.01,
           "refundWan": 9.95,
-          "netWan": 0.05,
           "draftOrders": 1,
           "formalOrders": 2,
           "refundOrders": 1
@@ -6192,7 +5482,6 @@
           "draftWan": 9.95,
           "formalWan": 0.2,
           "refundWan": 13.98,
-          "netWan": -3.83,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 2
@@ -6203,7 +5492,6 @@
           "draftWan": 23.93,
           "formalWan": 3.56,
           "refundWan": 26.93,
-          "netWan": 0.56,
           "draftOrders": 3,
           "formalOrders": 1,
           "refundOrders": 3
@@ -6214,7 +5502,6 @@
           "draftWan": 9.95,
           "formalWan": 4.19,
           "refundWan": 24.94,
-          "netWan": -10.8,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 2
@@ -6225,7 +5512,6 @@
           "draftWan": 0,
           "formalWan": -4.4,
           "refundWan": 9.99,
-          "netWan": -14.39,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 1
@@ -6236,7 +5522,6 @@
           "draftWan": 19.9,
           "formalWan": 6.05,
           "refundWan": 16.94,
-          "netWan": 9.01,
           "draftOrders": 2,
           "formalOrders": 1,
           "refundOrders": 2
@@ -6247,7 +5532,6 @@
           "draftWan": 14.38,
           "formalWan": 17.36,
           "refundWan": 49.88,
-          "netWan": -18.14,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 4
@@ -6258,7 +5542,6 @@
           "draftWan": 24.33,
           "formalWan": 14.7,
           "refundWan": 0,
-          "netWan": 39.03,
           "draftOrders": 3,
           "formalOrders": 2,
           "refundOrders": 0
@@ -6269,7 +5552,6 @@
           "draftWan": 14.18,
           "formalWan": 5.78,
           "refundWan": 51.87,
-          "netWan": -31.91,
           "draftOrders": 2,
           "formalOrders": 2,
           "refundOrders": 4
@@ -6280,7 +5562,6 @@
           "draftWan": 37.05,
           "formalWan": -0.96,
           "refundWan": 9.99,
-          "netWan": 26.1,
           "draftOrders": 4,
           "formalOrders": 1,
           "refundOrders": 1
@@ -6291,7 +5572,6 @@
           "draftWan": 9.95,
           "formalWan": -1.93,
           "refundWan": 66.86,
-          "netWan": -58.84,
           "draftOrders": 1,
           "formalOrders": 2,
           "refundOrders": 5
@@ -6302,7 +5582,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 9.95,
-          "netWan": -9.95,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 1
@@ -6313,7 +5592,6 @@
           "draftWan": 0,
           "formalWan": 7.76,
           "refundWan": 14.99,
-          "netWan": -7.23,
           "draftOrders": 1,
           "formalOrders": 1,
           "refundOrders": 1
@@ -6324,7 +5602,6 @@
           "draftWan": 27.09,
           "formalWan": 0,
           "refundWan": 32.13,
-          "netWan": -5.04,
           "draftOrders": 3,
           "formalOrders": 0,
           "refundOrders": 3
@@ -6335,7 +5612,6 @@
           "draftWan": 7.19,
           "formalWan": 0,
           "refundWan": 6.99,
-          "netWan": 0.2,
           "draftOrders": 1,
           "formalOrders": 0,
           "refundOrders": 1
@@ -6346,7 +5622,6 @@
           "draftWan": 0,
           "formalWan": 0,
           "refundWan": 44.82,
-          "netWan": -44.82,
           "draftOrders": 0,
           "formalOrders": 0,
           "refundOrders": 4
@@ -6357,7 +5632,6 @@
           "draftWan": 0,
           "formalWan": -2.94,
           "refundWan": 0,
-          "netWan": -2.94,
           "draftOrders": 0,
           "formalOrders": 1,
           "refundOrders": 0
@@ -6388,7 +5662,7 @@
     "monthlyOutputWanAvg": 92.73,
     "monthlyOrdersAvg": 44,
     "avgOrderWanAvg": 13.77,
-    "refundRatePctAvg": 57.43
+    "refundRatePctAvg": 57.28
   },
   "summary": {
     "statDays": 30,
@@ -6398,7 +5672,7 @@
     "quoteOutputWan": 488.88,
     "systemOutputWan": -100.28,
     "signSystemOutputWan": 292.48,
-    "productNetOutputWan": 457.47,
+    "productNetOutputWan": 200.87,
     "currentOrders": 34,
     "draftOrderCount": 37,
     "monthlyOutputWan": -100.3,
@@ -6432,11 +5706,11 @@
   },
   "dataSourceNotes": {
     "systemOutput": "年度/月度目标卡和渠道系统净产值来自 产值2026.1-12月.合计产值",
-    "netOutput": "渠道、6 个设计部产值总榜、部门控退潜力测算、部门产值×设计师人数、部门视角产值排名使用净产值：以客户编号/合同编号为订单指纹，汇总 签单2026.1-12月.系统产值 + 转正式2026.1-12月.转正式差额产值 + 转正设计费 - 退单2026.1-12月.退单产值；部门/设计师归属优先取转正式表，其次签单表，最后退单表兜底",
+    "netOutput": "产品线产值、走量型 vs 高客单、6 个设计部产值总榜、部门控退潜力测算、部门产值×设计师人数、部门视角产值排名使用净产值：以客户编号/合同编号为订单指纹，汇总 签单2026.1-12月.系统产值 + 转正式2026.1-12月.转正式差额产值 + 转正设计费 - 退单2026.1-12月.退单产值；部门/设计师归属优先取转正式表，其次签单表，最后退单表兜底",
     "quoteAverage": "各产品线均单值、均单面积、部门均单值排行使用 转正式2026.1-12月.报价单产值（含设计费）和转正式单数，不扣退单产值",
     "positiveAndRefund": "转正 KPI 使用 转正式2026.1-12月.转正式差额产值 + 转正设计费；退单风险来自 退单2026.1-12月.退单产值/退单单数",
     "targets": "年度目标、月度目标来自 monthly_targets-2026 子表",
     "channelDetail": "渠道系统净产值和 TOP 细分渠道均来自 产值2026.1-12月.合计产值，并通过 渠道映射表 映射；优先用 来源渠道二级 匹配，来源渠道二级为空时才用 来源渠道 兜底，永不参考 来源渠道三级；TOP 细分渠道使用 对应TOP 细分渠道产值排行 净产值，渠道系统净产值使用 对应渠道系统净产值 净产值；映射表未命中时统一展示 不详，待人工确认；TOP 细分渠道金额展示净产值正负，百分比按渠道订单数 / 全部渠道订单数计算",
-    "productMapping": "产品映射表只负责把原始产品套系归类，不提供产值；产品线产值分布按 产品映射.一级映射，走量型 vs 高客单型按 产品映射.二级映射；产品成单产值取签单系统产值 + 转正式差额产值 + 转正设计费，不按产品线扣减退单；退单来源包含 25 年订单，退单风险统一从总盘和部门维度分析；产品映射支持完全匹配、面积泛化匹配、核心词匹配"
+    "productMapping": "产品映射表只负责把原始产品套系归类，不提供产值；产品线产值分布按 产品映射.一级映射，走量型 vs 高客单型按 产品映射.二级映射；产品净产值取签单系统产值 + 转正式差额产值 + 转正设计费 - 退单产值；退单找产品只按客户编号/合同编号匹配转正式表和签单表，不再用姓名单独匹配，避免同名客户误扣；产品映射支持完全匹配、面积泛化匹配、核心词匹配"
   }
 }
