@@ -1,5 +1,5 @@
 window.GM_DASHBOARD_DATA = {
-  "generatedAt": "2026-07-22T11:13:32.652Z",
+  "generatedAt": "2026-07-23T11:15:07.464Z",
   "dashboardYear": 2026,
   "selectedTables": {
     "systemOutput": "产值2026.1-12月",
